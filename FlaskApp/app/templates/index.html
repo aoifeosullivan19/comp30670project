@@ -1,0 +1,48 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<link rel = "stylesheet" type="text/css" href ="{{ url_for('static',filename='styles/index.css') }}">
+
+</head>
+<body>
+
+<header>
+    <a href=index.html>HOME</a>
+    <a href=index.html>ABOUT</a>
+    <div class = 'dropdown'>
+    <button class = 'dropbutton'>STATIONS</button>
+        <div class = 'dropcontent'>
+            <a href = 'index.html'>Plan your Trip</a>
+            <a herf = 'index.html'>View Stations</a>
+        </div>
+    </div>
+    <a href=index.html>CONTACT</a>
+    
+    </header>    
+<main>
+   <img src ="/static/images/DublinPic.jpg" alt='HomePic'>
+    
+    </main>
+    
+<div id="map" style = "width:100%;height:700px;" ></div>
+
+    <script>
+      function myMap() {
+        var dublin = {lat: 53.35, lng: -6.26};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: dublin,
+            
+        });
+        var marker = new google.maps.Marker({
+          position: dublin, 
+          map: map
+        });
+      }
+    </script> 
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
+</script>  
+
+</body>
+</html>
