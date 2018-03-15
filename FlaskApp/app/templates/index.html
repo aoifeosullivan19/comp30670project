@@ -28,18 +28,140 @@
 
     <script>
       function myMap() {
-        var dublin = {lat: 53.35, lng: -6.26};
+        var dub = {lat: 53.35, lng: -6.26}
+          var dublin = [
+              ['Dublin', 53.35, -6.26],
+              ['East Wall', 53.35, -6.24],
+              ['Temple Bar', 53.345, -6.27]
+          ]
+        
         var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: dublin,
+        zoom: 13,
+        center: dub,
             
         });
-        var marker = new google.maps.Marker({
-          position: dublin, 
-          map: map
+          
+          
+        var infoWindow = new google.maps.InfoWindow()
+        var marker;
+        var i;
+          
+        for( i = 0; i < dublin.length; i++ ) {
+        
+        var position = new google.maps.LatLng(dublin[i][1], dublin[i][2]);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: dublin[i][0],
+            
+        
         });
+          
+        
+          
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent("Display Content Here");
+                infoWindow.open(map, marker);
+                map.setZoom(15);
+                map.setCenter(marker.getPosition());
+                //displayContent(dublin[i][0]);
+                GetLatlong();
+            }
+        })(marker, i))};
+        
+                 
+  
       }
+        
+    function displayContent(bikeStation){
+        
+        document.getElementById("test").innerHTML = bikeStation
+    }
+        
+    function GetLatlong()
+    {
+        var geocoder = new google.maps.Geocoder();
+        var address = document.getElementById('textboxid').value;
+
+        geocoder.geocode({ 'address': address }, function (results, status) {
+
+            if (status == google.maps.GeocoderStatus.OK) {
+                var latitude = results[0].geometry.location.lat();
+                var longitude = results[0].geometry.location.lng();
+                
+                document.getElementById('test').innerHTML = latitude + " "+ longitude;
+                distanceChecker(latitude,longitude)
+            }
+            else {
+                document.getElementById('test').innerHTML = "Please enter a valid location"
+            }
+            
+            
+        
+        })};  
+        
+        function distanceChecker(lat, long){
+            var dublin = [
+              ['Dublin', 53.35, -6.26],
+              ['East Wall', 53.35, -6.24],
+              ['Temple Bar', 53.345, -6.27]
+            ]
+            
+            var i;
+            var j = 1;
+            var location, min
+            
+            if (distance(lat,long,dublin[0][1],dublin[0][2]) < distance(lat,long,dublin[1][1],dublin[1][2])){
+                
+                min = distance(lat,long,dublin[0][1],dublin[0][2]);
+                location = dublin[0][0];
+               // document.getElementById("testng").innerHTML = "Dublin " + distance(lat,long,dublin[0][1],dublin[0][2]) + " " + min;
+            }
+            else {
+                
+                min = distance(lat,long,dublin[1][1],dublin[1][2]);
+                location = dublin[1][0];
+                //document.getElementById("testng").innerHTML = "East Wall " + distance(lat,long,dublin[1][1],dublin[1][2]) + " " + min;
+            }
+            
+            for (i = 2; i < dublin.length; i++){
+                if (min > distance(lat,long,dublin[2][1],dublin[2][2])){
+                    min = distance(lat,long,dublin[2][1],dublin[2][2]);
+                    location = dublin[2][0];
+                    //document.getElementById("testing").innerHTML = dublin[2][0] + " " + distance(lat,long,dublin[2][1],dublin[2][2]);
+            }}
+            
+            document.getElementById('test').innerHTML = min + " " + location
+            
+        }
+        
+        function distance(lat1,lon1,lat2,lon2) {
+            var R = 6371; // Radius of the earth in km
+            var dLat = deg2rad(lat2-lat1);  // deg2rad below
+            var dLon = deg2rad(lon2-lon1); 
+            var a = 
+                Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+                Math.sin(dLon/2) * Math.sin(dLon/2); 
+            
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+            var d = R * c; // Distance in km
+            var result = Math.round(d*100)/100
+            return result;
+            }
+
+            function deg2rad(deg) {
+                return deg * (Math.PI/180)
+            }    
+    
     </script> 
+    
+    <input id = 'textboxid' type = 'text' placeholder="Search Box">
+    <button type="button" id = "check" onclick= "GetLatlong()">Submit</button>
+    
+    <p id = 'test'></p>
+    
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
 </script>  

@@ -1,20 +1,20 @@
 """Main module."""
 from flask import render_template
 from app import app
-import systeminfo.main
-#from Test import *
+from app.test import *
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import base64
 
-@app.after_request
-def add_header(r):
-    """
-    Add headers to both force latest IE rendering engine or Chrome Frame,
-    and also to cache the rendered page for 10 minutes.
-    """
-    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    r.headers["Pragma"] = "no-cache"
-    r.headers["Expires"] = "0"
-    r.headers['Cache-Control'] = 'public, max-age=0'
-    return r
+#print(matplotlib.get_backend())
+
+#plt.plot(range(10))
+
+#plt.savefig('test.png')
+#from Test import *
 
 
 @app.route('/')
@@ -23,7 +23,6 @@ def index():
 	returnDict['user'] = 'Amy'
 	returnDict['title'] = 'Flask Application'
 	#returnDict['info'] = systeminfo.main.main()
-	#returnDict['test'] = Test.variable
 	return render_template("index.html", **returnDict)
 
 
