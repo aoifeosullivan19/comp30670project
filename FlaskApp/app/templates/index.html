@@ -154,8 +154,19 @@
             function deg2rad(deg) {
                 return deg * (Math.PI/180)
             }    
+
+</script>
     
-    </script> 
+	{% for item in data %}
+	<tr>
+    		<td>{{item[0]}}</td>
+    		<td>{{item[1]}}</td>
+   		<td>{{item[2]}}</td>
+		<td>{{item[3]}}</td>
+
+	</tr>
+	{% endfor %}
+
     
     <input id = 'textboxid' type = 'text' placeholder="Search Box">
     <button type="button" id = "check" onclick= "GetLatlong()">Submit</button>
