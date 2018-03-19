@@ -95,8 +95,23 @@ def create_table(databasename):
 
 def insert(databasename):
     """Function to insert values into database table"""
+    n=10
+    nme='test'
+    address='test3'
+    pos='test4'
+    bank='test5'
+    bon='test6' 
+    stat='test7'
+    contract='test8'
+    bikess=9
+    availst=10
+    avail=11
+    last=12
+    t=(n, nme, address, pos, bank, bon, stat, contract, bikess, availst, avail, last)
+
+
     cursor=databasename.cursor()
-    query="INSERT INTO bikesdata (number, name, address, position, banking, bonus, status, contract, bikestands, available_stands, available_bikes, last_update) VALUES ('1', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '1', '1', '1', '1')"     
+    query="INSERT INTO bikesdata (number, name, address, position, banking, bonus, status, contract, bikestands, available_stands, available_bikes, last_update) VALUES (%d, %s, %s, %s, %s, %s, %s, %s, %d, %d, %d, %d, %d), t"     
     cursor.execute(query %(number,name, address, position, banking, bonus, status, contract, bikestands, available_stands, available_bikes, last_update))
     databasename.commit()
     cursor.close()
