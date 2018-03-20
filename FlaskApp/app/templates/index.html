@@ -25,19 +25,19 @@
     </main>
     
 <div id="map" style = "width:100%;height:700px;" ></div>
-
+<p id = 'testing'></p>
     <script>
+
       function myMap() {
-        var dub = {lat: 53.35, lng: -6.26}
-          var dublin = [
-              ['Dublin', 53.35, -6.26],
-              ['East Wall', 53.35, -6.24],
-              ['Temple Bar', 53.345, -6.27]
-          ]
+
+	var dublin = [];
+        {% for row in rows %}
+                dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
+        {% endfor %}
         
         var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
-        center: dub,
+        center: {lat: 53.3498, lng: -6.2603}
             
         });
           
@@ -66,7 +66,8 @@
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
                 //displayContent(dublin[i][0]);
-                GetLatlong();
+                
+		
             }
         })(marker, i))};
         
@@ -102,13 +103,18 @@
         })};  
         
         function distanceChecker(lat, long){
-            var dublin = [
+            var dublinold = [
               ['Dublin', 53.35, -6.26],
               ['East Wall', 53.35, -6.24],
               ['Temple Bar', 53.345, -6.27]
             ]
             
-            var i;
+	    var dublin = [];
+        	{% for row in rows %}
+                	dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
+        	{% endfor %}
+         
+	    var i;
             var j = 1;
             var location, min
             
@@ -156,17 +162,7 @@
             }    
 
 </script>
-    
-	{% for row in rows %}
-	<tr>
-    		<td>{{ row.stationNo }}</td>
-    		<td>{{row.location }}</td>
-   		
-
-	</tr>
-	{% endfor %}
-
-    
+  
     <input id = 'textboxid' type = 'text' placeholder="Search Box">
     <button type="button" id = "check" onclick= "GetLatlong()">Submit</button>
     

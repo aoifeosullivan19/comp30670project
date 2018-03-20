@@ -7,7 +7,7 @@ from app.dbcon import Examp
 
 @app.route('/')
 def index():
-	row = Examp.query.all()
+	rows = Examp.query.all()
 	return render_template("index.html", rows=rows)
 
 
