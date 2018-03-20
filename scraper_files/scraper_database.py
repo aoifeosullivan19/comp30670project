@@ -8,7 +8,6 @@ import mysql.connector
 from mysql.connector import errorcode
 
 
-
 def data_collector (url):
     """Retrieves information from Dublin Bikes API and stores as JSON"""
 
@@ -55,7 +54,7 @@ for x in filename:
     available_stands=x['available_bike_stands']
     available_bikes=x['available_bikes']
     last_update=x['last_update']
-    print (number, name, last_update)
+    #print (number, name, last_update)
                    
 def connect():
     """Function to connect to database on Amazon Web Services"""
@@ -82,7 +81,7 @@ def read_db(databasename):
     cursor = databasename.cursor()
     cursor.execute("SELECT * FROM realtime_data")
     for row in cursor.fetchall():
-        print (row[0])
+        print (row[0:])
 
 def create_table(databasename):
     """Function to create new table in given database"""
@@ -93,26 +92,12 @@ def create_table(databasename):
         address varchar(135), position varchar(135), banking varchar(135), bonus varchar(135), status varchar(135), contract_name varchar(135), bike_stands int(11), available_bikes_stands int(11), available_bikes int(11), last_update varchar(135))""")
     databasename.commit()
 
-def insert(databasename):
+def insert(query):
     """Function to insert values into database table"""
-    n=10
-    nme='test'
-    address='test3'
-    pos='test4'
-    bank='test5'
-    bon='test6' 
-    stat='test7'
-    contract='test8'
-    bikess=9
-    availst=10
-    avail=11
-    last=12
-    t=(n, nme, address, pos, bank, bon, stat, contract, bikess, availst, avail, last)
 
-
-    cursor=databasename.cursor()
-    query="INSERT INTO bikesdata (number, name, address, position, banking, bonus, status, contract, bikestands, available_stands, available_bikes, last_update) VALUES (%d, %s, %s, %s, %s, %s, %s, %s, %d, %d, %d, %d, %d), t"     
-    cursor.execute(query %(number,name, address, position, banking, bonus, status, contract, bikestands, available_stands, available_bikes, last_update))
+    
+    cursor=databasename.cursor()         
+    cursor.execute ("INSERT INTO bikesdata (number, name, address, position, banking, bonus, status, contract_name, bike_stands, available_bikes_stands, available_bikes, last_update) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);", (2444, "today", "today", "position", "today", "today", "today", 2, 2, 4, 2, 123213))      
     databasename.commit()
     cursor.close()
     databasename.close()
@@ -120,3 +105,4 @@ def insert(databasename):
 
 databasename=connect()
 insert(databasename)
+
