@@ -1,9 +1,10 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+import pymysql
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://Amylouise94:Meninblack1@dbinstance.cjy2yzz9jf0m.us-west-2.rds.amazonaws.com/DummyDB'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://Amylouise94:Meninblack1@dummydb.cbsshlsxbajt.us-west-2.rds.amazonaws.com/DummyDB'
 db = SQLAlchemy(app)
 
 class Examp(db.Model):

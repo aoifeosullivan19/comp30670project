@@ -157,12 +157,11 @@
 
 </script>
     
-	{% for item in data %}
+	{% for row in rows %}
 	<tr>
-    		<td>{{item[0]}}</td>
-    		<td>{{item[1]}}</td>
-   		<td>{{item[2]}}</td>
-		<td>{{item[3]}}</td>
+    		<td>{{ row.stationNo }}</td>
+    		<td>{{row.location }}</td>
+   		
 
 	</tr>
 	{% endfor %}
