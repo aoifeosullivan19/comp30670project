@@ -45,6 +45,5 @@ def job():
 
 url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
 filename=data_collector(url)
-
 job()
 

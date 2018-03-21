@@ -30,7 +30,7 @@ def data_collector (url):
 
 class json_data:
     def data(self):
-        for i in json:
+        for i in json_parsed:
             name = i['name']
             number = i['number']
             address=i['address']
@@ -45,12 +45,22 @@ class json_data:
 
 
     def dynamic(self):
-        for i in json:
+        for i in json_parsed:
             number = i['number']
             available_bike_stands=i['available_bike_stands']
             last_update=i['last_update']
             available_bikes=i['available_bikes']
             insert_dynamic(number, available_bike_stands, last_update, available_bikes)
+    #http://pythondata.com/collecting-storing-tweets-python-mysql/
+
+
+    def latest(self):
+        for i in json_parsed:
+            number = i['number']
+            available_bike_stands=i['available_bike_stands']
+            last_update=i['last_update']
+            available_bikes=i['available_bikes']
+            insert_latest(number, available_bike_stands, last_update, available_bikes)
     #http://pythondata.com/collecting-storing-tweets-python-mysql/
 
 
@@ -74,30 +84,27 @@ def create_table(databasename):
         Column ('name', String (60)),
         Column('number', Integer, primary_key=True),
         Column('address', String (60)),
-        Column('latitude', Float),
-        Column('longitude', Float),
+        Column('latitude', Float(40)),
+        Column('longitude', Float(40)),
         Column('banking', String (40)),
-        Column('bike_stands', Integer),
+        Column('bike_stands', Float(40)),
         Column('status', String (40)))
-    
      
     dynamic_info=Table('dynamic_info', metadata,
-        Column('number', Integer, primary_key=True),
-        Column('available_bike_stands', Integer),
-        Column('last_update', Float(40), primary_key=True),
-        Column('available_bikes', Integer))
+        Column('number', Integer, ForeignKey("static_info.number")),
+        Column('available_bike_stands', Float(40)),
+        Column('last_update', Float(40)),
+        Column('available_bikes', Float(40)))
+
+    latest_info=Table('latest_info', metadata,
+        Column('number', Integer, ForeignKey("static_info.number")),
+        Column('available_bike_stands', Float(40)),
+        Column('last_update', Float(40)),
+        Column('available_bikes', Float(40)))
 
     metadata.create_all(engine, checkfirst=True)
 
-def insert(databasename, json):
-    """Function to insert values into database table"""
-    
-    connection = engine.connect()     
-    connection.execute ("INSERT INTO static_info (name, number, address, banking, bike_stands, status) VALUES (%s, %s, %s, %s, %s, %s);", (name, number, address, banking, bike_stands, status))    
-    databasename.commit()
-    cursor.close()
-    databasename.close()
-    return
+    #http://docs.sqlalchemy.org/en/latest/core/metadata.html
 
 def insert_data(name, number, address, banking, latitude, longitude, bike_stands, status):
 
@@ -112,13 +119,29 @@ def insert_dynamic(number, available_bike_stands, last_update, available_bikes):
     connection.execute ("INSERT INTO dynamic_info (number, available_bike_stands, last_update, available_bikes) VALUES (%s, %s, %s, %s);", (number, available_bike_stands, last_update, available_bikes))    
     return
 
+def insert_latest(number, available_bike_stands, last_update, available_bikes):
+
+    connection = engine.connect()
+    connection.execute ("REPLACE INTO latest_info (number, available_bike_stands, last_update, available_bikes) VALUES (%s, %s, %s, %s);", (number, available_bike_stands, last_update, available_bikes))    
+    return
+
+
+def job():
+    """Runs the convert to csv function"""
+
+    while True:
+        json_parsed=data_collector(url)
+        time.sleep(300)
+        json_parsed=data_collector(url)
+        test=json_data()
+        test.dynamic()
+
 
 url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
-json=data_collector(url)
+json_parsed=data_collector(url)
 engine=connect()
 create_table(engine)
 test=json_data()
-
-test.dynamic()
-
+job()
 #https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html 
+
