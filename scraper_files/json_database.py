@@ -42,6 +42,18 @@ class json_data:
             status=i['status']
             insert_data(name, number, address, banking, latitude, longitude, bike_stands, status)
     #http://pythondata.com/collecting-storing-tweets-python-mysql/
+
+
+    def dynamic(self):
+        for i in json:
+            number = i['number']
+            available_bike_stands=i['available_bike_stands']
+            last_update=i['last_update']
+            available_bikes=i['available_bikes']
+            insert_dynamic(number, available_bike_stands, last_update, available_bikes)
+    #http://pythondata.com/collecting-storing-tweets-python-mysql/
+
+
 def connect():
     """Function to connect to database on Amazon Web Services"""
 
@@ -67,6 +79,13 @@ def create_table(databasename):
         Column('banking', String (40)),
         Column('bike_stands', Integer),
         Column('status', String (40)))
+    
+     
+    dynamic_info=Table('dynamic_info', metadata,
+        Column('number', Integer, primary_key=True),
+        Column('available_bike_stands', Integer),
+        Column('last_update', Float(40), primary_key=True),
+        Column('available_bikes', Integer))
 
     metadata.create_all(engine, checkfirst=True)
 
@@ -87,12 +106,19 @@ def insert_data(name, number, address, banking, latitude, longitude, bike_stands
     return
 
 
+def insert_dynamic(number, available_bike_stands, last_update, available_bikes):
+
+    connection = engine.connect()
+    connection.execute ("INSERT INTO dynamic_info (number, available_bike_stands, last_update, available_bikes) VALUES (%s, %s, %s, %s);", (number, available_bike_stands, last_update, available_bikes))    
+    return
+
 
 url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
 json=data_collector(url)
 engine=connect()
 create_table(engine)
 test=json_data()
-test.data()
+
+test.dynamic()
 
 #https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html 
