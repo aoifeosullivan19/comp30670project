@@ -35,10 +35,12 @@ class json_data:
             number = i['number']
             address=i['address']
             banking=i['banking']
+            position=i['position']
+            latitude=position['lat']
+            longitude=position['lng']
             bike_stands=i['bike_stands']
-            
             status=i['status']
-            insert_data(name, number, address, banking, bike_stands, status)
+            insert_data(name, number, address, banking, latitude, longitude, bike_stands, status)
     #http://pythondata.com/collecting-storing-tweets-python-mysql/
 def connect():
     """Function to connect to database on Amazon Web Services"""
@@ -60,6 +62,8 @@ def create_table(databasename):
         Column ('name', String (60)),
         Column('number', Integer, primary_key=True),
         Column('address', String (60)),
+        Column('latitude', Float),
+        Column('longitude', Float),
         Column('banking', String (40)),
         Column('bike_stands', Integer),
         Column('status', String (40)))
@@ -76,11 +80,10 @@ def insert(databasename, json):
     databasename.close()
     return
 
-def insert_data(name, number, address, banking, bike_stands, status):
+def insert_data(name, number, address, banking, latitude, longitude, bike_stands, status):
 
-    connection = engine.connect()
-    
-    connection.execute ("INSERT INTO static_info (name, number, address, banking, bike_stands, status) VALUES (%s, %s, %s, %s, %s, %s);", (name, number, address, banking, bike_stands, status))
+    connection = engine.connect()    
+    connection.execute ("INSERT INTO static_info (name, number, address, banking, latitude, longitude, bike_stands, status) VALUES (%s, %s, %s, %s, %s, %s, %s, %s);", (name, number, address, banking, latitude, longitude, bike_stands, status))
     return
 
 
