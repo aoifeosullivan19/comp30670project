@@ -1,6 +1,5 @@
 import requests
 import json
-import csv
 import time
 import schedule
 import pandas as pd
@@ -12,21 +11,13 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import *
+import datetime
+import call_api as ca 
 
 #http://docs.sqlalchemy.org/en/latest/orm/tutorial.html
 Base = declarative_base()
 Session = sessionmaker()
 metadata=MetaData()
-
-
-def data_collector (url):
-    """Retrieves information from Dublin Bikes API and stores as JSON"""
-
-    req = requests.get(url)
-    req_text= req.text
-    json_parsed=json.loads(req_text)
-    url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
-    return json_parsed
 
 class json_data:
     def data(self):
@@ -42,13 +33,15 @@ class json_data:
             status=i['status']
             insert_data(name, number, address, banking, latitude, longitude, bike_stands, status)
     #http://pythondata.com/collecting-storing-tweets-python-mysql/
+    
 
+    def dynamic(self):            
+    #https://stackoverflow.com/questions/3682748/converting-unix-timestamp-string-to-readable-date-in-python
 
-    def dynamic(self):
         for i in json_parsed:
             number = i['number']
             available_bike_stands=i['available_bike_stands']
-            last_update=i['last_update']
+            last_update=datetime.datetime.fromtimestamp(i['last_update']/1000)
             available_bikes=i['available_bikes']
             insert_dynamic(number, available_bike_stands, last_update, available_bikes)
     #http://pythondata.com/collecting-storing-tweets-python-mysql/
@@ -93,13 +86,13 @@ def create_table(databasename):
     dynamic_info=Table('dynamic_info', metadata,
         Column('number', Integer, ForeignKey("static_info.number")),
         Column('available_bike_stands', Float(40)),
-        Column('last_update', Float(40)),
+        Column('last_update', String (100)),
         Column('available_bikes', Float(40)))
 
     latest_info=Table('latest_info', metadata,
         Column('number', Integer, ForeignKey("static_info.number")),
         Column('available_bike_stands', Float(40)),
-        Column('last_update', Float(40)),
+        Column('last_update', String(100)),
         Column('available_bikes', Float(40)))
 
     metadata.create_all(engine, checkfirst=True)
@@ -128,20 +121,20 @@ def insert_latest(number, available_bike_stands, last_update, available_bikes):
 
 def job():
     """Runs the convert to csv function"""
-
-    while True:
-        json_parsed=data_collector(url)
-        time.sleep(300)
-        json_parsed=data_collector(url)
-        test=json_data()
-        test.dynamic()
-
+    url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
+    ca.call_api(url)
+    data=ca.call_api(url)
+    ca.write_file (data)
+    json_parsed=ca.write_file(data)
+    test=json_data()
+    test.dynamic()
+ 
 
 url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=7ad82bb68a98a4a16979023ed867b6501b108e6e"
-json_parsed=data_collector(url)
 engine=connect()
 create_table(engine)
-test=json_data()
+data=ca.call_api(url)
+json_parsed=ca.write_file(data)
 job()
 #https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html 
 
