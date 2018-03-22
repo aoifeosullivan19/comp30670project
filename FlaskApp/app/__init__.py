@@ -2,6 +2,7 @@
 """Flask application for displaying system infomation"""
 
 from app import metadata
+import pygal
 
 
 __version__ = metadata.version
