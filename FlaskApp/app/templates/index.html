@@ -19,16 +19,40 @@
     <a href=index.html>CONTACT</a>
     
     </header>    
-<main>
-   <img src ="/static/images/DublinPic.jpg" alt='HomePic'>
-    
+    <main>
+   	<img src ="/static/images/DublinPic.jpg" alt='HomePic'>
     </main>
     
-<div id="map" style = "width:100%;height:700px;" ></div>
-<p id = 'testing'></p>
-    <script>
+    <div id="map" style = "width:100%;height:700px;" ></div>
 
-      function myMap() {
+    <div id = 'trip'>
+        <form>
+            <input id = 'start' type = 'text' placeholder="Search Box">
+            <!--   <input id = 'stop' type = 'text' placeholder="Search Box"> -->
+        </form>
+    <button type="button" id = "check" onclick= "Submit()">Submit</button>
+    <p id = 'testing'></p>
+
+    </div>    
+    
+    <div id="mapdiv" style = "width:50%;height:400px;" ></div>
+    <p id = 'test'></p>
+
+    <script>
+	
+    function Submit(){
+        
+        document.getElementById('test').innerHTML = " "
+        //document.getElementById('testing').innerHTML = " "
+        
+        var start = document.getElementById('start').value;
+       // var end  = document.getElementById('stop').value;
+        
+        GetLatlong(start);
+       // GetLatlong(end);
+        }   
+    
+     function myMap() {
 
 	var dublin = [];
         {% for row in rows %}
@@ -40,7 +64,6 @@
         center: {lat: 53.3498, lng: -6.2603}
             
         });
-          
           
         var infoWindow = new google.maps.InfoWindow()
         var marker;
@@ -54,11 +77,8 @@
             map: map,
             title: dublin[i][0],
             
-        
         });
-          
-        
-          
+                   
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
                 infoWindow.setContent("Display Content Here");
@@ -66,24 +86,44 @@
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
                 //displayContent(dublin[i][0]);
-                
-		
             }
-        })(marker, i))};
-        
-                 
-  
+        })(marker, i))}
       }
         
-    function displayContent(bikeStation){
+     function startmap(lat, long, latend, longend){
         
-        document.getElementById("test").innerHTML = bikeStation
-    }
+        var locstart = {lat: lat, lng: long};
+        var locend = {lat: latend, lng: longend}
         
-    function GetLatlong()
-    {
+        var map = new google.maps.Map(document.getElementById('mapdiv'), {
+          center: locstart,
+          zoom: 12
+        });
+        
+         var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map
+        });
+
+        var request = {
+          destination: locstart,
+          origin: locend,
+          travelMode: 'WALKING'
+        };
+
+        var directionsService = new google.maps.DirectionsService();
+        directionsService.route(request, function(response, status) {
+          if (status == 'OK') {
+            directionsDisplay.setDirections(response);
+          }
+        });
+        }
+        
+        //https://developers.google.com/maps/documentation/javascript/examples/directions-simple
+    
+        
+    function GetLatlong(address) {
         var geocoder = new google.maps.Geocoder();
-        var address = document.getElementById('textboxid').value;
+	address += ", Dublin";
 
         geocoder.geocode({ 'address': address }, function (results, status) {
 
@@ -91,23 +131,14 @@
                 var latitude = results[0].geometry.location.lat();
                 var longitude = results[0].geometry.location.lng();
                 
-                document.getElementById('test').innerHTML = latitude + " "+ longitude;
-                distanceChecker(latitude,longitude)
+                distanceChecker(latitude,longitude,address)
             }
             else {
                 document.getElementById('test').innerHTML = "Please enter a valid location"
             }
-            
-            
-        
         })};  
         
-        function distanceChecker(lat, long){
-            var dublinold = [
-              ['Dublin', 53.35, -6.26],
-              ['East Wall', 53.35, -6.24],
-              ['Temple Bar', 53.345, -6.27]
-            ]
+    function distanceChecker(lat, long, address){
             
 	    var dublin = [];
         	{% for row in rows %}
@@ -122,24 +153,30 @@
                 
                 min = distance(lat,long,dublin[0][1],dublin[0][2]);
                 location = dublin[0][0];
-               // document.getElementById("testng").innerHTML = "Dublin " + distance(lat,long,dublin[0][1],dublin[0][2]) + " " + min;
-            }
+                latend = dublin[0][1];
+                longend = dublin[0][2];
+		 }
             else {
                 
                 min = distance(lat,long,dublin[1][1],dublin[1][2]);
                 location = dublin[1][0];
-                //document.getElementById("testng").innerHTML = "East Wall " + distance(lat,long,dublin[1][1],dublin[1][2]) + " " + min;
-            }
+    		latend = dublin[1][1];
+                longend = dublin[1][2];
+	        }
             
             for (i = 2; i < dublin.length; i++){
-                if (min > distance(lat,long,dublin[2][1],dublin[2][2])){
-                    min = distance(lat,long,dublin[2][1],dublin[2][2]);
-                    location = dublin[2][0];
-                    //document.getElementById("testing").innerHTML = dublin[2][0] + " " + distance(lat,long,dublin[2][1],dublin[2][2]);
+                if (min > distance(lat,long,dublin[i][1],dublin[i][2])){
+                    min = distance(lat,long,dublin[i][1],dublin[i][2]);
+                    location = dublin[i][0];
+                    latend = dublin[i][1];
+                    longend = dublin[i][2];
             }}
             
-            document.getElementById('test').innerHTML = min + " " + location
+            var div = document.getElementById('test');
+            div.innerHTML += "The closest location to " + address + " is " + location + ".";
+            div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
             
+            startmap(lat, long, latend, longend)
         }
         
         function distance(lat1,lon1,lat2,lon2) {
@@ -162,13 +199,7 @@
             }    
 
 </script>
-  
-    <input id = 'textboxid' type = 'text' placeholder="Search Box">
-    <button type="button" id = "check" onclick= "GetLatlong()">Submit</button>
-    
-    <p id = 'test'></p>
-    
-
+ 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
 </script>  
 
