@@ -15,7 +15,14 @@ class Examp(db.Model):
 	long = db.Column('longitude', db.Float)
 	stand = db.Column('bike_stands', db.Integer)
 
-test = Examp.query.all()
+class Dynamic(db.Model):
+        __tablename__ = 'dynamic_info'
+        id = db.Column('number', db.Integer, primary_key=True)
+        bikes = db.Column('available_bikes', db.Integer)
+        stands = db.Column('available_bike_stands', db.Integer)
 
+
+test = Examp.query.all()
+test_dynam = Dynamic.query.all()
 #https://www.youtube.com/watch?v=Tu4vRU4lt6k
 

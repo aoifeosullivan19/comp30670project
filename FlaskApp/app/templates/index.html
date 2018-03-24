@@ -26,6 +26,7 @@
     <div id="map" style = "width:100%;height:700px;" ></div>
 
     <div id = 'trip'>
+	<p id = 'new'></p>
         <form>
             <input id = 'start' type = 'text' placeholder="Search Box">
             <!--   <input id = 'stop' type = 'text' placeholder="Search Box"> -->
@@ -56,7 +57,26 @@
 
 	var dublin = [];
         {% for row in rows %}
-                dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
+                dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}, {{row.id}}] );
+        {% endfor %}
+
+//	{% for dynam in dynamic %}
+//		for (var j = 0; j < length.dublin; j++){
+//			if ( dublin[j][3] != {{ dynam.id }} ){
+//				dublin[j].push( {{ dynam.stands }} );
+			//	dublin[j].push( {{ dynam.bikes }} );
+//			}
+//			else {
+//				dublin[j].push( [6] );
+//				dublin[j].push( [5] );
+//				}
+//			}	
+//	{% endfor %}	
+
+
+	var dynamic = [];
+	{% for dynam in dynamic %}
+                dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ] );
         {% endfor %}
         
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -81,15 +101,38 @@
                    
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infoWindow.setContent("Display Content Here");
-                infoWindow.open(map, marker);
+		var j, val;
+		for (j = 0; j < dublin.length; j++){
+			if (dublin[i][3] == dynamic[j][0]){
+				val = j;
+				dublin[i].push( dynamic[j][1] );
+				dublin[i].push( dynamic[j][2] );
+		}}
+		
+                infoWindow.setContent("Available Bikes: "+ dynamic[val][2]+"<br> Available Stands: "+dynamic[val][1]);
+//		document.getElementById('test').innerhtml = i;
+		
+		infoWindow.open(map, marker); 
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
-                //displayContent(dublin[i][0]);
+                displayContent(dublin[i]);
             }
         })(marker, i))}
       }
         
+     function displayContent(arr){
+	
+	loc = arr[0]
+	stand = arr[4]
+	bike = arr[5]
+	
+	var add = document.getElementById('new');
+	add.innerHTML = " ";
+	add.innerHTML += "Location: " + loc + "<br>";
+	add.innerHTML += "There are " + bike + " bikes availavle and ";
+	add.innerHTML += stand + " stands available at " + loc;	
+	}
+
      function startmap(lat, long, latend, longend){
         
         var locstart = {lat: lat, lng: long};
@@ -144,7 +187,12 @@
         	{% for row in rows %}
                 	dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
         	{% endfor %}
-         
+            
+	    var dynamic = [];
+        	{% for dynam in dynamic %}
+                	dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ]);
+        	{% endfor %}
+ 
 	    var i;
             var j = 1;
             var location, min
@@ -174,8 +222,8 @@
             
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
-            div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
-            
+            div.innerHTML += "You are " + min +"km away from " + location + ".<br>";           
+
             startmap(lat, long, latend, longend)
         }
         
