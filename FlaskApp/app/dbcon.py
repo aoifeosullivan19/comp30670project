@@ -4,16 +4,24 @@ import pymysql
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://Amylouise94:Meninblack1@dummydb.cbsshlsxbajt.us-west-2.rds.amazonaws.com/DummyDB'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://dublinbikesadmin:dublinbikes2018@dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com/dublinbikes'
 db = SQLAlchemy(app)
 
 class Examp(db.Model):
-	__tablename__ = 'DummyTable'
-	id = db.Column('stationNO', db.Integer, primary_key=True)
-	location = db.Column('location', db.Unicode)
-	lat = db.Column('lat', db.Float)
-	long = db.Column('longi', db.Float)
+	__tablename__ = 'static_info'
+	id = db.Column('number', db.Integer, primary_key=True)
+	location = db.Column('name', db.Unicode)
+	lat = db.Column('latitude', db.Float)
+	long = db.Column('longitude', db.Float)
+	stand = db.Column('bike_stands', db.Integer)
+
+class Dynamic(db.Model):
+        __tablename__ = 'dynamic_info'
+        id = db.Column('number', db.Integer, primary_key=True)
+        bikes = db.Column('available_bikes', db.Integer)
+        stands = db.Column('available_bike_stands', db.Integer)
+
 
 test = Examp.query.all()
-
+test_dynam = Dynamic.query.all()
 #https://www.youtube.com/watch?v=Tu4vRU4lt6k
