@@ -53,7 +53,7 @@
        // GetLatlong(end);
         }   
     
-     function myMap() {
+  
 
 	var dublin = [];
         {% for row in rows %}
@@ -79,7 +79,9 @@
                 dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ] );
         {% endfor %}
         
-        var map = new google.maps.Map(document.getElementById('map'), {
+	function myMap(){        
+
+	var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         center: {lat: 53.3498, lng: -6.2603}
             
@@ -183,15 +185,15 @@
         
     function distanceChecker(lat, long, address){
             
-	    var dublin = [];
-        	{% for row in rows %}
-                	dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
-        	{% endfor %}
+//	    var dublin = [];
+//        	{% for row in rows %}
+//                	dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
+//        	{% endfor %}
             
-	    var dynamic = [];
-        	{% for dynam in dynamic %}
-                	dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ]);
-        	{% endfor %}
+//	    var dynamic = [];
+//        	{% for dynam in dynamic %}
+//                	dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ]);
+//        	{% endfor %}
  
 	    var i;
             var j = 1;
@@ -218,11 +220,17 @@
                     location = dublin[i][0];
                     latend = dublin[i][1];
                     longend = dublin[i][2];
+		    var stop = i
             }}
-            
+            var k, val;
+	    for (k = 0; k < dublin.length; k++){
+		if (dublin[stop][3] == dynamic[k][0]){
+			val = k;
+		}}
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";           
+	    div.innerHTML += "There are " + dynamic[val][1] + " stands and " + dynamic[val][2] + " bikes available"; 
 
             startmap(lat, long, latend, longend)
         }
