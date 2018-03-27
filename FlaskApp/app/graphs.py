@@ -18,6 +18,9 @@ except Exception as e:
     print("Oops...unable to connect to database at present")
     print(e)
 
+#This code reads data from database and creates graphs using matplotlib
+#this code was abandoned due to issues connecting these graphs to the flask app
+
 
 
 pd.read_sql('select * from TestTable;', con=conn)

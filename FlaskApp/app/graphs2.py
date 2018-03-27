@@ -58,23 +58,5 @@ except Exception as e:
 
 
 
-# def getgraph():
-#     host = "dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com"
-#     port = 3306
-#     dbname = "dublinbikes"
-#     user = "dublinbikesadmin"
-#     password = "dublinbikes2018"
-#     try:
-#         print("Connecting to SQL")
-#         conn = pymysql.connect(host, user=user,port=port,
-#                                passwd=password, db=dbname)
-#         test = conn.cursor()
-#         test.execute("select name, bike_stands from static_info;")
-#         print("Connection successful")
-#     except Exception as e:
-#         print("Oops...unable to connect to database at present")
-#         print(e)
-#
-#     result = test.fetchall()
-#     return result
+
 
