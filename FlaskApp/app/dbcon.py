@@ -16,7 +16,7 @@ class Examp(db.Model):
 	stand = db.Column('bike_stands', db.Integer)
 
 class Dynamic(db.Model):
-        __tablename__ = 'dynamic_info'
+        __tablename__ = 'latest_info'
         id = db.Column('number', db.Integer, primary_key=True)
         bikes = db.Column('available_bikes', db.Integer)
         stands = db.Column('available_bike_stands', db.Integer)
