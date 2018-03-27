@@ -1,7 +1,7 @@
 import pymysql
-import pandas as pd
+#import pandas as pd
 #%matplotlib inline
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import pygal
 
 

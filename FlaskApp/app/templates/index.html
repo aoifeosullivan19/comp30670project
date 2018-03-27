@@ -45,6 +45,10 @@
     <div id="mapdiv" style = "width:50%;height:400px;" ></div>
     <p id = 'test'></p>
 
+    <canvas id="chart"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
     <script>
 
     function Submit(){
@@ -166,7 +170,7 @@
 				dublin[i].push( dynamic[j][2] );
 				//data.push( dynamic[j][1] );
                // var place = dublin[i];
-				drawChart(marker, dublin[i]);
+		//		drawChart(marker, dublin[i]);
 		}}
 
 
@@ -203,12 +207,51 @@
 	stand = arr[4]
 	bike = arr[5]
 
-	//add = document.getElementById('new');
-	//add.innerHTML = " ";
+	add = document.getElementById('new');
+	add.innerHTML = " ";
 	add.innerHTML += "Location: " + loc + "<br>";
 	add.innerHTML += "There are " + bike + " bikes available and ";
 	add.innerHTML += stand + " stands available at " + loc;
+	
+        
+        var barData = {
+            labels : ['Stands', 'Bikes'],
+                  
+   	datasets : [
+     	 {     
+            label: loc,
+            data : [stand, bike],
+          
+            backgroundColor: [
+       		 'rgba(255, 99, 132, 0.6)',
+       		 'rgba(54, 162, 235, 0.6)'
+       		 ]
+     	 }]
+   
 	}
+	 document.getElementById("chart").innerHTML = "";
+	 var mychart = document.getElementById("chart").getContext("2d");
+	   	
+
+  	 var LineChartDemo = new Chart(mychart, {
+        
+        	type: "bar",
+        	data: barData,
+		options: {
+			responsive: true,
+			scales: {
+        			yAxes: [{
+            				ticks: {
+                				beginAtZero: true
+            					}
+        				}]
+    				}
+			}
+ 
+  	 });
+	}
+
+
      function startmap(lat, long, latend, longend){
 
         var locstart = {lat: lat, lng: long};
