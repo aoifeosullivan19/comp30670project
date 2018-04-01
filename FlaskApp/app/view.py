@@ -5,7 +5,7 @@ from app.dbcon import Examp, Dynamic
 
 #app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
 	rows = Examp.query.all()
 	dynamic = Dynamic.query.all()

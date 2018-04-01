@@ -113,7 +113,6 @@
             
         });
           
-        
         var infoWindow = new google.maps.InfoWindow()
         var marker;
         var i;
@@ -121,13 +120,21 @@
         for( i = 0; i < dublin.length; i++ ) {
         
         var position = new google.maps.LatLng(dublin[i][1], dublin[i][2]);
-        marker = new google.maps.Marker({
+        for (var i in dublin) {
+                 
+            var marker = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
             position: position,
             map: map,
             title: dublin[i][0],
-            
-        });        
-
+            center: [i][0],
+            radius: 2
+        });
+// https://developers.google.com/maps/documentation/javascript/examples/circle-simple                   
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
 		var j, val;

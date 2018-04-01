@@ -1,16 +1,90 @@
+.container {
+        width: 100%;
+        background-color: aliceblue;
+       
+} 
+.parallax {
+     background-image: url("https://www.irishtimes.com/polopoly_fs/1.2619912.1461266016!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");        
+        margin: 0 auto;
+        height: 100%;
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
+
 header{
     background: black;
     color: white;
     overflow: hidden;
     padding: 15px 15px;
+    height: 80px;
 }
 
-header a {
+header h1 {
     float: left;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: lightblue;
+    font-size: 45px;
 }
+
+header img {
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.select {
+    width = 700px;
+    height = 500px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+ul li {
+    list-style-type: none; 
+    color: black;
+}
+
+
+a:hover {
+    color: aquamarine;
+}
+.wrapper {
+    text-align: center;
+    margin-bottom: 30%;
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+/*https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page */
+.button1, .button2 {
+    display: inline-block;
+    text-align: center;
+    background: #D1F4F5;
+    
+    border-radius: 2px;
+    width: 320px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+
 
 .dropdown {
     float: left;
