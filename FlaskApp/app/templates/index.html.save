@@ -53,13 +53,6 @@
 	<p id = result></p>
 	
     <script>
-   	
-	$.getJSON('/station_info', function(data) {
-		$.each(data,  function(index) {
-			alert(data.result[2])
-			})
-		})
-	
 
     function Submit(){
 
@@ -165,12 +158,11 @@
          {#   });#}
 
                 infoWindow.setContent("Available Bikes: <br> Available Stands: ");
-	//	document.getElementById('test').innerhtml = i;
-        {#infoWindow.setContent(node);#}
+        	{#infoWindow.setContent(node);#}
 		infoWindow.open(map, marker);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
-          //      displayContent(dublin[i]);
+                displayContent(data.result[i]);
             }
         })(marker, i))}
 	})
