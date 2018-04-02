@@ -123,10 +123,19 @@
         var position = new google.maps.LatLng(dublin[i][1], dublin[i][2]);
         marker = new google.maps.Marker({
             position: position,
+            icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                scale: 10
+            },
             map: map,
-            title: dublin[i][0],
-            
-        });        
+            title: dublin[i][0],           
+        });      
+        
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
