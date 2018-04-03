@@ -100,7 +100,7 @@
           
         
         
-        var marker;
+               var marker;
         var i;
         var infoWindow = new google.maps.InfoWindow();
 	
@@ -108,28 +108,13 @@
         	$.each(data,  function(index) {
                      
         	for( i = 0; i <103; i++ ) {
-        
+	
         var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
-        var stands = data.result[i][4] / 4;        
-        //var bikes = info.occupany[0];
-         
         marker = new google.maps.Marker({
             position: position,
             map: map,
             title: data.result[i][0],
         });
-               marker.setIcon ({
- 
-                path: google.maps.SymbolPath.CIRCLE,
-                strokeColor: '#FF0000',
-                strokeOpacity: 0.8,
-                strokeWeight: 2,
-                fillColor: '#FF0000',
-                fillOpacity: 0.35,
-                scale: stands,
-                //scale: Math.sqrt(data.result[i][4]) * 10,
- })
-
 	
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {

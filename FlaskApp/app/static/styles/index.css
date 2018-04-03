@@ -67,6 +67,15 @@ a:hover {
 }
 
 /*https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page */
+
+.wrapper1 {
+    text-align: center;
+    margin-bottom: 30%;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
 .button1, .button2 {
     display: inline-block;
     text-align: center;
@@ -84,7 +93,73 @@ a:hover {
     color: #fff;
 }
 
+h2 {
+    display: inline-block;
+    text-align: center;
+    background: #D1F4F5;
+    border-radius: 2px;
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
 
+.graphs {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+form {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 40%;
+    margin-top: 1%;
+    display: none; 
+}
+
+form p {
+    text-align: left;
+    float: left;
+    
+}
+.bike, .station {
+    background-color: #D1F4F5;
+    border: none;
+    color: black;
+    padding: 1px 3px;
+    text-align: center;
+    display: inline-block;
+    font-size: 29px;
+    margin: 4px 2px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: bold;
+}
+.button .check {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 1%;
+    display: none;
+}
+
+.check {
+    display: none;
+    
+}
+
+.button3:hover, .button4:hover {
+    background-color: #02b8dd;
+    color: #fff;
 
 .dropdown {
     float: left;
