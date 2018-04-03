@@ -54,23 +54,13 @@
 	
     <script>
    	
-	$.getJSON('/station_info', function(data) {
-		$.each(data,  function(index) {
-			alert(data.result[2])
-			})
-		})
-	
-
     function Submit(){
 
         document.getElementById('test').innerHTML = " "
-        //document.getElementById('testing').innerHTML = " "
 
         var start = document.getElementById('start').value;
-       // var end  = document.getElementById('stop').value;
 
         GetLatlong(start);
-       // GetLatlong(end);
         }
 
      function myMap() {
@@ -163,15 +153,19 @@
 		{#var infoWindow = new google.maps.InfoWindow({#}
          {#       content: contentString#}
          {#   });#}
+	
+	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
 
-                infoWindow.setContent("Available Bikes: <br> Available Stands: ");
-	//	document.getElementById('test').innerhtml = i;
-        {#infoWindow.setContent(node);#}
+	
+                infoWindow.setContent("Available Bikes:"+info.occupancy[0]+" <br> Available Stands: "+info.occupancy[1]);
+        	{#infoWindow.setContent(node);#}
 		infoWindow.open(map, marker);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
-          //      displayContent(dublin[i]);
-            }
+                displayContent(data.result[i], info.occupancy);
+         	})
+	  }
+	
         })(marker, i))}
 	})
 	})
@@ -179,11 +173,11 @@
 	
 	
 
-     function displayContent(arr){
+     function displayContent(arr1, arr2){
 
-	loc = arr[0]
-	stand = arr[4]
-	bike = arr[5]
+	loc = arr1[0]
+	stand = arr2[0]
+	bike = arr2[1]
 
 	add = document.getElementById('new');
 	add.innerHTML = " ";
@@ -276,48 +270,44 @@
 
     function distanceChecker(lat, long, address){
 
-	    var dublin = [];
-        	{% for row in rows %}
-                	dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}] );
-        	{% endfor %}
-
-	    var dynamic = [];
-        	{% for dynam in dynamic %}
-                	dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ]);
-        	{% endfor %}
+	    $.getJSON('/station_info', function(data) {
+		$.each(data,  function(index) {
 
 	    var i;
             var j = 1;
             var location, min
 
-            if (distance(lat,long,dublin[0][1],dublin[0][2]) < distance(lat,long,dublin[1][1],dublin[1][2])){
+            if (distance(lat,long,data.result[0][1],data.result[0][2]) < distance(lat,long,data.result[1][1],data.result[1][2])){
 
-                min = distance(lat,long,dublin[0][1],dublin[0][2]);
-                location = dublin[0][0];
-                latend = dublin[0][1];
-                longend = dublin[0][2];
+                min = distance(lat,long,data.result[0][1],data.result[0][2]);
+                location = data.result[0][0];
+                latend = data.result[0][1];
+                longend = data.result[0][2];
 		 }
             else {
 
-                min = distance(lat,long,dublin[1][1],dublin[1][2]);
-                location = dublin[1][0];
-    		latend = dublin[1][1];
-                longend = dublin[1][2];
+                min = distance(lat,long,data.result[1][1],data.result[1][2]);
+                location = data.result[1][0];
+    		latend = data.result[1][1];
+                longend = data.result[1][2];
 	        }
 
-            for (i = 2; i < dublin.length; i++){
-                if (min > distance(lat,long,dublin[i][1],dublin[i][2])){
-                    min = distance(lat,long,dublin[i][1],dublin[i][2]);
-                    location = dublin[i][0];
-                    latend = dublin[i][1];
-                    longend = dublin[i][2];
+            for (i = 2; i < 103; i++){
+                if (min > distance(lat,long,data.result[i][1],data.result[i][2])){
+                    min = distance(lat,long,data.result[i][1],data.result[i][2]);
+                    location = data.result[i][0];
+                    latend = data.result[i][1];
+                    longend = data.result[i][2];
             }}
 
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
             startmap(lat, long, latend, longend)
-        }
+        })
+	})
+	}
+	
 
         function distance(lat1,lon1,lat2,lon2) {
             var R = 6371; // Radius of the earth in km

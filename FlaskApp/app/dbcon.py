@@ -25,6 +25,15 @@ class Dynamic(Base):
 	stands = Column('available_bike_stands', Integer)
 #	time = Column('last_update', db.DateTime)
 
+
+class latest(Base):
+        __tablename__ = 'latest_info'
+        id = Column('number', Integer, primary_key=True)
+        bikes = Column('available_bikes', Integer)
+        stands = Column('available_bike_stands', Integer)
+#       time = Column('last_update', db.DateTime)
+
+
 #test = Examp.query.all()
 #test_dynam = Dynamic.query.all()
 #https://www.youtube.com/watch?v=Tu4vRU4lt6k
