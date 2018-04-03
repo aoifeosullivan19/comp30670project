@@ -2,7 +2,6 @@
 from flask import render_template, jsonify, request
 from app import app
 from app.dbcon import Examp, Dynamic, latest
-from app.graphs2 import test
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import pygal
@@ -15,25 +14,7 @@ session = Session()
 @app.route('/')
 def index():
 
-	rows  = session.query(Examp)
-
-	#for row in sql:
-	#	print(row)
-	number = []
-	bikes = []
-
-#	for x in result:
-#		number.append(int(x[0]))
-#		bikes.append(int(x[1]))
-#		graph = pygal.Line()
-#		graph.title = 'Testing graph from DB.'
-#		graph.x_labels = ['label1', 'label2', 'label3', 'label4', 'label5', 'label6']
-#		graph.add('bikes', number)
-#		graph.add('bikes', bikes)
-#	graph_data = graph.render_data_uri()
-#	rows = Examp.query.all()
-
-	return render_template("index.html", rows=rows)
+	return render_template("index.html")
 
 @app.route('/station_info')
 def station_info():

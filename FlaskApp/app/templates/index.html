@@ -29,28 +29,21 @@
 
     <div id = 'trip'>
 	<p id = 'new'></p>
+	<p id = 'graph'></p>
         <form>
-            <input id = 'start' type = 'text' placeholder="Search Box">
-            <!--   <input id = 'stop' type = 'text' placeholder="Search Box"> -->
+           
+		 <input id = 'start' type = 'text' placeholder="Search Box">
+           
         </form>
     <button type="button" id = "check" onclick= "Submit()">Submit</button>
     <p id = 'testing'></p>
-{#        Code that displays graph from pygal#}
-        <div id="container" align="left">
-        <embed type="image/svg+xml" src={{graph_data|safe}} style='max-width:500px'/>
-    </div>
 
-    </div>
 
     <div id="mapdiv" style = "width:50%;height:400px;" ></div>
     <p id = 'test'></p>
 
-    <canvas id="chart"></canvas>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
-	<p id = result></p>
+ 
 	
     <script>
    	
@@ -65,48 +58,7 @@
 
      function myMap() {
 
-
-//     google.charts.load('current', {'packages':['corechart']});
-
-//         function drawChart(marker1, arr1) {
- //            var chartdata =[];
-
-                 {#for (j = 0; j < dynamic.length; j++) {#}
-                 {#    if (arr1[0] == dynamic[j][0]) {#}
-                 {#        chartdata.push( dynamic[j][0] );#}
-                 {#        chartdata.push( dynamic[j][1]);#}
-                 {#        chartdata.push( dynamic[j][2] );#}
-                 {#    }#}
-                 {#}#}
-
-
-   //          add = document.getElementById('new');
-
-
-
-     //        var data = new google.visualization.arrayToDataTable([
-       //          ['id', 'bikes', 'stands'],
-         //        [locations, bikes, stands]]);
-             {#   chartdata]#}
-             {#);#}
-
-
- //            var options = {
-   //              title: 'Station: ' + arr1[0],
-     //            curveType: 'function',
-       //          legend: {position: 'bottom'} +
-         //        marker1.getPosition().toString(),
-           //      'width': 400,
-//                 'height': 150
-
-       //      };
-
-             {#node = document.createElement('div');#}
-
-         //    chart = new google.visualization.LineChart(document.getElementById('new'));
-        //     chart.draw(data, options);
-
-      //   }
+     google.charts.load('current', {'packages':['corechart']});
 
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -136,33 +88,16 @@
 	
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
+            return function(){
 
-
-		{#var contentString = '<div id="content">' +#}
-         {#           '<div id="stationinfobox">' +#}
-         {#           '</div>' +#}
-         {#           '<h1 id="firstHeading" class="firstHeading">Station Info</h1>' +#}
-         {#           '<div id="bodyContent">' +#}
-         {#           '<p>Station ' + dynamic[val][0] + '</p>' + node +#}
-         {#           '<canvas id="myChart" width="1600" height="900"></canvas>' +#}
-         {#           '<p>The number of bikes available is ' + dynamic[val][2] + '</p><p> Number of available stands is '#}
-         {#               + dynamic[val][1] + '</p>'#}
-         {#           '</div>' +#}
-         {#           '</div>';#}
-		{#var infoWindow = new google.maps.InfoWindow({#}
-         {#       content: contentString#}
-         {#   });#}
-	
 	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-
 	
                 infoWindow.setContent("Available Bikes:"+info.occupancy[0]+" <br> Available Stands: "+info.occupancy[1]);
         	{#infoWindow.setContent(node);#}
 		infoWindow.open(map, marker);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
-                displayContent(data.result[i], info.occupancy);
+                displayContent(data.result[i], info.occupancy, marker);
          	})
 	  }
 	
@@ -170,57 +105,36 @@
 	})
 	})
       }
-	
-	
 
-     function displayContent(arr1, arr2){
+
+     function displayContent(arr1, arr2, marker){
 
 	loc = arr1[0]
-	stand = arr2[0]
-	bike = arr2[1]
+	stand = arr2[1]
+	bike = arr2[0]
 
 	add = document.getElementById('new');
 	add.innerHTML = " ";
 	add.innerHTML += "Location: " + loc + "<br>";
 	add.innerHTML += "There are " + bike + " bikes available and ";
 	add.innerHTML += stand + " stands available at " + loc;
+	   
+        var data = new google.visualization.arrayToDataTable([
+                 ['id', 'bikes', 'stands'],
+                 [loc, bike, stand]]);    
+           
+	 var options = {
+                 title: 'Station: ' + arr1[0],
+                 curveType: 'function',
+                 legend: {position: 'bottom'} +
+                 marker.getPosition().toString(),
+                 'width': 400,
+                 'height': 150	 	
+		}
 	
-        
-        var barData = {
-            labels : ['Stands', 'Bikes'],
-                  
-   	datasets : [
-     	 {     
-            label: loc,
-            data : [stand, bike],
-          
-            backgroundColor: [
-       		 'rgba(255, 99, 132, 0.6)',
-       		 'rgba(54, 162, 235, 0.6)'
-       		 ]
-     	 }]
-   
-	}
-	 document.getElementById("chart").innerHTML = "";
-	 var mychart = document.getElementById("chart").getContext("2d");
-	   	
-
-  	 var LineChartDemo = new Chart(mychart, {
-        
-        	type: "bar",
-        	data: barData,
-		options: {
-			responsive: true,
-			scales: {
-        			yAxes: [{
-            				ticks: {
-                				beginAtZero: true
-            					}
-        				}]
-    				}
-			}
- 
-  	 });
+	chart = new google.visualization.LineChart(document.getElementById('graph'));
+        chart.draw(data, options);
+  	 
 	}
 
 
@@ -283,6 +197,7 @@
                 location = data.result[0][0];
                 latend = data.result[0][1];
                 longend = data.result[0][2];
+		var val = 0
 		 }
             else {
 
@@ -290,6 +205,7 @@
                 location = data.result[1][0];
     		latend = data.result[1][1];
                 longend = data.result[1][2];
+		var val = 1
 	        }
 
             for (i = 2; i < 103; i++){
@@ -298,15 +214,19 @@
                     location = data.result[i][0];
                     latend = data.result[i][1];
                     longend = data.result[i][2];
+		    var val = i
             }}
+	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){	
 
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
+	    div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
             startmap(lat, long, latend, longend)
         })
 	})
-	}
+	})
+    }
 	
 
         function distance(lat1,lon1,lat2,lon2) {
