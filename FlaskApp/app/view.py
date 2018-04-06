@@ -1,10 +1,13 @@
 """Main module."""
+from collections import defaultdict
 from flask import render_template, jsonify, request
 from app import app
 from app.dbcon import Examp, Dynamic, latest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import pygal
+import pandas as pd
+import json
 
 engine = create_engine('mysql+pymysql://dublinbikesadmin:dublinbikes2018@dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com/dublinbikes')
 
@@ -41,6 +44,33 @@ def station_occupancy():
 		return jsonify(occupancy = arr)
 	except Exception as e:
 		return str(e)
+
+@app.route('/graph_info')
+def graph_info():
+	try:
+		id = request.args.get('id')
+		conn_str = "mysql+pymysql://dublinbikesadmin:dublinbikes2018@dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com/dublinbikes"
+		conn = create_engine(conn_str)
+
+		query = """
+ 		SELECT * from bike_dynamic where number = {};
+		"""
+		df = pd.read_sql_query(con=conn, sql=query.format(id))
+
+		df['last_update'] = pd.to_datetime(df['last_update'])
+		df['day'] = df['last_update'].dt.weekday_name
+		df['hour'] = df['last_update'].dt.hour
+
+		y = df.groupby(['day','hour'])['available_bikes'].mean().to_dict()
+
+		d = defaultdict(list)
+		for k,v in y.items():
+   			 d[k[1]].append(v)
+
+		return jsonify(graph = d)
+	except Exception as e:
+		return str(e)
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
