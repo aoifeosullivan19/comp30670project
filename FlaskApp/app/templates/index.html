@@ -118,6 +118,17 @@
 	add.innerHTML += "Location: " + loc + "<br>";
 	add.innerHTML += "There are " + bike + " bikes available and ";
 	add.innerHTML += stand + " stands available at " + loc;
+
+	var data = new google.visualization.DataTable();
+            data.addColumn('number','Day');
+            data.addColumn('number','Monday');
+            data.addColumn('number','Tuesday');
+            data.addColumn('number','Wednesday');
+            data.addColumn('number','Thursday');
+            data.addColumn('number','Friday');
+            data.addColumn('number','Sat');
+            data.addColumn('number','Sun');
+
 	
 	$.getJSON('/graph_info?id='+id, function(result){
 		
@@ -127,15 +138,14 @@
 		for (var j = 0; j < 7; j++){
 		col.push(result.graph[i][j])
 		}
-         var data = new google.visualization.arrayToDataTable([
-       		['Day','Monday','Tuesday','Wednesday','Thursday','Friday','Sat','Sun'],	
-		col,
-	 ])  
+         data.addRows([col])
            }
+
 	 var options = {
                  title: 'Station: ' + arr1[0],
                  vAxis: {title: 'Bikes'},
-                 hAxis: {title: 'Time' },	 	
+                 hAxis: {title: 'Time' },
+		height: 600,	 	
 		seriesType: 'line'
 		}
 	

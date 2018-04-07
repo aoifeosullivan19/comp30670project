@@ -1,5 +1,6 @@
+
 """Main module."""
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from flask import render_template, jsonify, request
 from app import app
 from app.dbcon import Examp, Dynamic, latest
@@ -60,12 +61,14 @@ def graph_info():
 		df['last_update'] = pd.to_datetime(df['last_update'])
 		df['day'] = df['last_update'].dt.weekday_name
 		df['hour'] = df['last_update'].dt.hour
-
-		y = df.groupby(['day','hour'])['available_bikes'].mean().to_dict()
-
+		#print(df)
+		y = df.groupby(['day','hour'])['available_bikes'].mean()
+		y = OrderedDict(y)
 		d = defaultdict(list)
+		print(y)
 		for k,v in y.items():
-   			 d[k[1]].append(v)
+		#	print(k[1],v)
+			d[k[1]].append(v)
 
 		return jsonify(graph = d)
 	except Exception as e:
