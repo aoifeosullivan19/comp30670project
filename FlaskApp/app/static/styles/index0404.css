@@ -1,0 +1,222 @@
+.container {
+        width: 100%;
+        background-color: aliceblue;
+       
+} 
+.parallax {
+     background-image: url("https://www.irishtimes.com/polopoly_fs/1.2619912.1461266016!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");        
+        margin: 0 auto;
+        height: 100%;
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+header{
+    background: black;
+    color: white;
+    overflow: hidden;
+    padding: 15px 15px;
+    height: 80px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: lightblue;
+    font-size: 45px;
+}
+
+header img {
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.select {
+    width = 700px;
+    height = 500px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+ul li {
+    list-style-type: none; 
+    color: black;
+}
+
+
+a:hover {
+    color: aquamarine;
+}
+.wrapper {
+    text-align: center;
+    margin-bottom: 30%;
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+/*https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page */
+
+.wrapper1 {
+    text-align: center;
+    margin-bottom: 30%;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.button1, .button2 {
+    display: inline-block;
+    text-align: center;
+    background: #D1F4F5;
+    
+    border-radius: 2px;
+    width: 320px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+h2 {
+    display: inline-block;
+    text-align: center;
+    background: #D1F4F5;
+    border-radius: 2px;
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.graphs {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+form {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 40%;
+    margin-top: 1%;
+    display: none; 
+}
+
+form p {
+    text-align: left;
+    float: left;
+    
+}
+.bike, .station {
+    background-color: #D1F4F5;
+    border: none;
+    color: black;
+    padding: 1px 3px;
+    text-align: center;
+    display: inline-block;
+    font-size: 29px;
+    margin: 4px 2px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: bold;
+}
+.button .check {
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 1%;
+    display: none;
+}
+
+.check {
+    display: none;
+    
+}
+
+.button3:hover, .button4:hover {
+    background-color: #02b8dd;
+    color: #fff;
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbutton {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+header a:hover, .dropdown:hover .dropbutton {
+    background-color: red;
+}
+    
+
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black
+}
+
+
+.dropcontent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+.map {
+    width = 700px;
+    height = 500px;
+
+}
+
+main img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}

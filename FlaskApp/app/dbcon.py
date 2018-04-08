@@ -29,5 +29,18 @@ class latest(Base):
         stands = Column('available_bike_stands', Integer)
 #       time = Column('last_update', db.DateTime)
 
+class weather(Base):
+        __tablename__ = 'dynamic_weather'
+        temp = Column('temp', Float)
+        temp_min = Column('temp_min', Float)
+        temp_max = Column('temp_max', Float)
+        description = Column('description', Unicode)
+        mainDescription = Column('mainDescription', Unicode)
+        speed = Column('speed', Float)
+        deg = Column('def', Float)
+        dt_txt = Column('dt_txt', Unicode, primary_key=True)
+        humidity = Column('humidity', Float)
+        rain = Column('rain', Float)
+
 
 #https://www.youtube.com/watch?v=Tu4vRU4lt6k

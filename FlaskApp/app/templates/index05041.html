@@ -5,8 +5,6 @@
 <link rel = "stylesheet" type="text/css" href ="{{ url_for('static',filename='styles/index.css') }}">
  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js" type="text/javascript">
-	</script>
    <script> 
  $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -39,7 +37,7 @@
 
 <header>
     <h1>DublinBikes.</h1>
-     <div id="weather"></div>
+    <img src = "/static/images/weather.jpeg" alt="Current Weather">
      
     </header>    
     <main>
@@ -47,144 +45,109 @@
     <div class="wrapper">
     <ul>
         <a href="#map" class="button1"><li>Map View</li></a>
-        <a href="#trip" class="button2"><li>Journey Planner</li></a>
+        <a href="#trip" class="button2"><li>Station Finder</li></a>
         </ul>
-       
+        
     </div>
     </div>
     </main>
-        <div id="map" style = "width:100%;height:700px;" ></div>
-
-    <div id = 'trip'>
-	<p id = 'new'></p>
-	<p id = 'graph'></p>
-        <form>
-            <ul><li>Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                <li>Please input the time of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                <li>Please input the date of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                </ul>
-		 
-           
-        </form>
-    <button type="button" id = "check" onclick= "Submit()">Submit</button>
-    </div>
-    <p id = 'testing'></p>
-
-
-    <div id="mapdiv" style = "width:50%;height:400px;" ></div>
-    <div id = "results"> <p id = 'test'></p></div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
+    <div id="map" style = "width:100%;height:700px;" ></div>
+
+        <div id = 'trip'>
+         <div id ='display'><form>
+            <ul>
+                <li> Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"> </li>
+                <li>I need a bike <input type="checkbox" id="checkBike"> station <input type="checkbox" id="checkStation"> </li>
+                <li>Show trends for occupancy <input type="checkbox" id="checkOcc"> weather <input type="checkbox" id="checkWeather"> </li>
+            </ul>
+            <!--   <input id = 'stop' type = 'text' placeholder="Search Box"> -->
+        </form>
+            <button type="button" id = "check" onclick= "Submit()">Submit</button>
+             </div>
+    </div>  
+   <div id = 'graphs'>       
+
+     <p id = 'testing'></p>
+        <div id="mapdiv" style = "width:50%;height:400px;" ></div>
+    <p id = 'test'></p>
+    
+    <div id ='trends'><h2> This is where the trends go </h2> </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ </div>
+
+ 
+    <script>
+    $(document).ready(function(){
+        $("checkOcc").click(function(){
+            $("trends").toggle();
+        });
+    });
+    </script>
     <script>
 
-
+    function Display() {
         
-window.onload=function(infoWeather) {
-     alert("hi");
-     // info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
-    $.getJSON('/current_weather', function(infoWeather) {
-    var minTemp = infoWeather.current[1];
-        alert("hello");
-    var add0 = document.getElementById('weather');
-    add0.innerHTML = " ";
-	add0.innerHTML += "Min temp: " + minTemp + "<br>";
+  
+        //var x = document.getElementById("form");
+        var y = document.getElementById("display");
 
-    }) }
-    
-// http://clubmate.fi/detect-click-with-pure-javascript/      
- 
- function myFunction() {
-    document.getElementById("trends").style.display = "block";
-}
- 
+                
+                
+        // x.style.display = "block";
+        y.style.display = "block";
+    }
+        
     function Submit(){
-        var x = document.getElementById("graphs");
-        
-        x.onclick=function(){
-            htmlText1 += "<p>" + "Pressure:" + " hPa" + "</p>";
-            document.getElementById("trends").innerHTML = htmlText1; 
-        }
-        
+        var trends = document.getElementById("trends");
+        var boxBike = document.getElementById("checkBike");
+        var boxStand = document.getElementById("checkStand");
+        var boxOcc = document.getElementById("checkOcc");
+        var boxWeather = document.getElementById("checkWeather");
         
         
         document.getElementById('test').innerHTML = " "
-        //document.getElementById('testing').innerHTML = " "
-        
         var start = document.getElementById('start').value;
-       // var end  = document.getElementById('stop').value;
         
-        GetLatlong(start);
-       // GetLatlong(end);
-        }   
-    
-  
-
-	var dublin = [];
-        {% for row in rows %}
-                dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}, {{row.id}}] );
-        {% endfor %}
-
-//	{% for dynam in dynamic %}
-//		for (var j = 0; j < length.dublin; j++){
-//			if ( dublin[j][3] != {{ dynam.id }} ){
-//				dublin[j].push( {{ dynam.stands }} );
-			//	dublin[j].push( {{ dynam.bikes }} );
-//			}
-//			else {
-//				dublin[j].push( [6] );
-//				dublin[j].push( [5] );
-//				}
-//			}	
-//	{% endfor %}	
-
-
-	var dynamic = [];
-	{% for dynam in dynamic %}
-                dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ] );
-        {% endfor %}
- 
+        boxBike.onclick=GetLatlong(start);
+        }
    
     function myMap(){
     google.charts.load('current', {'packages':['corechart']});
+        
         var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center: {lat: 53.3498, lng: -6.2603}
+            zoom: 13,
+            center: {lat: 53.3498, lng: -6.2603}
         });
-          
         
-        
-               var marker;
+        var marker;
         var i;
         var infoWindow = new google.maps.InfoWindow();
 	
-	$.getJSON('/station_info', function(data) {
-        	$.each(data,  function(index) {
-                     
-        	for( i = 0; i <103; i++ ) {
-	
-        var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
-        var markers = [];
-        marker = new google.maps.Marker({
-            position: position,
-            map: map,
-            title: data.result[i][0],
-        });
-	//marker.setMap(map);
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function(){
-	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-        var bikes = info.occupancy[0]
-	
-                infoWindow.setContent("Station: " + data.result[i][0] + "<br> Available Bikes:"+bikes+" <br> Available Stands: "+info.occupancy[1]);
-       
-		infoWindow.open(map, marker);
-                map.setZoom(14);
-                map.setCenter(marker.getPosition());
-                displayContent(data.result[i], info.occupancy, marker);
-       
-                           markers.push (marker.setIcon ({
+	     $.getJSON('/station_info', function(data) {
+            $.each(data,  function(index) {
+                for( i = 0; i <103; i++ ) {
+                var occupancy_number;
+                var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
+                //var stands = data.result[i][4] / 4;
+                var arrayMarker = new Array ();
+                marker = new google.maps.Marker({
+                    position: position,
+                    //map: map,
+                    title: data.result[i][0],
+                });
+                    
+                    $.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
+                            var occupancy_number = info.occupancy[0];
+                            var stands = data.result[i][4]/2;      
+                            var scale;
+                            if(occupancy_number<stands){
+                                scale = 5;
+                            }else{
+                                scale = 10;
+                            }
+                     marker.setMap(map);
+                            marker.setIcon ({
                                path: google.maps.SymbolPath.CIRCLE,
                                 strokeColor: '#008000',
                                 strokeOpacity: 0.8,
@@ -192,19 +155,28 @@ window.onload=function(infoWeather) {
                                 fillColor: '#008000',
                                 fillOpacity: 0.35,
                                 //scale: stands
-                                scale: bikes,
-                                                         }))
- 
-	  }
-	
-        )}}(marker, i)))}
-	})})
-	}
-      
-
+                                scale: scale
+                            })   
+                    })
+                   
+                    
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function(){
+                            $.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
+                                    infoWindow.setContent("Available Bikes:"+info.occupancy[0]+" <br> Available Stands: "+info.occupancy[1]);
+                                    infoWindow.open(map, marker);
+                                    map.setZoom(15);
+                                    map.setCenter(marker.getPosition());
+                                    displayContent(data.result[i], info.occupancy, marker);
+                                    })
+                      }
+                    })(marker, i))
+                }
+            })
+        })
         //set array of markers in google map object
         //markers.setMap(map); or may map.setMarkers()
-      
+      }
   	
 
      function displayContent(arr1, arr2, marker) {

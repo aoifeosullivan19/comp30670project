@@ -3,8 +3,12 @@
         background-color: aliceblue;
        
 } 
+
+body {
+    margin: 0; 
+}
 .parallax {
-     background-image: url("https://www.irishtimes.com/polopoly_fs/1.2619912.1461266016!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");        
+     background-image: url("https://www.irishtimes.com/polopoly_fs/1.2752055.1470861459!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");
         margin: 0 auto;
         height: 100%;
         background-attachment: fixed;
@@ -30,7 +34,7 @@ header h1 {
     font-size: 45px;
 }
 
-header img {
+#weather p {
     float: right;
     margin-right: 30px;
     margin-top: 0px;
@@ -65,9 +69,6 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%; 
 }
-
-/*https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page */
-
 .wrapper1 {
     text-align: center;
     margin-bottom: 30%;
@@ -76,6 +77,7 @@ a:hover {
     margin-right: 10%; 
 }
 
+/*https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page */
 .button1, .button2 {
     display: inline-block;
     text-align: center;
@@ -93,18 +95,7 @@ a:hover {
     color: #fff;
 }
 
-h2 {
-    display: inline-block;
-    text-align: center;
-    background: #D1F4F5;
-    border-radius: 2px;
-    width: 1000px;
-    height: 70px;
-    font-size: 30px;
-    line-height: 65px;
-    margin-left: 10%;
-    margin-top: 15%;
-}
+
 
 .graphs {
     width: 1000px;
@@ -115,23 +106,51 @@ h2 {
     margin-top: 20%;
 }
 
-form {
+#trends {
     width: 1000px;
     height: 70px;
     font-size: 30px;
     line-height: 65px;
-    margin-left: 40%;
-    margin-top: 1%;
-    display: none; 
+    margin-left: 10%;
+    margin-top: 20%;
 }
 
-form p {
-    text-align: left;
-    float: left;
+form ul li {
+    display: inline-block;
+    text-align: center;
+    background: #D1F4F5;
+    width: 1000px;
+    height: 70px;
+    font-size: 10px;
+    line-height: 50px;
+}
+
+
+#start {
+    margin-top: 5%;
+}
+
+#results {
+    display: inline-block; 
+    float: right;
+    margin-left: 40%;
     
 }
-.bike, .station {
-    background-color: #D1F4F5;
+
+#test {
+        display: inline-block; 
+    float: right;
+    margin-left: 40%;
+}
+
+#check {
+    display: inline-block; 
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-left: 55%; 
+}
+#bike, #station {
+
     border: none;
     color: black;
     padding: 1px 3px;
@@ -149,18 +168,13 @@ form p {
     line-height: 65px;
     margin-left: 10%;
     margin-top: 1%;
-    display: none;
-}
 
-.check {
-    display: none;
-    
 }
 
 .button3:hover, .button4:hover {
     background-color: #02b8dd;
     color: #fff;
-
+}
 .dropdown {
     float: left;
     overflow: hidden;
@@ -178,6 +192,18 @@ form p {
     margin: 0;
 }
 
+#display {
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
 header a:hover, .dropdown:hover .dropbutton {
     background-color: red;
 }

@@ -62,6 +62,7 @@
             <ul><li>Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"></li>
                 <li>Please input the time of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
                 <li>Please input the date of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
+                <li>Display occupancy trends <input type="checkbox" id="graphs" onclick="myFunction()"> </li>
                 </ul>
 		 
            
@@ -73,6 +74,7 @@
 
     <div id="mapdiv" style = "width:50%;height:400px;" ></div>
     <div id = "results"> <p id = 'test'></p></div>
+    <div id = "trends"> <p>this is where the graphs go</p></div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
@@ -80,8 +82,7 @@
 
 
         
-window.onload=function(infoWeather) {
-     alert("hi");
+ window.onload = function () {
      // info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
     $.getJSON('/current_weather', function(infoWeather) {
     var minTemp = infoWeather.current[1];
@@ -90,10 +91,11 @@ window.onload=function(infoWeather) {
     add0.innerHTML = " ";
 	add0.innerHTML += "Min temp: " + minTemp + "<br>";
 
-    }) }
+    }) 
     
 // http://clubmate.fi/detect-click-with-pure-javascript/      
  
+} 
  function myFunction() {
     document.getElementById("trends").style.display = "block";
 }
@@ -177,10 +179,10 @@ window.onload=function(infoWeather) {
 	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
         var bikes = info.occupancy[0]
 	
-                infoWindow.setContent("Station: " + data.result[i][0] + "<br> Available Bikes:"+bikes+" <br> Available Stands: "+info.occupancy[1]);
+                infoWindow.setContent("Available Bikes:"+bikes+" <br> Available Stands: "+info.occupancy[1]);
        
 		infoWindow.open(map, marker);
-                map.setZoom(14);
+                map.setZoom(15);
                 map.setCenter(marker.getPosition());
                 displayContent(data.result[i], info.occupancy, marker);
        
