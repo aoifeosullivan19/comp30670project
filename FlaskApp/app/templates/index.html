@@ -64,16 +64,16 @@
                 <li>Please input the date of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
                 </ul>
 		 
-           
+            <button type="button" id = "check" onclick= "Submit()">Submit</button>
         </form>
-    <button type="button" id = "check" onclick= "Submit()">Submit</button>
+  
     </div>
     <p id = 'testing'></p>
 
-
     <div id="mapdiv" style = "width:50%;height:400px;" ></div>
-    <div id = "results"> <p id = 'test'></p></div>
+    <p id = 'test'></p></div>
 
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <script>
@@ -98,14 +98,7 @@ window.onload=function(infoWeather) {
     document.getElementById("trends").style.display = "block";
 }
  
-    function Submit(){
-        var x = document.getElementById("graphs");
-        
-        x.onclick=function(){
-            htmlText1 += "<p>" + "Pressure:" + " hPa" + "</p>";
-            document.getElementById("trends").innerHTML = htmlText1; 
-        }
-        
+function Submit(){
         
         
         document.getElementById('test').innerHTML = " "
@@ -177,7 +170,10 @@ window.onload=function(infoWeather) {
 	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
         var bikes = info.occupancy[0]
 	
-                infoWindow.setContent("Station: " + data.result[i][0] + "<br> Available Bikes:"+bikes+" <br> Available Stands: "+info.occupancy[1]);
+                infoWindow.setContent("Station: " + data.result[i][0] + 
+                                      "<br> Available Bikes:"+bikes+
+                                      " <br> Available Stands: "+info.occupancy[1]+
+                                     '<br> <button onclick="displayContent(data.result[i], info.occupancy, marker)">Click for occupancy trends</button>');
        
 		infoWindow.open(map, marker);
                 map.setZoom(14);
@@ -207,15 +203,15 @@ window.onload=function(infoWeather) {
       
   	
 
-     function displayContent(arr1, arr2, marker) {
+    function displayContent(arr1, arr2, marker) {
 	loc = arr1[0]
 	stand = arr2[1]
 	bike = arr2[0]
-	add = document.getElementById('new');
-	add.innerHTML = " ";
-	add.innerHTML += "Location: " + loc + "<br>";
-	add.innerHTML += "There are " + bike + " bikes available and ";
-	add.innerHTML += stand + " stands available at " + loc;
+	//add = document.getElementById('new');
+	//add.innerHTML = " ";
+	//add.innerHTML += "Location: " + loc + "<br>";
+	//add.innerHTML += "There are " + bike + " bikes available and ";
+	//add.innerHTML += stand + " stands available at " + loc;
 	   
         var data = new google.visualization.arrayToDataTable([
                  ['id', 'bikes', 'stands'],
@@ -226,8 +222,8 @@ window.onload=function(infoWeather) {
                  curveType: 'function',
                  legend: {position: 'bottom'} +
                  marker.getPosition().toString(),
-                 'width': 400,
-                 'height': 150	 	
+                 'width': 600,
+                 'height': 200	 	
 		}
 	
 	chart = new google.visualization.LineChart(document.getElementById('graph'));
