@@ -61,16 +61,21 @@ def graph_info():
 		df['last_update'] = pd.to_datetime(df['last_update'])
 		df['day'] = df['last_update'].dt.weekday_name
 		df['hour'] = df['last_update'].dt.hour
-		#print(df)
+
+		names = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday', 'Saturday', 'Sunday']
+		df['day'] = df['day'].astype('category', categories=names, ordered=True)
+
 		y = df.groupby(['day','hour'])['available_bikes'].mean()
 		y = OrderedDict(y)
 		d = defaultdict(list)
-		print(y)
+
+		arr = []
 		for k,v in y.items():
-		#	print(k[1],v)
+			if k[0] not in arr:
+        			arr.append(k[0])
 			d[k[1]].append(v)
 
-		return jsonify(graph = d)
+		return jsonify(data = d, day = arr)
 	except Exception as e:
 		return str(e)
 

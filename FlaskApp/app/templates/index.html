@@ -121,24 +121,19 @@
 
 	var data = new google.visualization.DataTable();
             data.addColumn('number','Day');
-            data.addColumn('number','Monday');
-            data.addColumn('number','Tuesday');
-            data.addColumn('number','Wednesday');
-            data.addColumn('number','Thursday');
-            data.addColumn('number','Friday');
-            data.addColumn('number','Sat');
-            data.addColumn('number','Sun');
-
 	
 	$.getJSON('/graph_info?id='+id, function(result){
-		
+	
+	for (var d = 0; d < 7; d++){
+		data.addColumn('number',result.day[d]);
+			}
 	for (var i = 0; i < 24; i++){
 		var col = []
 		col.push(i)	 
 		for (var j = 0; j < 7; j++){
-		col.push(result.graph[i][j])
+		col.push(result.data[i][j])
 		}
-         data.addRows([col])
+         data.addRows([col]);
            }
 
 	 var options = {
@@ -153,33 +148,6 @@
         chart.draw(data, options);
   	 })
 	}
-	
-
-      function drawVisualization() {
-      
-      $.getJSON('/graph_info', function(result) {
-        	$.each(data,  function(result) {
-			alert(result.graph[1])
-	})
-	})
-
-       // var data = google.visualization.arrayToDataTable([
-         
-//	])
-	
-    	var options = {
-      		title : 'Average Biking Activity',
-      		vAxis: {title: 'Avg Bikes per Station'},
-      		hAxis: {title: 'Time'},
-      		seriesType: 'line',
-      		series: {5: {type: 'line'}}
-    };
-
-    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-
-
 
 
      function startmap(lat, long, latend, longend){
@@ -260,15 +228,43 @@
                     longend = data.result[i][2];
 		    var val = i
             }}
-	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){	
+	var id = data.result[val][3]
+	$.getJSON('/station_occupancy?id='+id, function(info){	
 
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
 	    div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
             startmap(lat, long, latend, longend)
-        })
-	})
+        
+	
+	 var data = new google.visualization.DataTable();
+            data.addColumn('number','Day');
+
+        $.getJSON('/graph_info?id='+id, function(result){
+
+        for (var d = 0; d < 7; d++){
+                data.addColumn('number',result.day[d]);
+                        }
+        for (var i = 0; i < 24; i++){
+                var col = []
+                col.push(i)
+                for (var j = 0; j < 7; j++){
+                col.push(result.data[i][j])
+                }
+         data.addRows([col]);
+           }
+	     var options = {
+                 title: 'Station: ' + location,
+                 vAxis: {title: 'Bikes'},
+                 hAxis: {title: 'Time' },
+                height: 600,
+                seriesType: 'line'
+                }
+        chart = new google.visualization.ComboChart(document.getElementById('graph'));
+        chart.draw(data, options);
+         })
+	})})
 	})
     }
 	
