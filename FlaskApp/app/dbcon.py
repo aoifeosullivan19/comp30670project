@@ -37,7 +37,7 @@ class weather(Base):
         description = Column('description', Unicode)
         mainDescription = Column('mainDescription', Unicode)
         speed = Column('speed', Float)
-        deg = Column('def', Float)
+        deg = Column('deg', Float)
         dt_txt = Column('dt_txt', Unicode, primary_key=True)
         humidity = Column('humidity', Float)
         rain = Column('rain', Float)

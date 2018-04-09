@@ -34,7 +34,7 @@ header h1 {
     font-size: 45px;
 }
 
-#weather p {
+#weather {
     float: right;
     margin-right: 30px;
     margin-top: 0px;

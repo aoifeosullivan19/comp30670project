@@ -73,7 +73,7 @@ def occupancy():
 @app.route('/current_weather')
 def current_weather():
 	try:
-		info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
+		info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
 		arr = [];
 		for i in info:
 			arr.append(i)
