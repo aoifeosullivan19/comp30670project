@@ -12,18 +12,15 @@
   // Add smooth scrolling to all links
   $('a[href^="#"]').on('click', function(event) {
 
-      // Prevent default anchor click behavior
       event.preventDefault();
-      // Store hash
+
       var hash = this.hash;
       var target = this.hash;
       var $target = $(target);
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, 'swing', function(){
+      }, 700, 'swing', function(){
           window.location.hash = target;});
   });
 });
@@ -171,16 +168,19 @@ function Submit(){
             return function(){
 	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
         var bikes = info.occupancy[0]
+        
+        x = data.result[i];
+        y = info.occupancy;
+        z = marker;
 	
                 infoWindow.setContent("Station: " + data.result[i][0] + 
                                       "<br> Available Bikes:"+bikes+
                                       " <br> Available Stands: "+info.occupancy[1]+
-                                     '<br> <button onclick="displayContent(data.result[i], info.occupancy, marker)">Click for occupancy trends</button>');
-       
+                                     '<br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
 		infoWindow.open(map, marker);
                 map.setZoom(14);
                 map.setCenter(marker.getPosition());
-                displayContent(data.result[i], info.occupancy, marker);
+                //displayContent(data.result[i], info.occupancy, marker);
        
                            markers.push (marker.setIcon ({
                                path: google.maps.SymbolPath.CIRCLE,
