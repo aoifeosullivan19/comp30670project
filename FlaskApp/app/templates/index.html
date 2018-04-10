@@ -80,14 +80,14 @@
 window.onload=function(infoWeather) {
      // info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
     $.getJSON('/current_weather', function(currWeather) {
-        var weather = currWeather.current;
-        
+        var weather = currWeather.current[0];
     var minTemp = currWeather.current[3];
-        alert("hello");
+
     var add0 = document.getElementById('weather');
     add0.innerHTML = " ";
-    add0.innerHTML = "Today's Weather"
-	add0.innerHTML += "<br>Min temp: " + weather[3] + "<br>";
+    add0.innerHTML = "Today's Weather: " + weather[3];
+	add0.innerHTML += "<br>Min temp: " + weather[1];
+    add0.innerHTML += "<br>Max temp: " + weather[2];
 
     }) }
     
