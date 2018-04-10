@@ -96,46 +96,12 @@ window.onload=function(infoWeather) {
  function myFunction() {
     document.getElementById("trends").style.display = "block";
 }
- 
-function Submit(){
-        
-        
-        document.getElementById('test').innerHTML = " "
-        //document.getElementById('testing').innerHTML = " "
-        
-        var start = document.getElementById('start').value;
-       // var end  = document.getElementById('stop').value;
-        
-        GetLatlong(start);
-       // GetLatlong(end);
-        }   
     
-  
-
-	var dublin = [];
-        {% for row in rows %}
-                dublin.push( ['{{ row.location }}', {{ row.lat }}, {{ row.long }}, {{row.id}}] );
-        {% endfor %}
-
-//	{% for dynam in dynamic %}
-//		for (var j = 0; j < length.dublin; j++){
-//			if ( dublin[j][3] != {{ dynam.id }} ){
-//				dublin[j].push( {{ dynam.stands }} );
-			//	dublin[j].push( {{ dynam.bikes }} );
-//			}
-//			else {
-//				dublin[j].push( [6] );
-//				dublin[j].push( [5] );
-//				}
-//			}	
-//	{% endfor %}	
-
-
-	var dynamic = [];
-	{% for dynam in dynamic %}
-                dynamic.push( [{{ dynam.id }}, {{ dynam.stands }}, {{ dynam.bikes }} ] );
-        {% endfor %}
- 
+    function Submit(){
+        document.getElementById('test').innerHTML = " "
+        var start = document.getElementById('start').value;
+        GetLatlong(start);
+    }
    
     function myMap(){
     google.charts.load('current', {'packages':['corechart']});
@@ -206,32 +172,49 @@ function Submit(){
   	
 
     function displayContent(arr1, arr2, marker) {
-	loc = arr1[0]
-	stand = arr2[1]
-	bike = arr2[0]
+
+    
+ 	var loc = arr1[0]
+	var stand = arr2[1]
+	var bike = arr2[0]
+	var id = arr1[3]
+    
 	//add = document.getElementById('new');
 	//add.innerHTML = " ";
 	//add.innerHTML += "Location: " + loc + "<br>";
 	//add.innerHTML += "There are " + bike + " bikes available and ";
 	//add.innerHTML += stand + " stands available at " + loc;
 	   
-        var data = new google.visualization.arrayToDataTable([
-                 ['id', 'bikes', 'stands'],
-                 [loc, bike, stand]]);    
-           
+   var data = new google.visualization.DataTable();
+            data.addColumn('number','Day');
+	
+	$.getJSON('/graph_info?id='+id, function(result){
+	
+	for (var d = 0; d < 7; d++){
+		data.addColumn('number',result.day[d]);
+			}
+	for (var i = 0; i < 24; i++){
+		var col = []
+		col.push(i)	 
+		for (var j = 0; j < 7; j++){
+		col.push(result.data[i][j])
+		}
+         data.addRows([col]);
+           }
 	 var options = {
                  title: 'Station: ' + arr1[0],
-                 curveType: 'function',
-                 legend: {position: 'bottom'} +
-                 marker.getPosition().toString(),
-                 'width': 600,
-                 'height': 200	 	
+                 vAxis: {title: 'Bikes'},
+                 hAxis: {title: 'Time' },
+		isStacked: true,
+		height: 600,	 	
+//		seriesType: 'line'
 		}
 	
-	chart = new google.visualization.LineChart(document.getElementById('graph'));
+	chart = new google.visualization.AreaChart(document.getElementById('graph'));
         chart.draw(data, options);
-  	 
+  	 })
 	}
+
 
      function startmap(lat, long, latend, longend){
         
@@ -309,35 +292,60 @@ function Submit(){
                     longend = data.result[i][2];
 		    var val = i
             }}
-	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){	
+	var id = data.result[val][3]
+	$.getJSON('/station_occupancy?id='+id, function(info){	
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
 	    div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
             startmap(lat, long, latend, longend)
-        })
+        
+	
+	 var data = new google.visualization.DataTable();
+            data.addColumn('number','Day');
+        $.getJSON('/graph_info?id='+id, function(result){
+        for (var d = 0; d < 7; d++){
+                data.addColumn('number',result.day[d]);
+                        }
+        for (var i = 0; i < 24; i++){
+                var col = []
+                col.push(i)
+                for (var j = 0; j < 7; j++){
+                col.push(result.data[i][j])
+                }
+         data.addRows([col]);
+           }
+	     var options = {
+                 title: 'Station: ' + location,
+                 vAxis: {title: 'Bikes'},
+                 hAxis: {title: 'Time' },
+                height: 600,
+                seriesType: 'line'
+                }
+        chart = new google.visualization.ComboChart(document.getElementById('graph'));
+        chart.draw(data, options);
+         })
+	})})
 	})
-	})
-    }   
+    }
+	
+
         function distance(lat1,lon1,lat2,lon2) {
             var R = 6371; // Radius of the earth in km
             var dLat = deg2rad(lat2-lat1);  // deg2rad below
-            var dLon = deg2rad(lon2-lon1); 
-            var a = 
+            var dLon = deg2rad(lon2-lon1);
+            var a =
                 Math.sin(dLat/2) * Math.sin(dLat/2) +
-                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-                Math.sin(dLon/2) * Math.sin(dLon/2); 
-            
-            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
             var d = R * c; // Distance in km
             var result = Math.round(d*100)/100
             return result;
             }
-
             function deg2rad(deg) {
                 return deg * (Math.PI/180)
-            }    
-
+            }
 </script>
  
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
