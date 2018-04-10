@@ -140,11 +140,12 @@
                  title: 'Station: ' + arr1[0],
                  vAxis: {title: 'Bikes'},
                  hAxis: {title: 'Time' },
+		isStacked: true,
 		height: 600,	 	
-		seriesType: 'line'
+//		seriesType: 'line'
 		}
 	
-	chart = new google.visualization.ComboChart(document.getElementById('graph'));
+	chart = new google.visualization.AreaChart(document.getElementById('graph'));
         chart.draw(data, options);
   	 })
 	}
