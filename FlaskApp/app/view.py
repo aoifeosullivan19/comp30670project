@@ -22,7 +22,10 @@ def index():
 @app.route('/station_info')
 def station_info():
 	try:
-		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id, Examp.stand)
+		#info = session.query(Examp, latest).select_from(latest).join(Examp)
+		#.join(latest, Examp.id = latest.id).all() 
+		# Examp.lat, Examp.long, Examp.id,)
+		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
 		arr = []
 		for i in info:
 			arr.append(i)
@@ -32,14 +35,16 @@ def station_info():
     
 @app.route('/station')
 def station():
-    try:
-        info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id, Examp.stand)
-        stations =[]
-        for i in info:
-            stations.append(dict(i))
-        return jsonify(stations=stations)
-    except Exception as e:
-        return str(e)    
+	try:
+		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
+		stations = []
+
+		for arr in info:
+			stations.append(dict(arr))
+		return jsonify(stations=stations)
+
+	except Exception as e:
+		return str(e)    
 
 @app.route('/station_occupancy')
 def station_occupancy():

@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Column, Integer, Float, Unicode
+from sqlalchemy import Column, Integer,ForeignKey, Float, Unicode
 from sqlalchemy.ext.declarative import declarative_base
 import pymysql
 
@@ -24,7 +24,7 @@ class Dynamic(Base):
 
 class latest(Base):
         __tablename__ = 'latest_info'
-        id = Column('number', Integer, primary_key=True)
+        id = Column('number', Integer,ForeignKey('Examp.id'),  primary_key=True)
         bikes = Column('available_bikes', Integer)
         stands = Column('available_bike_stands', Integer)
 #       time = Column('last_update', db.DateTime)
