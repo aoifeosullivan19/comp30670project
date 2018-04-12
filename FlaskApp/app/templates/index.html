@@ -116,7 +116,6 @@ window.onload=function(infoWeather) {
         var infoWindow = new google.maps.InfoWindow();
 	
 	$.getJSON('/station_info', function(data) {
-        //	$.each(data,  function(index) {
                      
         	for( i = 0; i <103; i++ ) {
 	
@@ -126,32 +125,29 @@ window.onload=function(infoWeather) {
             center: position,
             map: map,
             title: data.result[i][0],
-	    radius: data.result[i][3],
+	    radius: data.bikeres[i][0],
 	    clickable: true
 	})
  google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function(){
 
 
-
-//	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-//        var bikes = info.occupancy[0]
 	//marker.setMap(map);
 
-//	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-//        var bikes = info.occupancy[0]
-        
+	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
+	        var bikes = info.occupancy[0]
+        	var stands = info.occupancy[1]
         x = data.result[i];
-//        y = info.occupancy;
+        y = info.occupancy;
         z = marker;
 	
-              	infoWindow.setContent('Station: <br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
+              	infoWindow.setContent('<b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
 		infoWindow.setPosition(marker.getCenter());
 		infoWindow.open(map);
                	map.setZoom(14);
                 map.setCenter(marker.getCenter());
                 //displayContent(data.result[i], info.occupancy, marker);
-       
+	})       
 	  }}(marker, i)))//})	
 	}
 	})
