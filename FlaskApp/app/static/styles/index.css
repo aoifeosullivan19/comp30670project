@@ -1,6 +1,9 @@
 .container {
-        width: 100%;
-        background-color: aliceblue;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    /*font-family: 'Allerta', "Courier New", "Lucida Console", sans-serif;*/
+    font-family: "Duru Sans", "Courier New", "Lucida Console", sans-serif;
        
 } 
 
@@ -26,6 +29,7 @@ header{
     height: 80px;
 }
 
+
 header h1 {
     float: left;
     margin-top: 20px;
@@ -34,13 +38,25 @@ header h1 {
     font-size: 45px;
 }
 
-#weather {
+#weatherIcon{
+    position: relative;
     float: right;
-    margin-right: 30px;
-    margin-top: 0px;
-    max-height: 100%;
-    max-width: 100%;
+    margin-right: 5%;
+    margin-top: 1%;
+    max-height: 90%;
+    max-width: 20%;
 }
+
+#weather {
+    position: relative;
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    max-height: 90%;
+    max-width: 50%;
+    font-size: 15px;
+}
+
 
 .select {
     width = 700px;
@@ -90,6 +106,18 @@ a:hover {
     margin-top: 6%; 
 }
 
+#check {
+    display: inline-block;
+    text-align: center;
+    background: darkslateblue;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+}
+#check:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
 #graph {
     margin-top: 10%; 
     background: rgba(220, 238, 254, 0.7);
@@ -120,7 +148,7 @@ form {
 }
 form ul li {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     /* background: #D1F4F5; */
     width: 60%;
     height: 40%;
@@ -143,7 +171,8 @@ form ul li {
 #test {
     display: inline-block; 
     float: right;
-    margin-left: 40%;
+    margin-left: 30%;
+    margin-top: 0%;
     width: 40%;
     height: 40%;
     font-size: 20px;

@@ -1,33 +1,30 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html>
 <head>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <link rel = "stylesheet" type="text/css" href ="{{ url_for('static',filename='styles/index.css') }}">
  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js" type="text/javascript">
 	</script>
-   <script> 
+   <script>
  $(document).ready(function(){
   // Add smooth scrolling to all links
   $('a[href^="#"]').on('click', function(event) {
-
       event.preventDefault();
-
       var hash = this.hash;
       var target = this.hash;
       var $target = $(target);
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 700, 'swing', function(){
           window.location.hash = target;});
   });
 });
-    // https://www.youtube.com/watch?v=_EGO-d9H184 
+    // https://www.youtube.com/watch?v=_EGO-d9H184
     //https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 </script>
-
+<link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'>
 </head>
 <body>
 
@@ -36,17 +33,21 @@
 
 <header>
     <h1>DublinBikes.</h1>
+        <div id="weatherIcon">
+{#        <img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png'#}
+{#                               alt="didnt work" style="width:60px;height:60px;">#}
+    </div>
      <div id="weather"></div>
-     
-    </header>    
+
+    </header>
     <main>
-    <div id="select"> 
+    <div id="select">
     <div class="wrapper">
     <ul>
         <a href="#map" class="button1"><li>Map View</li></a>
         <a href="#trip" class="button2"><li>Journey Planner</li></a>
         </ul>
-       
+
     </div>
     </div>
     </main>
@@ -56,14 +57,53 @@
 	<p id = 'new'></p>
 	<p id = 'graph'></p>
         <form>
+
             <ul><li>Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                <li>Please input the time of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                <li>Please input the date of your trip (optional): <input id = 'start' type = 'text' placeholder="Search Box"></li>
-                </ul>
-		 
+                <li>Pick your time of departure:
+                <select name="Time">
+                    <option value=" " selected></option>
+                  <option value="12:00">12:00</option>
+                  <option value="01:00">01:00</option>
+                  <option value="02:00">02:00</option>
+                  <option value="03:00">03:00</option>
+                  <option value="04:00">04:00</option>
+                  <option value="05:00">05:00</option>
+                  <option value="06:00">06:00</option>
+                  <option value="07:00">07:00</option>
+                  <option value="08:00">08:00</option>
+                  <option value="09:00">09:00</option>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
+                  <option value="23:00">23:00</option>
+                </select></li>
+                <li>Pick your day of departure:
+                    <select name="Day">
+                        <option value=" " selected></option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select></li>
+                <li>
             <button type="button" id = "check" onclick= "Submit()">Submit</button>
+                </li>
+            </ul>
         </form>
-  
+
     </div>
     <p id = 'testing'></p>
 
@@ -72,125 +112,133 @@
 
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
+
     <script>
 
-
-        
 window.onload=function(infoWeather) {
      // info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
     $.getJSON('/current_weather', function(currWeather) {
         var weather = currWeather.current[0];
     var minTemp = currWeather.current[3];
-
     var add0 = document.getElementById('weather');
+    var icon = document.getElementById("weatherIcon");
     add0.innerHTML = " ";
     add0.innerHTML = "Today's Weather: " + weather[3];
 	add0.innerHTML += "<br>Min temp: " + weather[1];
     add0.innerHTML += "<br>Max temp: " + weather[2];
+    if(weather[4] == 'Rain'){
+        icon.innerHTML += "<img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png' alt='didnt work' style='width:60px;height:60px;'>";
 
+    }
+    if(weather[4] == 'Clouds'){
+        icon.innerHTML += "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOs_GW_J_VVcF8" +
+           "2pt_bwA_wcVGtkSnoRvIskT8dnF2czrs8XWiIQ' style='width:60px;height:60px;'>";
+        icon.innerHTML += "<img src='http://rs122.pbsrc.com/albums/o266/weatherstooge/TWC%20Icons%20-%201998-2006/Cloudy.png~c200' style='width:60px;height:60px;'>";
+    }
+    if(weather[4] == 'Clear'){
+           icon.innerHTML += "<img src='http://www.okeechobeebassfishingguide.com/wp-content/plugins/weather-and-weather-forecast-widget/weatherimages/Custom1/32.png' style='width:60px;height:60px;'>";
+    }
+    if(weather[4] == 'Drizzle'){
+           icon.innerHTML += "<img src='https://cdn3.iconfinder.com/data/icons/weather-color1/128/Weather1-13-512.png' style='width:60px;height:60px;'>";
+    }
+    if(weather[4] == 'Fog'){
+        icon.innerHTML +=  "<img src='https://www.iconfinder.com/icons/118513/cloud_fog_foggy_weather_icon' style='width:60px;height:60px;'>";
+    }
+    if(weather[4] == 'Mist'){
+        icon.innerHTML += "<img src='https://cdn.iconscout.com/public/images/icon/premium/png-512/fog-haze-mist-smoke-pollution-smog-weather-forecast-39a0661b7d779874-512x512.png' style='width:60px;height:60px;'>";
+    }
+    if(weather[4] == 'Snow'){
+        icon.innerHTML += "<img src='https://cdn1.iconfinder.com/data/icons/weather-elements/512/Weather_CloudSnow.png' style='width:60px;height:60px;'>";
+    }
     }) }
-    
-// http://clubmate.fi/detect-click-with-pure-javascript/      
- 
+
+// http://clubmate.fi/detect-click-with-pure-javascript/
+
  function myFunction() {
     document.getElementById("trends").style.display = "block";
 }
-    
+
     function Submit(){
         document.getElementById('test').innerHTML = " "
         var start = document.getElementById('start').value;
         GetLatlong(start);
     }
-   
+
     function myMap(){
     google.charts.load('current', {'packages':['corechart']});
         var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         center: {lat: 53.3498, lng: -6.2603}
         });
-          
-        
+
+
         var marker;
         var i;
         var infoWindow = new google.maps.InfoWindow();
-	
+
 	$.getJSON('/station_info', function(data) {
-        //	$.each(data,  function(index) {
-                     
+
         	for( i = 0; i <103; i++ ) {
-	
+
         var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
         var markers = [];
         marker = new google.maps.Circle({
             center: position,
             map: map,
             title: data.result[i][0],
-	    strokeColor: '#008000',
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: '#008000',
-            fillOpacity: 0.35,
-            radius: data.result[i][3]
-        });
-//	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-//        var bikes = info.occupancy[0]
-	//marker.setMap(map);
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+	    radius: data.bikeres[i][0],
+	    clickable: true
+	})
+ google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function(){
-//	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-//        var bikes = info.occupancy[0]
-        
+	//marker.setMap(map);
+	$.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
+	        var bikes = info.occupancy[0]
+        	var stands = info.occupancy[1]
         x = data.result[i];
-//        y = info.occupancy;
-//        z = marker;
-	
-                infoWindow.setContent("Station: " + data.result[i][0] + 
-                                      "<br> Available Bikes:1"+//+bikes+
-                                      " <br> Available Stands: 2"+//+info.occupancy[1]+
-                                     '<br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
-		infoWindow.open(map, this);
+        y = info.occupancy;
+        z = marker;
+
+              	infoWindow.setContent('<b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
+		infoWindow.setPosition(marker.getCenter());
+		infoWindow.open(map);
                	map.setZoom(14);
                 map.setCenter(marker.getCenter());
                 //displayContent(data.result[i], info.occupancy, marker);
-       
-	  }}(marker, i)))//})	
+	})
+	  }}(marker, i)))//})
 	}
 	})
 }
-      
 
         //set array of markers in google map object
         //markers.setMap(map); or may map.setMarkers()
-      
-  	
+
 
     function displayContent(arr1, arr2, marker) {
 
-    
  	var loc = arr1[0]
 	var stand = arr2[1]
 	var bike = arr2[0]
 	var id = arr1[3]
-    
+
 	//add = document.getElementById('new');
 	//add.innerHTML = " ";
 	//add.innerHTML += "Location: " + loc + "<br>";
 	//add.innerHTML += "There are " + bike + " bikes available and ";
 	//add.innerHTML += stand + " stands available at " + loc;
-	   
+
    var data = new google.visualization.DataTable();
             data.addColumn('number','Day');
-	
+
 	$.getJSON('/graph_info?id='+id, function(result){
-	
+
 	for (var d = 0; d < 7; d++){
 		data.addColumn('number',result.day[d]);
 			}
 	for (var i = 0; i < 24; i++){
 		var col = []
-		col.push(i)	 
+		col.push(i)
 		for (var j = 0; j < 7; j++){
 		col.push(result.data[i][j])
 		}
@@ -201,36 +249,32 @@ window.onload=function(infoWeather) {
                  vAxis: {title: 'Bikes'},
                  hAxis: {title: 'Time' },
 		isStacked: true,
-		height: 600,	 	
+		height: 600,
 //		seriesType: 'line'
 		}
-	
+
 	chart = new google.visualization.AreaChart(document.getElementById('graph'));
         chart.draw(data, options);
   	 })
 	}
-
-
      function startmap(lat, long, latend, longend){
-        
+
         var locstart = {lat: lat, lng: long};
         var locend = {lat: latend, lng: longend}
-        
+
         var map = new google.maps.Map(document.getElementById('mapdiv'), {
           center: locstart,
           zoom: 12
         });
-        
+
          var directionsDisplay = new google.maps.DirectionsRenderer({
           map: map
         });
-
         var request = {
           destination: locstart,
           origin: locend,
           travelMode: 'WALKING'
         };
-
         var directionsService = new google.maps.DirectionsService();
         directionsService.route(request, function(response, status) {
           if (status == 'OK') {
@@ -238,27 +282,25 @@ window.onload=function(infoWeather) {
           }
         });
         }
-        
+
         //https://developers.google.com/maps/documentation/javascript/examples/directions-simple
-    
-        
+
+
     function GetLatlong(address) {
         var geocoder = new google.maps.Geocoder();
 	address += ", Dublin";
-
         geocoder.geocode({ 'address': address }, function (results, status) {
-
             if (status == google.maps.GeocoderStatus.OK) {
                 var latitude = results[0].geometry.location.lat();
                 var longitude = results[0].geometry.location.lng();
-                
+
                 distanceChecker(latitude,longitude,address)
             }
             else {
                 document.getElementById('test').innerHTML = "Please enter a valid location"
             }
-        })};  
-        
+        })};
+
     function distanceChecker(lat, long, address){
 	    $.getJSON('/station_info', function(data) {
 		$.each(data,  function(index) {
@@ -288,14 +330,14 @@ window.onload=function(infoWeather) {
 		    var val = i
             }}
 	var id = data.result[val][3]
-	$.getJSON('/station_occupancy?id='+id, function(info){	
+	$.getJSON('/station_occupancy?id='+id, function(info){
             var div = document.getElementById('test');
             div.innerHTML += "The closest location to " + address + " is " + location + ".";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
 	    div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
             startmap(lat, long, latend, longend)
-        
-	
+
+
 	 var data = new google.visualization.DataTable();
             data.addColumn('number','Day');
         $.getJSON('/graph_info?id='+id, function(result){
@@ -323,7 +365,6 @@ window.onload=function(infoWeather) {
 	})})
 	})
     }
-	
 
         function distance(lat1,lon1,lat2,lon2) {
             var R = 6371; // Radius of the earth in km
@@ -342,9 +383,9 @@ window.onload=function(infoWeather) {
                 return deg * (Math.PI/180)
             }
 </script>
- 
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
-</script>  
+</script>
     </div>
 </div>
 </body>
