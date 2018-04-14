@@ -1,0 +1,2246 @@
+temp,temp_min,temp_max,description,mainDescription,speed,deg,dt_txt,humidity,rain
+4,4,4,broken clouds,Clouds,11,240,2018/01/01 00:00,80,0
+4.43,4,5,light rain,Rain,13,240,2018/01/01 01:00,80,0
+4,4,4,scattered clouds,Clouds,10,240,2018/01/01 02:00,86,0
+4.43,4,5,light intensity shower rain,Rain,12,250,2018/01/01 03:00,80,0
+4.43,4,5,scattered clouds,Clouds,9,240,2018/01/01 04:00,80,0
+5,5,5,broken clouds,Clouds,10,240,2018/01/01 05:00,80,0
+5,5,5,broken clouds,Clouds,7,230,2018/01/01 06:00,80,0
+4.43,4,5,broken clouds,Clouds,6,230,2018/01/01 07:00,80,0
+4,4,4,broken clouds,Clouds,6,230,2018/01/01 08:00,86,0
+4,4,4,broken clouds,Clouds,6,240,2018/01/01 09:00,86,0
+4.43,4,5,scattered clouds,Clouds,8,240,2018/01/01 10:00,80,0
+5.43,5,6,broken clouds,Clouds,10,250,2018/01/01 11:00,81,0
+6.43,6,7,broken clouds,Clouds,13,260,2018/01/01 12:00,75,0
+7,7,7,light intensity shower rain,Rain,13,280,2018/01/01 13:00,81,0
+7.13,6,8,light intensity shower rain,Rain,13,280,2018/01/01 14:00,87,0
+7,7,7,light intensity shower rain,Rain,9,280,2018/01/01 15:00,81,0
+7,7,7,broken clouds,Clouds,11,280,2018/01/01 16:00,81,0
+6,6,6,few clouds,Clouds,9,280,2018/01/01 17:00,81,0
+5.57,5,6,few clouds,Clouds,7,280,2018/01/01 18:00,86,0
+5,5,5,few clouds,Clouds,6,260,2018/01/01 19:00,86,0
+5,5,5,scattered clouds,Clouds,7,270,2018/01/01 20:00,80,0
+5,5,5,scattered clouds,Clouds,7,260,2018/01/01 21:00,75,0
+4,4,4,scattered clouds,Clouds,8,260,2018/01/01 22:00,80,0
+3,3,3,scattered clouds,Clouds,7,260,2018/01/01 23:00,100,0
+3.57,3,4,scattered clouds,Clouds,6,250,2018/01/02 00:00,100,0
+3.43,3,4,broken clouds,Clouds,5,250,2018/01/02 01:00,100,0
+4,4,4,broken clouds,Clouds,5,240,2018/01/02 02:00,100,0
+4.57,4,5,broken clouds,Clouds,3,210,2018/01/02 03:00,100,0
+4.57,4,5,broken clouds,Clouds,2,160,2018/01/02 04:00,100,0
+5.57,5,6,broken clouds,Clouds,4,150,2018/01/02 05:00,75,0
+6.13,5,7,light rain,Rain,4,150,2018/01/02 06:00,75,0
+6.57,6,7,moderate rain,Rain,4,160,2018/01/02 07:00,87,0
+6.57,6,7,light rain,Rain,6,150,2018/01/02 08:00,93,0
+8,8,8,light rain,Rain,5,180,2018/01/02 09:00,87,0
+9,9,9,light rain,Rain,10,220,2018/01/02 10:00,87,0
+9,9,9,scattered clouds,Clouds,9,240,2018/01/02 11:00,87,0
+9.49,9,10,broken clouds,Clouds,10,250,2018/01/02 12:00,81,0
+9.49,9,10,broken clouds,Clouds,11,250,2018/01/02 13:00,76,0
+9.49,9,10,proximity shower rain,Rain,9,250,2018/01/02 14:00,76,0
+9,9,9,light rain,Rain,9,230,2018/01/02 15:00,81,0
+8,8,8,light rain,Rain,7,220,2018/01/02 16:00,93,0
+8,8,8,light rain,Rain,6,190,2018/01/02 17:00,93,0
+8,8,8,light rain,Rain,5,150,2018/01/02 18:00,93,0
+10.43,10,11,light intensity drizzle,Drizzle,10,210,2018/01/02 19:00,81,0
+10,10,10,light intensity shower rain,Rain,15,250,2018/01/02 20:00,76,0
+8.43,8,9,broken clouds,Clouds,17,250,2018/01/02 21:00,70,0
+8,8,8,light intensity shower rain,Rain,15,260,2018/01/02 22:00,75,0
+6,6,6,light intensity shower rain,Rain,14,260,2018/01/02 23:00,87,0
+5,5,5,shower rain,Rain,12,250,2018/01/03 00:00,86,0
+5,5,5,broken clouds,Clouds,11,250,2018/01/03 01:00,80,0
+5,5,5,light intensity shower rain,Rain,12,250,2018/01/03 02:00,80,0
+5.43,5,6,scattered clouds,Clouds,13,250,2018/01/03 03:00,81,0
+5.57,5,6,light intensity shower rain,Rain,15,270,2018/01/03 04:00,86,0
+5,5,5,light intensity shower rain,Rain,13,260,2018/01/03 05:00,86,0
+5.43,5,6,scattered clouds,Clouds,10,250,2018/01/03 06:00,81,0
+6,6,6,shower rain,Rain,10,250,2018/01/03 07:00,87,0
+6.43,6,7,broken clouds,Clouds,15,260,2018/01/03 08:00,75,0
+6.49,6,7,light intensity shower rain,Rain,11,250,2018/01/03 09:00,81,0
+6.49,6,7,few clouds,Clouds,13,250,2018/01/03 10:00,75,0
+6.49,6,7,light intensity shower rain,Rain,14,260,2018/01/03 11:00,81,0
+6.49,6,7,light intensity shower rain,Rain,11,250,2018/01/03 12:00,81,0
+7,7,7,light intensity shower rain,Rain,12,250,2018/01/03 13:00,87,0
+7.51,7,8,proximity shower rain,Rain,11,250,2018/01/03 14:00,87,0
+7.49,7,8,light intensity shower rain,Rain,13,250,2018/01/03 15:00,75,0
+8,8,8,broken clouds,Clouds,13,250,2018/01/03 16:00,75,0
+8,8,8,broken clouds,Clouds,13,250,2018/01/03 17:00,75,0
+8,8,8,broken clouds,Clouds,12,250,2018/01/03 18:00,75,0
+7,7,7,broken clouds,Clouds,13,250,2018/01/03 19:00,81,0
+7,7,7,broken clouds,Clouds,11,260,2018/01/03 20:00,81,0
+7,7,7,scattered clouds,Clouds,11,250,2018/01/03 21:00,81,0
+7,7,7,scattered clouds,Clouds,10,250,2018/01/03 22:00,75,0
+6,6,6,scattered clouds,Clouds,8,240,2018/01/03 23:00,81,0
+6,6,6,scattered clouds,Clouds,6,230,2018/01/04 00:00,81,0
+6,6,6,broken clouds,Clouds,6,230,2018/01/04 01:00,87,0
+6,6,6,broken clouds,Clouds,4,230,2018/01/04 02:00,81,0
+5,5,5,moderate rain,Rain,4,210,2018/01/04 03:00,86,0
+4,4,4,moderate rain,Rain,1,0,2018/01/04 04:00,93,0
+4,4,4,moderate rain,Rain,6,140,2018/01/04 05:00,93,0
+4,4,4,rain and drizzle,Drizzle,8,130,2018/01/04 06:00,100,0
+5,5,5,rain and drizzle,Drizzle,10,150,2018/01/04 07:00,93,0
+7.7,6,9,broken clouds,Clouds,5,150,2018/01/04 08:00,93,0
+9.51,9,10,broken clouds,Clouds,5,220,2018/01/04 09:00,87,0
+9,9,9,broken clouds,Clouds,7,240,2018/01/04 10:00,87,0
+7.49,7,8,light rain,Rain,10,250,2018/01/04 11:00,93,0
+5,5,5,scattered clouds,Clouds,14,290,2018/01/04 12:00,80,0
+5,5,5,light intensity drizzle,Drizzle,11,280,2018/01/04 13:00,86,0
+6,6,6,scattered clouds,Clouds,13,280,2018/01/04 14:00,81,0
+6,6,6,broken clouds,Clouds,11,280,2018/01/04 15:00,81,0
+6,6,6,few clouds,Clouds,9,270,2018/01/04 16:00,75,0
+5.43,5,6,scattered clouds,Clouds,7,250,2018/01/04 17:00,75,0
+5,5,5,broken clouds,Clouds,7,250,2018/01/04 18:00,86,0
+5,5,5,broken clouds,Clouds,9,260,2018/01/04 19:00,86,0
+5,5,5,broken clouds,Clouds,3,220,2018/01/04 20:00,80,0
+4.43,4,5,broken clouds,Clouds,4,230,2018/01/04 21:00,80,0
+4,4,4,scattered clouds,Clouds,4,240,2018/01/04 22:00,86,0
+4.43,4,5,broken clouds,Clouds,4,220,2018/01/04 23:00,80,0
+4,4,4,broken clouds,Clouds,3,220,2018/01/05 00:00,86,0
+4,4,4,broken clouds,Clouds,2,230,2018/01/05 01:00,86,0
+4,4,4,broken clouds,Clouds,2,270,2018/01/05 02:00,86,0
+4,4,4,broken clouds,Clouds,3,260,2018/01/05 03:00,86,0
+3,3,3,broken clouds,Clouds,3,270,2018/01/05 04:00,93,0
+2,2,2,broken clouds,Clouds,3,280,2018/01/05 05:00,93,0
+2,2,2,broken clouds,Clouds,3,270,2018/01/05 06:00,93,0
+2,2,2,few clouds,Clouds,4,270,2018/01/05 07:00,93,0
+2,2,2,scattered clouds,Clouds,4,260,2018/01/05 08:00,93,0
+2,2,2,broken clouds,Clouds,4,250,2018/01/05 09:00,93,0
+2,2,2,broken clouds,Clouds,4,240,2018/01/05 10:00,93,0
+3,3,3,broken clouds,Clouds,4,250,2018/01/05 11:00,86,0
+4.01,3,5,broken clouds,Clouds,4,240,2018/01/05 12:00,86,0
+5,5,5,broken clouds,Clouds,4,230,2018/01/05 13:00,80,0
+6.49,6,7,broken clouds,Clouds,4,230,2018/01/05 14:00,70,0
+6,6,6,broken clouds,Clouds,5,230,2018/01/05 15:00,75,0
+5,5,5,scattered clouds,Clouds,2,190,2018/01/05 16:00,80,0
+5,5,5,scattered clouds,Clouds,2,200,2018/01/05 17:00,80,0
+4,4,4,scattered clouds,Clouds,3,210,2018/01/05 18:00,80,0
+4,4,4,broken clouds,Clouds,2,170,2018/01/05 19:00,80,0
+3.57,3,4,broken clouds,Clouds,3,150,2018/01/05 20:00,86,0
+2.7,1,4,broken clouds,Clouds,3,140,2018/01/05 21:00,100,0
+2.26,0,4,Sky is Clear,Clear,2,140,2018/01/05 22:00,100,0
+0.7,-1,2,broken clouds,Clouds,0,360,2018/01/05 23:00,100,0
+1.13,0,2,broken clouds,Clouds,2,100,2018/01/06 00:00,100,0
+0.57,0,1,broken clouds,Clouds,2,20,2018/01/06 01:00,100,0
+0.13,-1,1,broken clouds,Clouds,3,40,2018/01/06 02:00,100,0
+1.87,1,3,broken clouds,Clouds,4,60,2018/01/06 03:00,93,0
+2.87,2,4,scattered clouds,Clouds,5,50,2018/01/06 04:00,86,0
+3.87,3,5,broken clouds,Clouds,6,60,2018/01/06 05:00,80,0
+4.87,4,6,broken clouds,Clouds,7,50,2018/01/06 06:00,75,0
+5,5,5,broken clouds,Clouds,7,50,2018/01/06 07:00,75,0
+5.57,5,6,broken clouds,Clouds,8,50,2018/01/06 08:00,80,0
+5.57,5,6,broken clouds,Clouds,8,50,2018/01/06 09:00,75,0
+5.57,5,6,broken clouds,Clouds,8,50,2018/01/06 10:00,75,0
+6,6,6,broken clouds,Clouds,8,60,2018/01/06 11:00,75,0
+6,6,6,broken clouds,Clouds,10,60,2018/01/06 12:00,70,0
+6,6,6,light intensity shower rain,Rain,9,50,2018/01/06 13:00,75,0
+6,6,6,proximity shower rain,Rain,9,60,2018/01/06 14:00,100,0
+5.57,5,6,broken clouds,Clouds,10,50,2018/01/06 15:00,100,0
+5,5,5,broken clouds,Clouds,7,50,2018/01/06 16:00,100,0
+4.57,4,5,broken clouds,Clouds,7,50,2018/01/06 17:00,69,0
+5,5,5,broken clouds,Clouds,7,60,2018/01/06 18:00,100,0
+5,5,5,light intensity shower rain,Rain,6,60,2018/01/06 19:00,100,0
+4.57,4,5,broken clouds,Clouds,7,70,2018/01/06 20:00,100,0
+4,4,4,broken clouds,Clouds,5,60,2018/01/06 21:00,100,0
+3.57,3,4,scattered clouds,Clouds,4,60,2018/01/06 22:00,100,0
+3.57,3,4,few clouds,Clouds,5,50,2018/01/06 23:00,100,0
+3,3,3,few clouds,Clouds,5,60,2018/01/07 00:00,100,0
+3,3,3,light intensity shower rain,Rain,4,50,2018/01/07 01:00,100,0
+3,3,3,scattered clouds,Clouds,4,40,2018/01/07 02:00,86,0
+3,3,3,scattered clouds,Clouds,4,50,2018/01/07 03:00,86,0
+2,2,2,few clouds,Clouds,3,70,2018/01/07 04:00,100,0
+1,1,1,few clouds,Clouds,3,80,2018/01/07 05:00,100,0
+0.3,-1,2,scattered clouds,Clouds,3,80,2018/01/07 06:00,100,0
+0.3,-1,2,scattered clouds,Clouds,5,80,2018/01/07 07:00,80,0
+0.6,-2,4,scattered clouds,Clouds,4,80,2018/01/07 08:00,100,0
+1.17,-1,4,broken clouds,Clouds,5,90,2018/01/07 09:00,69,0
+1.6,-1,5,broken clouds,Clouds,5,90,2018/01/07 10:00,65,0
+5,5,5,broken clouds,Clouds,5,100,2018/01/07 11:00,100,0
+5.43,5,6,broken clouds,Clouds,6,110,2018/01/07 12:00,60,0
+5.43,5,6,broken clouds,Clouds,6,100,2018/01/07 13:00,100,0
+6,6,6,broken clouds,Clouds,6,100,2018/01/07 14:00,60,0
+5,5,5,scattered clouds,Clouds,6,110,2018/01/07 15:00,65,0
+4.57,4,5,broken clouds,Clouds,6,90,2018/01/07 16:00,100,0
+3.57,3,4,broken clouds,Clouds,6,90,2018/01/07 17:00,64,0
+2.57,2,3,broken clouds,Clouds,6,90,2018/01/07 18:00,74,0
+1,1,1,broken clouds,Clouds,4,100,2018/01/07 19:00,80,0
+2,2,2,broken clouds,Clouds,4,110,2018/01/07 20:00,69,0
+2,2,2,broken clouds,Clouds,5,100,2018/01/07 21:00,64,0
+1.57,1,2,scattered clouds,Clouds,5,100,2018/01/07 22:00,69,0
+2,2,2,scattered clouds,Clouds,5,110,2018/01/07 23:00,64,0
+0.57,0,1,scattered clouds,Clouds,4,100,2018/01/08 00:00,100,0
+1.13,0,2,scattered clouds,Clouds,4,100,2018/01/08 01:00,100,0
+0.26,-2,2,scattered clouds,Clouds,4,100,2018/01/08 02:00,86,0
+-0.3,-2,1,scattered clouds,Clouds,5,100,2018/01/08 03:00,79,0
+-0.3,-2,1,scattered clouds,Clouds,4,100,2018/01/08 04:00,79,0
+-0.43,-1,0,scattered clouds,Clouds,4,100,2018/01/08 05:00,74,0
+-0.87,-2,0,scattered clouds,Clouds,3,100,2018/01/08 06:00,79,0
+-0.87,-2,0,scattered clouds,Clouds,3,90,2018/01/08 07:00,79,0
+0.13,-1,1,scattered clouds,Clouds,3,100,2018/01/08 08:00,74,0
+-0.49,-1,0,Sky is Clear,Clear,3,90,2018/01/08 09:00,74,0
+0.52,-1,2,Sky is Clear,Clear,4,100,2018/01/08 10:00,80,0
+3,3,3,scattered clouds,Clouds,5,100,2018/01/08 11:00,69,0
+5,5,5,few clouds,Clouds,6,130,2018/01/08 12:00,56,0
+5,5,5,few clouds,Clouds,6,140,2018/01/08 13:00,60,0
+5,5,5,scattered clouds,Clouds,6,130,2018/01/08 14:00,100,0
+4.49,4,5,scattered clouds,Clouds,7,150,2018/01/08 15:00,100,0
+3.49,3,4,broken clouds,Clouds,5,160,2018/01/08 16:00,100,0
+3.49,3,4,broken clouds,Clouds,5,150,2018/01/08 17:00,100,0
+2.87,2,4,broken clouds,Clouds,5,150,2018/01/08 18:00,80,0
+3.43,3,4,broken clouds,Clouds,7,140,2018/01/08 19:00,80,0
+3.43,3,4,broken clouds,Clouds,6,140,2018/01/08 20:00,80,0
+3.43,3,4,broken clouds,Clouds,8,140,2018/01/08 21:00,86,0
+3.43,3,4,broken clouds,Clouds,8,140,2018/01/08 22:00,86,0
+3.43,3,4,broken clouds,Clouds,10,140,2018/01/08 23:00,86,0
+3.43,3,4,broken clouds,Clouds,8,150,2018/01/09 00:00,93,0
+3.43,3,4,broken clouds,Clouds,6,150,2018/01/09 01:00,93,0
+4,4,4,broken clouds,Clouds,7,160,2018/01/09 02:00,93,0
+4,4,4,broken clouds,Clouds,9,160,2018/01/09 03:00,86,0
+4,4,4,broken clouds,Clouds,7,150,2018/01/09 04:00,93,0
+4.57,4,5,light intensity drizzle,Drizzle,7,150,2018/01/09 05:00,100,0
+5,5,5,light intensity drizzle,Drizzle,5,170,2018/01/09 06:00,93,0
+5,5,5,light intensity drizzle,Drizzle,7,160,2018/01/09 07:00,93,0
+5,5,5,light intensity drizzle,Drizzle,12,140,2018/01/09 08:00,93,0
+5,5,5,light intensity drizzle,Drizzle,10,150,2018/01/09 09:00,93,0
+5,5,5,light intensity drizzle,Drizzle,8,150,2018/01/09 10:00,93,0
+5,5,5,light intensity drizzle,Drizzle,9,140,2018/01/09 11:00,93,0
+5.51,5,6,light intensity drizzle,Drizzle,9,140,2018/01/09 12:00,100,0
+6,6,6,light intensity drizzle,Drizzle,9,140,2018/01/09 13:00,93,0
+6.51,6,7,light intensity drizzle,Drizzle,7,140,2018/01/09 14:00,93,0
+7.01,6,8,light intensity drizzle,Drizzle,9,140,2018/01/09 15:00,100,0
+7.51,7,8,light intensity drizzle,Drizzle,10,140,2018/01/09 16:00,93,0
+7.57,7,8,light intensity drizzle,Drizzle,12,150,2018/01/09 17:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,10,140,2018/01/09 18:00,100,0
+8,8,8,light intensity drizzle rain,Drizzle,10,150,2018/01/09 19:00,93,0
+8.57,8,9,light intensity drizzle,Drizzle,5,160,2018/01/09 20:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,6,250,2018/01/09 21:00,93,0
+7,7,7,broken clouds,Clouds,3,210,2018/01/09 22:00,87,0
+5.43,5,6,broken clouds,Clouds,3,230,2018/01/09 23:00,93,0
+6,6,6,broken clouds,Clouds,4,230,2018/01/10 00:00,93,0
+4.43,4,5,broken clouds,Clouds,4,240,2018/01/10 01:00,93,0
+5,5,5,scattered clouds,Clouds,3,240,2018/01/10 02:00,93,0
+4,4,4,scattered clouds,Clouds,3,240,2018/01/10 03:00,93,0
+4.43,4,5,scattered clouds,Clouds,3,260,2018/01/10 04:00,93,0
+4.43,4,5,light rain,Rain,3,240,2018/01/10 05:00,93,0
+4.87,4,6,light rain,Rain,4,260,2018/01/10 06:00,87,0
+3.43,3,4,scattered clouds,Clouds,3,250,2018/01/10 07:00,93,0
+3.43,3,4,few clouds,Clouds,2,260,2018/01/10 08:00,86,0
+2.01,1,3,few clouds,Clouds,1,216,2018/01/10 09:00,100,0
+2.01,1,3,fog,Fog,1,0,2018/01/10 10:00,100,0
+4.02,2,6,few clouds,Clouds,1,60,2018/01/10 11:00,100,0
+6.51,6,7,few clouds,Clouds,2,130,2018/01/10 12:00,87,0
+7,7,7,few clouds,Clouds,2,90,2018/01/10 13:00,81,0
+6.51,6,7,broken clouds,Clouds,2,70,2018/01/10 14:00,93,0
+6.51,6,7,fog,Fog,4,60,2018/01/10 15:00,93,0
+5.51,5,6,fog,Fog,2,80,2018/01/10 16:00,93,0
+4.57,4,5,fog,Fog,4,40,2018/01/10 17:00,100,0
+4.49,4,5,fog,Fog,4,40,2018/01/10 18:00,100,0
+4,4,4,fog,Fog,3,30,2018/01/10 19:00,100,0
+4,4,4,fog,Fog,2,340,2018/01/10 20:00,100,0
+4.43,4,5,mist,Mist,2,360,2018/01/10 21:00,100,0
+5,5,5,mist,Mist,5,10,2018/01/10 22:00,100,0
+5,5,5,fog,Fog,4,30,2018/01/10 23:00,100,0
+4.57,4,5,fog,Fog,4,30,2018/01/11 00:00,100,0
+4.57,4,5,fog,Fog,4,20,2018/01/11 01:00,100,0
+4.57,4,5,mist,Mist,3,360,2018/01/11 02:00,100,0
+3.7,2,5,fog,Fog,2,310,2018/01/11 03:00,93,0
+2.7,1,4,mist,Mist,2,330,2018/01/11 04:00,107,0
+3.13,2,4,fog,Fog,2,10,2018/01/11 05:00,100,0
+3.13,2,4,fog,Fog,3,30,2018/01/11 06:00,100,0
+2.13,1,3,fog,Fog,3,340,2018/01/11 07:00,100,0
+2.13,1,3,mist,Mist,2,330,2018/01/11 08:00,100,0
+1.52,0,3,mist,Mist,2,280,2018/01/11 09:00,100,0
+1.01,0,2,fog,Fog,3,270,2018/01/11 10:00,100,0
+1.51,1,2,fog,Fog,2,270,2018/01/11 11:00,100,0
+3,3,3,fog,Fog,2,280,2018/01/11 12:00,100,0
+3.49,3,4,fog,Fog,3,280,2018/01/11 13:00,93,0
+3.49,3,4,fog,Fog,3,280,2018/01/11 14:00,93,0
+3.99,3,5,fog,Fog,2,290,2018/01/11 15:00,86,0
+3,3,3,fog,Fog,1,0,2018/01/11 16:00,93,0
+2.51,2,3,fog,Fog,1,0,2018/01/11 17:00,100,0
+2.13,1,3,fog,Fog,2,260,2018/01/11 18:00,100,0
+1.26,-1,3,mist,Mist,0,0,2018/01/11 19:00,100,0
+0.83,-2,3,mist,Mist,1,0,2018/01/11 20:00,100,0
+0.26,-2,2,fog,Fog,3,120,2018/01/11 21:00,92,0
+-0.3,-2,1,fog,Fog,2,150,2018/01/11 22:00,92,0
+0.74,-1,3,fog,Fog,2,150,2018/01/11 23:00,93,0
+0.17,-2,3,fog,Fog,3,150,2018/01/12 00:00,93,0
+0.17,-2,3,mist,Mist,3,150,2018/01/12 01:00,93,0
+0.04,-3,4,few clouds,Clouds,3,150,2018/01/12 02:00,93,0
+1.04,-2,5,few clouds,Clouds,6,140,2018/01/12 03:00,86,0
+3.3,2,5,scattered clouds,Clouds,6,140,2018/01/12 04:00,86,0
+2.74,1,5,scattered clouds,Clouds,7,150,2018/01/12 05:00,86,0
+2.17,0,5,broken clouds,Clouds,6,140,2018/01/12 06:00,80,0
+3.87,3,5,scattered clouds,Clouds,6,150,2018/01/12 07:00,80,0
+4.43,4,5,scattered clouds,Clouds,8,150,2018/01/12 08:00,80,0
+5,5,5,broken clouds,Clouds,4,160,2018/01/12 09:00,80,0
+6,6,6,broken clouds,Clouds,7,160,2018/01/12 10:00,81,0
+7,7,7,broken clouds,Clouds,6,150,2018/01/12 11:00,81,0
+8,8,8,broken clouds,Clouds,10,170,2018/01/12 12:00,70,0
+8,8,8,broken clouds,Clouds,8,170,2018/01/12 13:00,75,0
+8,8,8,broken clouds,Clouds,9,150,2018/01/12 14:00,75,0
+8,8,8,broken clouds,Clouds,8,150,2018/01/12 15:00,70,0
+8,8,8,broken clouds,Clouds,8,160,2018/01/12 16:00,81,0
+8,8,8,broken clouds,Clouds,7,150,2018/01/12 17:00,81,0
+8,8,8,broken clouds,Clouds,8,160,2018/01/12 18:00,75,0
+8,8,8,broken clouds,Clouds,9,160,2018/01/12 19:00,81,0
+8,8,8,broken clouds,Clouds,11,150,2018/01/12 20:00,87,0
+8,8,8,broken clouds,Clouds,11,140,2018/01/12 21:00,87,0
+8,8,8,broken clouds,Clouds,10,150,2018/01/12 22:00,81,0
+8,8,8,light intensity drizzle,Drizzle,12,150,2018/01/12 23:00,81,0
+8,8,8,broken clouds,Clouds,9,150,2018/01/13 00:00,87,0
+8,8,8,light intensity drizzle,Drizzle,9,150,2018/01/13 01:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,9,150,2018/01/13 02:00,93,0
+8,8,8,broken clouds,Clouds,9,140,2018/01/13 03:00,81,0
+7.57,7,8,light rain,Rain,9,150,2018/01/13 04:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,8,150,2018/01/13 05:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,9,150,2018/01/13 06:00,87,0
+7,7,7,light intensity drizzle,Drizzle,10,150,2018/01/13 07:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,9,140,2018/01/13 08:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,10,140,2018/01/13 09:00,93,0
+7.57,7,8,light intensity drizzle,Drizzle,10,150,2018/01/13 10:00,93,0
+7.57,7,8,light intensity drizzle,Drizzle,10,150,2018/01/13 11:00,93,0
+7.57,7,8,light intensity drizzle,Drizzle,8,150,2018/01/13 12:00,93,0
+8.13,7,9,light intensity drizzle,Drizzle,6,160,2018/01/13 13:00,93,0
+8.57,8,9,light intensity drizzle,Drizzle,7,160,2018/01/13 14:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,8,150,2018/01/13 15:00,93,0
+8.57,8,9,light intensity drizzle,Drizzle,8,150,2018/01/13 16:00,87,0
+7.57,7,8,light intensity drizzle,Drizzle,8,150,2018/01/13 17:00,100,0
+7.57,7,8,light intensity drizzle,Drizzle,7,150,2018/01/13 18:00,100,0
+7.57,7,8,broken clouds,Clouds,5,160,2018/01/13 19:00,100,0
+7.57,7,8,broken clouds,Clouds,4,150,2018/01/13 20:00,100,0
+7,7,7,scattered clouds,Clouds,4,140,2018/01/13 21:00,100,0
+4.73,3,7,scattered clouds,Clouds,3,140,2018/01/13 22:00,93,0
+5.87,5,7,broken clouds,Clouds,3,150,2018/01/13 23:00,93,0
+5.87,5,7,broken clouds,Clouds,3,150,2018/01/14 00:00,93,0
+5.43,5,6,scattered clouds,Clouds,2,170,2018/01/14 01:00,100,0
+3.87,3,5,few clouds,Clouds,3,140,2018/01/14 02:00,93,0
+3.13,2,4,few clouds,Clouds,2,180,2018/01/14 03:00,100,0
+2,2,2,few clouds,Clouds,3,160,2018/01/14 04:00,100,0
+3.57,3,4,few clouds,Clouds,3,180,2018/01/14 05:00,93,0
+3,3,3,few clouds,Clouds,3,180,2018/01/14 06:00,93,0
+3.43,3,4,few clouds,Clouds,3,210,2018/01/14 07:00,86,0
+0.43,0,1,fog,Fog,3,180,2018/01/14 08:00,86,0
+0,0,0,few clouds,Clouds,2,180,2018/01/14 09:00,100,0
+3,3,3,few clouds,Clouds,3,200,2018/01/14 10:00,93,0
+4.43,4,5,scattered clouds,Clouds,2,210,2018/01/14 11:00,86,0
+7,7,7,scattered clouds,Clouds,2,190,2018/01/14 12:00,81,0
+8,8,8,broken clouds,Clouds,5,220,2018/01/14 13:00,75,0
+8,8,8,broken clouds,Clouds,7,200,2018/01/14 14:00,75,0
+8,8,8,broken clouds,Clouds,7,200,2018/01/14 15:00,70,0
+8,8,8,broken clouds,Clouds,7,200,2018/01/14 16:00,75,0
+8,8,8,broken clouds,Clouds,8,200,2018/01/14 17:00,81,0
+8,8,8,light rain,Rain,8,200,2018/01/14 18:00,81,0
+7,7,7,light rain,Rain,9,200,2018/01/14 19:00,87,0
+7.43,7,8,light intensity drizzle rain,Drizzle,10,200,2018/01/14 20:00,87,0
+8,8,8,light intensity drizzle rain,Drizzle,10,210,2018/01/14 21:00,93,0
+8,8,8,light intensity drizzle rain,Drizzle,10,210,2018/01/14 22:00,93,0
+9,9,9,light intensity drizzle rain,Drizzle,10,220,2018/01/14 23:00,93,0
+9,9,9,rain and drizzle,Drizzle,9,220,2018/01/15 00:00,93,0
+9,9,9,light intensity drizzle rain,Drizzle,8,230,2018/01/15 01:00,100,0
+9.43,9,10,light intensity drizzle,Drizzle,9,240,2018/01/15 02:00,93,0
+9.43,9,10,light intensity drizzle rain,Drizzle,7,250,2018/01/15 03:00,93,0
+9,9,9,light intensity drizzle,Drizzle,8,250,2018/01/15 04:00,93,0
+9,9,9,broken clouds,Clouds,7,250,2018/01/15 05:00,93,0
+9,9,9,light intensity drizzle,Drizzle,8,250,2018/01/15 06:00,93,0
+9,9,9,light intensity drizzle,Drizzle,8,250,2018/01/15 07:00,87,0
+8,8,8,light intensity drizzle,Drizzle,9,260,2018/01/15 08:00,93,0
+8,8,8,broken clouds,Clouds,8,270,2018/01/15 09:00,87,0
+7,7,7,broken clouds,Clouds,8,260,2018/01/15 10:00,93,0
+7,7,7,scattered clouds,Clouds,8,270,2018/01/15 11:00,87,0
+7,7,7,broken clouds,Clouds,10,270,2018/01/15 12:00,81,0
+7,7,7,broken clouds,Clouds,10,260,2018/01/15 13:00,81,0
+7,7,7,light intensity shower rain,Rain,9,270,2018/01/15 14:00,81,0
+6,6,6,light intensity shower rain,Rain,7,270,2018/01/15 15:00,87,0
+6,6,6,proximity shower rain,Rain,11,260,2018/01/15 16:00,81,0
+5.57,5,6,proximity shower rain,Rain,8,270,2018/01/15 17:00,86,0
+5,5,5,proximity shower rain,Rain,8,260,2018/01/15 18:00,80,0
+5,5,5,broken clouds,Clouds,8,250,2018/01/15 19:00,86,0
+5,5,5,light intensity shower rain,Rain,9,260,2018/01/15 20:00,80,0
+5,5,5,broken clouds,Clouds,9,250,2018/01/15 21:00,80,0
+4,4,4,broken clouds,Clouds,9,260,2018/01/15 22:00,86,0
+4,4,4,light intensity shower rain,Rain,10,270,2018/01/15 23:00,86,0
+3,3,3,broken clouds,Clouds,8,260,2018/01/16 00:00,86,0
+3,3,3,broken clouds,Clouds,9,260,2018/01/16 01:00,86,0
+3,3,3,light intensity shower rain,Rain,10,260,2018/01/16 02:00,100,0
+2.57,2,3,light intensity shower rain,Rain,10,260,2018/01/16 03:00,100,0
+3,3,3,light intensity shower rain,Rain,10,260,2018/01/16 04:00,100,0
+2.57,2,3,broken clouds,Clouds,11,260,2018/01/16 05:00,100,0
+1.41,1,2,broken clouds,Clouds,9,250,2018/01/16 06:00,100,0
+2,2,2,broken clouds,Clouds,9,250,2018/01/16 07:00,100,0
+1.43,1,2,broken clouds,Clouds,9,240,2018/01/16 08:00,100,0
+2,2,2,light shower sleet,Snow,9,240,2018/01/16 09:00,100,0
+2,2,2,scattered clouds,Clouds,8,240,2018/01/16 10:00,100,0
+2.49,2,3,proximity shower rain,Rain,7,240,2018/01/16 11:00,100,0
+2.49,2,3,proximity shower rain,Rain,10,250,2018/01/16 12:00,100,0
+2.49,2,3,light shower sleet,Snow,9,240,2018/01/16 13:00,100,0
+1.49,1,2,light shower sleet,Snow,10,250,2018/01/16 14:00,93,0
+1.49,1,2,broken clouds,Clouds,9,250,2018/01/16 15:00,100,0
+2,2,2,light shower sleet,Snow,9,250,2018/01/16 16:00,80,0
+1.49,1,2,broken clouds,Clouds,11,260,2018/01/16 17:00,80,0
+0.43,0,1,shower snow,Snow,10,260,2018/01/16 18:00,100,0
+0.43,0,1,light shower snow,Snow,9,250,2018/01/16 19:00,86,0
+0.43,0,1,light shower snow,Snow,9,250,2018/01/16 20:00,86,0
+0.43,0,1,shower snow,Snow,10,250,2018/01/16 21:00,86,0
+0,0,0,light shower snow,Snow,8,250,2018/01/16 22:00,100,0
+0,0,0,light shower snow,Snow,13,260,2018/01/16 23:00,100,0
+0,0,0,light shower snow,Snow,8,250,2018/01/17 00:00,100,0
+0.57,0,1,broken clouds,Clouds,10,260,2018/01/17 01:00,100,0
+1,1,1,broken clouds,Clouds,10,260,2018/01/17 02:00,86,0
+1,1,1,broken clouds,Clouds,11,260,2018/01/17 03:00,100,0
+1,1,1,light shower sleet,Snow,11,260,2018/01/17 04:00,100,0
+1.43,1,2,light shower sleet,Snow,10,260,2018/01/17 05:00,100,0
+1,1,1,light shower sleet,Snow,11,260,2018/01/17 06:00,100,0
+1,1,1,light intensity shower rain,Rain,10,260,2018/01/17 07:00,100,0
+2,2,2,broken clouds,Clouds,7,240,2018/01/17 09:00,100,0
+2,2,2,broken clouds,Clouds,8,250,2018/01/17 10:00,80,0
+2.49,2,3,broken clouds,Clouds,10,250,2018/01/17 11:00,100,0
+3,3,3,scattered clouds,Clouds,10,250,2018/01/17 12:00,100,0
+4,4,4,broken clouds,Clouds,9,250,2018/01/17 13:00,80,0
+5,5,5,broken clouds,Clouds,8,250,2018/01/17 14:00,75,0
+5,5,5,broken clouds,Clouds,9,250,2018/01/17 15:00,75,0
+5,5,5,light rain,Rain,9,250,2018/01/17 16:00,80,0
+4.43,4,5,proximity shower rain,Rain,7,240,2018/01/17 17:00,75,0
+4,4,4,light rain,Rain,7,240,2018/01/17 18:00,86,0
+4,4,4,light rain,Rain,6,210,2018/01/17 19:00,86,0
+8.67,3,13,light intensity drizzle rain,Drizzle,5,150,2018/01/17 20:00,93,0
+5.13,4,6,light intensity drizzle rain,Drizzle,4,150,2018/01/17 21:00,93,0
+8,8,8,light intensity drizzle rain,Drizzle,10,230,2018/01/17 22:00,93,0
+10,10,10,light intensity shower rain,Rain,15,260,2018/01/17 23:00,87,0
+9.57,9,10,light intensity shower rain,Rain,15,250,2018/01/18 00:00,81,0
+9,9,9,light intensity shower rain,Rain,15,250,2018/01/18 01:00,81,0
+5.7,4,7,broken clouds,Clouds,17,300,2018/01/18 02:00,80,0
+3.57,3,4,broken clouds,Clouds,11,290,2018/01/18 03:00,86,0
+4,4,4,broken clouds,Clouds,8,280,2018/01/18 04:00,86,0
+4,4,4,broken clouds,Clouds,7,280,2018/01/18 05:00,86,0
+4,4,4,broken clouds,Clouds,6,270,2018/01/18 06:00,86,0
+3,3,3,scattered clouds,Clouds,7,260,2018/01/18 07:00,93,0
+3.43,3,4,broken clouds,Clouds,6,250,2018/01/18 08:00,86,0
+3.51,3,4,broken clouds,Clouds,7,250,2018/01/18 09:00,93,0
+3.49,3,4,scattered clouds,Clouds,9,250,2018/01/18 10:00,86,0
+4,4,4,scattered clouds,Clouds,9,260,2018/01/18 11:00,86,0
+4,4,4,scattered clouds,Clouds,10,260,2018/01/18 12:00,86,0
+4.49,4,5,scattered clouds,Clouds,11,260,2018/01/18 13:00,75,0
+5,5,5,broken clouds,Clouds,9,270,2018/01/18 14:00,75,0
+4.49,4,5,light intensity shower rain,Rain,7,270,2018/01/18 15:00,75,0
+4,4,4,scattered clouds,Clouds,7,270,2018/01/18 16:00,100,0
+4,4,4,few clouds,Clouds,9,260,2018/01/18 17:00,100,0
+3,3,3,scattered clouds,Clouds,9,260,2018/01/18 18:00,100,0
+2,2,2,few clouds,Clouds,10,260,2018/01/18 19:00,100,0
+2,2,2,few clouds,Clouds,11,260,2018/01/18 20:00,100,0
+2,2,2,few clouds,Clouds,9,270,2018/01/18 21:00,100,0
+1,1,1,scattered clouds,Clouds,9,260,2018/01/18 22:00,100,0
+1,1,1,scattered clouds,Clouds,8,260,2018/01/18 23:00,100,0
+1,1,1,few clouds,Clouds,7,250,2018/01/19 00:00,86,0
+1,1,1,few clouds,Clouds,7,250,2018/01/19 01:00,86,0
+1,1,1,few clouds,Clouds,7,250,2018/01/19 02:00,100,0
+1,1,1,few clouds,Clouds,8,250,2018/01/19 03:00,100,0
+1,1,1,few clouds,Clouds,8,250,2018/01/19 04:00,100,0
+1,1,1,few clouds,Clouds,8,250,2018/01/19 05:00,86,0
+1,1,1,few clouds,Clouds,7,240,2018/01/19 06:00,86,0
+1,1,1,broken clouds,Clouds,8,240,2018/01/19 07:00,86,0
+1,1,1,scattered clouds,Clouds,8,250,2018/01/19 08:00,86,0
+1,1,1,broken clouds,Clouds,9,240,2018/01/19 09:00,100,0
+1.49,1,2,broken clouds,Clouds,8,240,2018/01/19 10:00,100,0
+2,2,2,scattered clouds,Clouds,9,240,2018/01/19 11:00,100,0
+2.49,2,3,scattered clouds,Clouds,10,240,2018/01/19 12:00,100,0
+3,3,3,broken clouds,Clouds,9,250,2018/01/19 13:00,86,0
+4,4,4,scattered clouds,Clouds,10,250,2018/01/19 14:00,80,0
+4,4,4,few clouds,Clouds,8,250,2018/01/19 15:00,80,0
+3.49,3,4,few clouds,Clouds,9,250,2018/01/19 16:00,80,0
+3,3,3,few clouds,Clouds,7,240,2018/01/19 17:00,100,0
+3,3,3,few clouds,Clouds,7,240,2018/01/19 18:00,86,0
+2,2,2,broken clouds,Clouds,5,240,2018/01/19 19:00,100,0
+2,2,2,broken clouds,Clouds,6,240,2018/01/19 20:00,100,0
+2,2,2,broken clouds,Clouds,6,240,2018/01/19 21:00,100,0
+3,3,3,broken clouds,Clouds,7,240,2018/01/19 22:00,100,0
+2,2,2,Sky is Clear,Clear,6,240,2018/01/19 23:00,100,0
+2,2,2,Sky is Clear,Clear,4,230,2018/01/20 00:00,100,0
+2.57,2,3,Sky is Clear,Clear,3,230,2018/01/20 01:00,93,0
+3.57,3,4,Sky is Clear,Clear,3,210,2018/01/20 02:00,86,0
+3,3,3,light intensity drizzle,Drizzle,2,210,2018/01/20 03:00,86,0
+3,3,3,light intensity drizzle rain,Drizzle,2,230,2018/01/20 04:00,86,0
+3,3,3,light rain,Rain,1,0,2018/01/20 05:00,86,0
+2.57,2,3,light rain,Rain,1,0,2018/01/20 06:00,100,0
+2.57,2,3,light rain,Rain,2,100,2018/01/20 07:00,100,0
+2.57,2,3,light rain,Rain,2,40,2018/01/20 08:00,100,0
+2.57,2,3,light rain,Rain,4,50,2018/01/20 09:00,100,0
+2.57,2,3,light intensity drizzle rain,Drizzle,4,40,2018/01/20 10:00,100,0
+3,3,3,light rain,Rain,4,80,2018/01/20 11:00,93,0
+3,3,3,light rain,Rain,4,100,2018/01/20 12:00,100,0
+3.43,3,4,light intensity drizzle rain,Drizzle,5,90,2018/01/20 13:00,93,0
+4,4,4,light intensity drizzle rain,Drizzle,4,60,2018/01/20 14:00,100,0
+4,4,4,light intensity drizzle rain,Drizzle,3,50,2018/01/20 15:00,93,0
+4,4,4,light intensity drizzle,Drizzle,2,30,2018/01/20 16:00,100,0
+4,4,4,light intensity drizzle rain,Drizzle,3,10,2018/01/20 17:00,100,0
+4,4,4,light intensity drizzle rain,Drizzle,4,10,2018/01/20 18:00,100,0
+3.57,3,4,light intensity drizzle,Drizzle,2,350,2018/01/20 19:00,93,0
+2.13,1,3,scattered clouds,Clouds,1,0,2018/01/20 20:00,100,0
+1.27,-1,3,fog,Fog,1,0,2018/01/20 21:00,100,0
+1.57,1,2,broken clouds,Clouds,3,260,2018/01/20 22:00,100,0
+2.13,1,3,broken clouds,Clouds,1,0,2018/01/20 23:00,100,0
+1.57,1,2,broken clouds,Clouds,1,0,2018/01/21 00:00,100,0
+2.13,1,3,light rain,Rain,1,120,2018/01/21 01:00,100,0
+2.57,2,3,light rain,Rain,2,100,2018/01/21 02:00,100,0
+4,4,4,light rain,Rain,5,140,2018/01/21 03:00,93,0
+4.57,4,5,light rain,Rain,6,140,2018/01/21 04:00,100,0
+4.57,4,5,light rain,Rain,6,140,2018/01/21 05:00,100,0
+5,5,5,light rain,Rain,7,130,2018/01/21 06:00,100,0
+5.43,5,6,moderate rain,Rain,8,140,2018/01/21 07:00,93,0
+6,6,6,light rain,Rain,8,140,2018/01/21 08:00,100,0
+6.43,6,7,light rain,Rain,7,150,2018/01/21 09:00,93,0
+8.7,7,10,light rain,Rain,5,150,2018/01/21 10:00,100,0
+9.57,9,10,light rain,Rain,2,220,2018/01/21 11:00,100,0
+11,11,11,light rain,Rain,7,230,2018/01/21 12:00,93,0
+11,11,11,light rain,Rain,8,240,2018/01/21 13:00,100,0
+12,12,12,light rain,Rain,9,250,2018/01/21 14:00,93,0
+12,12,12,light intensity drizzle rain,Drizzle,9,250,2018/01/21 15:00,93,0
+12,12,12,light intensity drizzle rain,Drizzle,8,260,2018/01/21 16:00,93,0
+11,11,11,broken clouds,Clouds,13,260,2018/01/21 17:00,81,0
+10,10,10,broken clouds,Clouds,14,260,2018/01/21 18:00,81,0
+9,9,9,scattered clouds,Clouds,12,270,2018/01/21 19:00,81,0
+8.57,8,9,broken clouds,Clouds,11,260,2018/01/21 20:00,81,0
+8.43,8,9,broken clouds,Clouds,10,270,2018/01/21 21:00,70,0
+8,8,8,broken clouds,Clouds,9,260,2018/01/21 22:00,81,0
+8,8,8,broken clouds,Clouds,7,260,2018/01/21 23:00,75,0
+8,8,8,broken clouds,Clouds,6,240,2018/01/22 00:00,81,0
+8,8,8,broken clouds,Clouds,3,260,2018/01/22 01:00,81,0
+8,8,8,broken clouds,Clouds,5,240,2018/01/22 02:00,81,0
+7.43,7,8,broken clouds,Clouds,4,240,2018/01/22 03:00,81,0
+7.57,7,8,broken clouds,Clouds,5,260,2018/01/22 04:00,87,0
+7,7,7,light intensity drizzle,Drizzle,6,270,2018/01/22 05:00,87,0
+7,7,7,broken clouds,Clouds,7,270,2018/01/22 06:00,81,0
+6.57,6,7,broken clouds,Clouds,8,260,2018/01/22 07:00,87,0
+7,7,7,broken clouds,Clouds,8,270,2018/01/22 08:00,81,0
+7,7,7,broken clouds,Clouds,7,260,2018/01/22 09:00,81,0
+7,7,7,broken clouds,Clouds,9,260,2018/01/22 10:00,81,0
+7.49,7,8,light rain,Rain,7,250,2018/01/22 11:00,75,0
+8,8,8,broken clouds,Clouds,7,260,2018/01/22 12:00,81,0
+8,8,8,light rain,Rain,8,270,2018/01/22 13:00,81,0
+8,8,8,light intensity drizzle rain,Drizzle,8,260,2018/01/22 14:00,75,0
+8,8,8,broken clouds,Clouds,8,260,2018/01/22 15:00,81,0
+8,8,8,broken clouds,Clouds,6,240,2018/01/22 16:00,81,0
+8,8,8,broken clouds,Clouds,6,250,2018/01/22 17:00,81,0
+8,8,8,broken clouds,Clouds,4,220,2018/01/22 18:00,81,0
+8,8,8,broken clouds,Clouds,6,230,2018/01/22 19:00,75,0
+8,8,8,broken clouds,Clouds,6,220,2018/01/22 20:00,81,0
+8,8,8,broken clouds,Clouds,5,210,2018/01/22 21:00,75,0
+8.43,8,9,broken clouds,Clouds,5,210,2018/01/22 22:00,76,0
+9,9,9,broken clouds,Clouds,6,200,2018/01/22 23:00,81,0
+9.43,9,10,broken clouds,Clouds,6,210,2018/01/23 00:00,81,0
+9.43,9,10,broken clouds,Clouds,7,210,2018/01/23 01:00,81,0
+10,10,10,broken clouds,Clouds,5,190,2018/01/23 02:00,87,0
+10.43,10,11,broken clouds,Clouds,6,210,2018/01/23 03:00,87,0
+11,11,11,light rain,Rain,5,210,2018/01/23 04:00,87,0
+12,12,12,broken clouds,Clouds,5,190,2018/01/23 05:00,87,0
+12,12,12,overcast clouds,Clouds,7,200,2018/01/23 06:00,87,0
+12,12,12,broken clouds,Clouds,6,210,2018/01/23 07:00,87,0
+12,12,12,broken clouds,Clouds,7,210,2018/01/23 08:00,87,0
+12,12,12,light intensity drizzle rain,Drizzle,10,230,2018/01/23 09:00,87,0
+12,12,12,broken clouds,Clouds,10,230,2018/01/23 10:00,87,0
+12.49,12,13,broken clouds,Clouds,11,230,2018/01/23 11:00,82,0
+12.49,12,13,broken clouds,Clouds,12,230,2018/01/23 12:00,76,0
+12.49,12,13,broken clouds,Clouds,12,230,2018/01/23 13:00,76,0
+12.49,12,13,scattered clouds,Clouds,12,240,2018/01/23 14:00,66,0
+12,12,12,scattered clouds,Clouds,13,240,2018/01/23 15:00,66,0
+11.49,11,12,broken clouds,Clouds,14,250,2018/01/23 16:00,58,0
+10,10,10,broken clouds,Clouds,10,250,2018/01/23 17:00,66,0
+9.43,9,10,broken clouds,Clouds,7,240,2018/01/23 18:00,66,0
+9,9,9,scattered clouds,Clouds,7,230,2018/01/23 19:00,66,0
+9.43,9,10,scattered clouds,Clouds,7,210,2018/01/23 20:00,71,0
+9,9,9,scattered clouds,Clouds,7,210,2018/01/23 21:00,76,0
+9.43,9,10,broken clouds,Clouds,9,200,2018/01/23 22:00,76,0
+10.43,10,11,broken clouds,Clouds,10,200,2018/01/23 23:00,71,0
+11,11,11,broken clouds,Clouds,12,200,2018/01/24 00:00,71,0
+11.43,11,12,broken clouds,Clouds,13,210,2018/01/24 01:00,76,0
+11.43,11,12,light rain,Rain,14,210,2018/01/24 02:00,76,0
+11.43,11,12,light rain,Rain,14,210,2018/01/24 03:00,76,0
+9.57,9,10,heavy intensity rain,Rain,13,250,2018/01/24 04:00,87,0
+8.57,8,9,heavy intensity rain,Rain,14,250,2018/01/24 05:00,87,0
+7,7,7,moderate rain,Rain,12,230,2018/01/24 06:00,81,0
+7,7,7,broken clouds,Clouds,10,230,2018/01/24 07:00,75,0
+6,6,6,broken clouds,Clouds,10,230,2018/01/24 08:00,81,0
+6,6,6,scattered clouds,Clouds,10,230,2018/01/24 09:00,81,0
+6.49,6,7,light intensity shower rain,Rain,10,230,2018/01/24 10:00,75,0
+7,7,7,few clouds,Clouds,12,240,2018/01/24 11:00,70,0
+8,8,8,few clouds,Clouds,11,240,2018/01/24 12:00,65,0
+6.49,6,7,light intensity shower rain,Rain,14,240,2018/01/24 13:00,70,0
+7.49,7,8,broken clouds,Clouds,11,230,2018/01/24 14:00,65,0
+7.49,7,8,broken clouds,Clouds,13,240,2018/01/24 15:00,70,0
+6.49,6,7,broken clouds,Clouds,12,240,2018/01/24 16:00,70,0
+6,6,6,broken clouds,Clouds,11,240,2018/01/24 17:00,81,0
+6,6,6,scattered clouds,Clouds,10,240,2018/01/24 18:00,75,0
+6,6,6,scattered clouds,Clouds,10,240,2018/01/24 19:00,75,0
+6,6,6,scattered clouds,Clouds,10,230,2018/01/24 20:00,75,0
+6,6,6,scattered clouds,Clouds,11,230,2018/01/24 21:00,75,0
+6,6,6,broken clouds,Clouds,10,230,2018/01/24 22:00,70,0
+5.43,5,6,broken clouds,Clouds,11,230,2018/01/24 23:00,70,0
+5.43,5,6,scattered clouds,Clouds,11,230,2018/01/25 00:00,70,0
+5,5,5,scattered clouds,Clouds,11,230,2018/01/25 01:00,75,0
+5,5,5,scattered clouds,Clouds,11,230,2018/01/25 02:00,75,0
+5,5,5,scattered clouds,Clouds,9,230,2018/01/25 03:00,75,0
+5,5,5,scattered clouds,Clouds,9,230,2018/01/25 04:00,75,0
+4.43,4,5,scattered clouds,Clouds,10,230,2018/01/25 05:00,75,0
+4,4,4,scattered clouds,Clouds,8,220,2018/01/25 06:00,80,0
+4,4,4,broken clouds,Clouds,6,210,2018/01/25 07:00,80,0
+4,4,4,broken clouds,Clouds,6,190,2018/01/25 08:00,80,0
+5,5,5,broken clouds,Clouds,6,200,2018/01/25 09:00,75,0
+6,6,6,light intensity shower rain,Rain,8,220,2018/01/25 10:00,70,0
+5.49,5,6,light rain,Rain,8,240,2018/01/25 11:00,81,0
+6,6,6,scattered clouds,Clouds,7,240,2018/01/25 12:00,81,0
+7,7,7,broken clouds,Clouds,8,240,2018/01/25 13:00,75,0
+7,7,7,scattered clouds,Clouds,8,250,2018/01/25 14:00,81,0
+8,8,8,scattered clouds,Clouds,9,270,2018/01/25 15:00,70,0
+7.49,7,8,scattered clouds,Clouds,9,270,2018/01/25 16:00,70,0
+6.53,6,7,light intensity shower rain,Rain,9,290,2018/01/25 17:00,87,0
+5,5,5,scattered clouds,Clouds,9,260,2018/01/25 18:00,86,0
+5,5,5,scattered clouds,Clouds,9,270,2018/01/25 19:00,86,0
+5,5,5,scattered clouds,Clouds,8,270,2018/01/25 20:00,86,0
+5,5,5,broken clouds,Clouds,7,280,2018/01/25 21:00,86,0
+5.42,5,6,light rain,Rain,7,300,2018/01/25 22:00,87,0
+6,6,6,light rain,Rain,7,320,2018/01/25 23:00,87,0
+5.57,5,6,light rain,Rain,6,320,2018/01/26 00:00,93,0
+5.57,5,6,broken clouds,Clouds,6,320,2018/01/26 01:00,86,0
+5.57,5,6,light intensity drizzle rain,Drizzle,5,320,2018/01/26 02:00,86,0
+4.13,3,5,broken clouds,Clouds,6,310,2018/01/26 03:00,93,0
+3,3,3,few clouds,Clouds,5,290,2018/01/26 04:00,93,0
+3.57,3,4,few clouds,Clouds,7,300,2018/01/26 05:00,93,0
+3.57,3,4,few clouds,Clouds,4,300,2018/01/26 06:00,93,0
+1.43,1,2,scattered clouds,Clouds,3,280,2018/01/26 07:00,93,0
+0.49,0,1,scattered clouds,Clouds,4,290,2018/01/26 08:00,100,0
+1.49,1,2,few clouds,Clouds,5,270,2018/01/26 09:00,93,0
+3,3,3,few clouds,Clouds,3,270,2018/01/26 10:00,93,0
+4,4,4,few clouds,Clouds,5,270,2018/01/26 11:00,93,0
+5.49,5,6,few clouds,Clouds,3,250,2018/01/26 12:00,81,0
+6,6,6,broken clouds,Clouds,6,240,2018/01/26 13:00,87,0
+6,6,6,broken clouds,Clouds,6,260,2018/01/26 14:00,87,0
+6,6,6,broken clouds,Clouds,5,250,2018/01/26 15:00,87,0
+6,6,6,broken clouds,Clouds,4,240,2018/01/26 16:00,87,0
+6,6,6,broken clouds,Clouds,4,230,2018/01/26 17:00,87,0
+6,6,6,broken clouds,Clouds,4,210,2018/01/26 18:00,87,0
+6,6,6,broken clouds,Clouds,4,210,2018/01/26 19:00,87,0
+6.43,6,7,broken clouds,Clouds,3,210,2018/01/26 20:00,81,0
+6.43,6,7,light rain,Rain,5,220,2018/01/26 21:00,81,0
+6,6,6,light rain,Rain,5,200,2018/01/26 22:00,87,0
+6.43,6,7,light rain,Rain,5,200,2018/01/26 23:00,75,0
+7,7,7,broken clouds,Clouds,5,200,2018/01/27 00:00,81,0
+7,7,7,light rain,Rain,6,200,2018/01/27 01:00,87,0
+7.43,7,8,broken clouds,Clouds,8,220,2018/01/27 02:00,87,0
+8,8,8,broken clouds,Clouds,8,220,2018/01/27 03:00,87,0
+8,8,8,light rain,Rain,6,200,2018/01/27 04:00,93,0
+8.43,8,9,light rain,Rain,5,210,2018/01/27 05:00,87,0
+9,9,9,light rain,Rain,5,210,2018/01/27 06:00,93,0
+10,10,10,light rain,Rain,7,220,2018/01/27 07:00,93,0
+10,10,10,light rain,Rain,8,240,2018/01/27 08:00,93,0
+10,10,10,light intensity drizzle rain,Drizzle,9,240,2018/01/27 09:00,100,0
+11,11,11,light intensity drizzle,Drizzle,8,250,2018/01/27 10:00,93,0
+11,11,11,light intensity drizzle,Drizzle,8,260,2018/01/27 11:00,93,0
+11.43,11,12,light intensity drizzle rain,Drizzle,8,250,2018/01/27 12:00,87,0
+12,12,12,light intensity drizzle rain,Drizzle,8,240,2018/01/27 13:00,87,0
+12,12,12,light intensity drizzle rain,Drizzle,10,240,2018/01/27 14:00,87,0
+12,12,12,proximity shower rain,Rain,10,250,2018/01/27 15:00,87,0
+12,12,12,light rain,Rain,11,260,2018/01/27 16:00,81,0
+11,11,11,light intensity drizzle rain,Drizzle,10,270,2018/01/27 17:00,87,0
+10,10,10,broken clouds,Clouds,12,260,2018/01/27 18:00,76,0
+9,9,9,broken clouds,Clouds,11,260,2018/01/27 19:00,81,0
+9,9,9,broken clouds,Clouds,10,260,2018/01/27 20:00,81,0
+8,8,8,few clouds,Clouds,8,260,2018/01/27 21:00,87,0
+8,8,8,scattered clouds,Clouds,7,250,2018/01/27 22:00,87,0
+8,8,8,scattered clouds,Clouds,8,250,2018/01/27 23:00,87,0
+8.43,8,9,scattered clouds,Clouds,7,250,2018/01/28 00:00,81,0
+9,9,9,scattered clouds,Clouds,8,240,2018/01/28 01:00,87,0
+10,10,10,scattered clouds,Clouds,8,240,2018/01/28 02:00,87,0
+10,10,10,light intensity drizzle,Drizzle,7,240,2018/01/28 03:00,93,0
+10,10,10,broken clouds,Clouds,7,240,2018/01/28 04:00,93,0
+10.49,10,11,light intensity drizzle,Drizzle,9,240,2018/01/28 05:00,93,0
+11.43,11,12,light intensity drizzle rain,Drizzle,9,250,2018/01/28 06:00,93,0
+12,12,12,light intensity drizzle,Drizzle,10,240,2018/01/28 07:00,87,0
+12,12,12,light intensity drizzle rain,Drizzle,10,250,2018/01/28 08:00,87,0
+12,12,12,light intensity drizzle rain,Drizzle,10,250,2018/01/28 09:00,87,0
+12,12,12,light intensity drizzle,Drizzle,12,250,2018/01/28 10:00,87,0
+12,12,12,light intensity drizzle,Drizzle,12,250,2018/01/28 11:00,87,0
+12,12,12,light intensity drizzle,Drizzle,12,240,2018/01/28 12:00,87,0
+12.43,12,13,light intensity drizzle rain,Drizzle,12,250,2018/01/28 13:00,82,0
+12.43,12,13,light intensity drizzle,Drizzle,11,250,2018/01/28 14:00,76,0
+12.43,12,13,broken clouds,Clouds,8,250,2018/01/28 15:00,76,0
+12,12,12,broken clouds,Clouds,10,240,2018/01/28 16:00,76,0
+12,12,12,broken clouds,Clouds,11,240,2018/01/28 17:00,76,0
+11.43,11,12,broken clouds,Clouds,10,240,2018/01/28 18:00,71,0
+11,11,11,broken clouds,Clouds,9,240,2018/01/28 19:00,81,0
+11,11,11,light intensity drizzle rain,Drizzle,10,240,2018/01/28 20:00,81,0
+11,11,11,broken clouds,Clouds,10,240,2018/01/28 21:00,81,0
+10.43,10,11,light intensity drizzle,Drizzle,10,240,2018/01/28 22:00,81,0
+10.43,10,11,light intensity drizzle,Drizzle,10,230,2018/01/28 23:00,87,0
+10.43,10,11,broken clouds,Clouds,10,230,2018/01/29 00:00,81,0
+10.43,10,11,broken clouds,Clouds,11,230,2018/01/29 01:00,87,0
+11,11,11,broken clouds,Clouds,11,240,2018/01/29 02:00,87,0
+11,11,11,light intensity drizzle rain,Drizzle,12,250,2018/01/29 03:00,87,0
+10.57,10,11,light rain,Rain,11,250,2018/01/29 04:00,93,0
+10,10,10,light rain,Rain,9,250,2018/01/29 05:00,93,0
+9.57,9,10,moderate rain,Rain,6,290,2018/01/29 06:00,93,0
+8.57,8,9,light rain,Rain,6,290,2018/01/29 07:00,93,0
+7.57,7,8,light rain,Rain,6,290,2018/01/29 08:00,93,0
+7,7,7,light intensity drizzle rain,Drizzle,9,280,2018/01/29 09:00,87,0
+6,6,6,broken clouds,Clouds,6,290,2018/01/29 10:00,93,0
+6,6,6,scattered clouds,Clouds,6,280,2018/01/29 11:00,93,0
+7,7,7,few clouds,Clouds,7,290,2018/01/29 12:00,81,0
+7,7,7,few clouds,Clouds,8,300,2018/01/29 13:00,75,0
+7,7,7,few clouds,Clouds,7,300,2018/01/29 14:00,75,0
+7,7,7,few clouds,Clouds,6,300,2018/01/29 15:00,75,0
+7,7,7,few clouds,Clouds,6,290,2018/01/29 16:00,70,0
+6.49,6,7,broken clouds,Clouds,4,280,2018/01/29 17:00,70,0
+5.57,5,6,proximity shower rain,Rain,4,280,2018/01/29 18:00,80,0
+5.57,5,6,light intensity shower rain,Rain,4,280,2018/01/29 19:00,86,0
+4,4,4,scattered clouds,Clouds,4,260,2018/01/29 20:00,80,0
+3.43,3,4,few clouds,Clouds,4,260,2018/01/29 21:00,86,0
+2.87,2,4,few clouds,Clouds,3,240,2018/01/29 22:00,80,0
+2.43,2,3,few clouds,Clouds,4,240,2018/01/29 23:00,86,0
+2.43,2,3,few clouds,Clouds,5,260,2018/01/30 00:00,86,0
+3,3,3,few clouds,Clouds,5,250,2018/01/30 01:00,86,0
+2.43,2,3,few clouds,Clouds,5,240,2018/01/30 02:00,86,0
+3,3,3,scattered clouds,Clouds,4,240,2018/01/30 03:00,86,0
+3,3,3,scattered clouds,Clouds,4,240,2018/01/30 04:00,86,0
+4,4,4,broken clouds,Clouds,4,240,2018/01/30 05:00,80,0
+3.43,3,4,broken clouds,Clouds,3,210,2018/01/30 06:00,80,0
+3,3,3,few clouds,Clouds,2,250,2018/01/30 07:00,86,0
+3,3,3,scattered clouds,Clouds,4,230,2018/01/30 08:00,86,0
+4,4,4,broken clouds,Clouds,3,210,2018/01/30 09:00,100,0
+4,4,4,broken clouds,Clouds,5,210,2018/01/30 10:00,100,0
+5,5,5,broken clouds,Clouds,3,200,2018/01/30 11:00,75,0
+6,6,6,broken clouds,Clouds,3,230,2018/01/30 12:00,70,0
+6,6,6,broken clouds,Clouds,3,230,2018/01/30 13:00,70,0
+6,6,6,broken clouds,Clouds,4,240,2018/01/30 14:00,75,0
+6,6,6,broken clouds,Clouds,7,250,2018/01/30 15:00,100,0
+6,6,6,broken clouds,Clouds,6,240,2018/01/30 16:00,100,0
+6,6,6,broken clouds,Clouds,5,240,2018/01/30 17:00,70,0
+6,6,6,broken clouds,Clouds,5,230,2018/01/30 18:00,75,0
+5,5,5,broken clouds,Clouds,4,200,2018/01/30 19:00,86,0
+6,6,6,broken clouds,Clouds,6,220,2018/01/30 20:00,81,0
+6,6,6,broken clouds,Clouds,8,220,2018/01/30 21:00,81,0
+6,6,6,light rain,Rain,9,230,2018/01/30 22:00,87,0
+6,6,6,light rain,Rain,10,240,2018/01/30 23:00,93,0
+6,6,6,light rain,Rain,8,230,2018/01/31 00:00,93,0
+7,7,7,light rain,Rain,7,230,2018/01/31 01:00,81,0
+7,7,7,light intensity drizzle rain,Drizzle,11,250,2018/01/31 02:00,81,0
+7,7,7,light intensity shower rain,Rain,10,260,2018/01/31 03:00,81,0
+5,5,5,light intensity shower rain,Rain,10,280,2018/01/31 04:00,80,0
+4,4,4,light intensity shower rain,Rain,10,270,2018/01/31 05:00,86,0
+2.43,2,3,light intensity shower rain,Rain,9,260,2018/01/31 06:00,100,0
+2,2,2,scattered clouds,Clouds,8,270,2018/01/31 07:00,100,0
+2,2,2,broken clouds,Clouds,8,260,2018/01/31 08:00,100,0
+2,2,2,few clouds,Clouds,8,250,2018/01/31 09:00,100,0
+2,2,2,scattered clouds,Clouds,8,250,2018/01/31 10:00,100,0
+2.51,2,3,light intensity shower rain,Rain,12,270,2018/01/31 11:00,100,0
+3,3,3,proximity shower rain,Rain,9,250,2018/01/31 12:00,86,0
+4,4,4,proximity shower rain,Rain,12,260,2018/01/31 13:00,80,0
+4,4,4,proximity shower rain,Rain,13,260,2018/01/31 14:00,100,0
+4,4,4,broken clouds,Clouds,9,250,2018/01/31 15:00,100,0
+4,4,4,scattered clouds,Clouds,10,250,2018/01/31 16:00,100,0
+3.57,3,4,light intensity shower rain,Rain,11,260,2018/01/31 17:00,86,0
+3.57,3,4,light intensity shower rain,Rain,10,240,2018/01/31 18:00,86,0
+3.57,3,4,broken clouds,Clouds,10,250,2018/01/31 19:00,86,0
+2.57,2,3,light intensity shower rain,Rain,11,260,2018/01/31 20:00,93,0
+3,3,3,light intensity shower rain,Rain,12,270,2018/01/31 21:00,86,0
+3.43,3,4,broken clouds,Clouds,9,280,2018/01/31 22:00,86,0
+4,4,4,broken clouds,Clouds,8,280,2018/01/31 23:00,86,0
+3.57,3,4,few clouds,Clouds,5,280,2018/02/01 00:00,93,0
+3,3,3,Sky is Clear,Clear,7,270,2018/02/01 01:00,86,0
+2,2,2,Sky is Clear,Clear,7,260,2018/02/01 02:00,93,0
+2,2,2,Sky is Clear,Clear,8,270,2018/02/01 03:00,93,0
+2,2,2,few clouds,Clouds,8,270,2018/02/01 04:00,93,0
+2.43,2,3,broken clouds,Clouds,6,270,2018/02/01 05:00,86,0
+2,2,2,Sky is Clear,Clear,5,260,2018/02/01 06:00,93,0
+2,2,2,Sky is Clear,Clear,7,280,2018/02/01 07:00,100,0
+2,2,2,Sky is Clear,Clear,9,290,2018/02/01 08:00,100,0
+2,2,2,scattered clouds,Clouds,6,280,2018/02/01 09:00,100,0
+3,3,3,few clouds,Clouds,7,280,2018/02/01 10:00,86,0
+4,4,4,few clouds,Clouds,7,290,2018/02/01 11:00,80,0
+5,5,5,scattered clouds,Clouds,7,310,2018/02/01 12:00,75,0
+6,6,6,scattered clouds,Clouds,9,320,2018/02/01 13:00,75,0
+6,6,6,scattered clouds,Clouds,10,320,2018/02/01 14:00,70,0
+6,6,6,scattered clouds,Clouds,9,320,2018/02/01 15:00,70,0
+5.51,5,6,scattered clouds,Clouds,10,320,2018/02/01 16:00,75,0
+4.57,4,5,scattered clouds,Clouds,8,310,2018/02/01 17:00,100,0
+4.13,3,5,scattered clouds,Clouds,8,310,2018/02/01 18:00,100,0
+4,4,4,scattered clouds,Clouds,7,320,2018/02/01 19:00,69,0
+4,4,4,scattered clouds,Clouds,7,320,2018/02/01 20:00,69,0
+3,3,3,scattered clouds,Clouds,7,310,2018/02/01 21:00,74,0
+2.43,2,3,broken clouds,Clouds,4,310,2018/02/01 22:00,74,0
+2.43,2,3,few clouds,Clouds,6,290,2018/02/01 23:00,74,0
+1.87,1,3,few clouds,Clouds,7,300,2018/02/02 00:00,100,0
+1.43,1,2,few clouds,Clouds,6,290,2018/02/02 01:00,100,0
+1.43,1,2,few clouds,Clouds,6,290,2018/02/02 02:00,100,0
+2,2,2,few clouds,Clouds,8,300,2018/02/02 03:00,100,0
+1.43,1,2,few clouds,Clouds,6,300,2018/02/02 04:00,100,0
+1.43,1,2,few clouds,Clouds,5,270,2018/02/02 05:00,100,0
+1,1,1,few clouds,Clouds,4,290,2018/02/02 06:00,100,0
+2,2,2,few clouds,Clouds,4,250,2018/02/02 07:00,100,0
+1,1,1,few clouds,Clouds,6,260,2018/02/02 08:00,100,0
+1.49,1,2,few clouds,Clouds,5,260,2018/02/02 09:00,100,0
+2,2,2,scattered clouds,Clouds,5,260,2018/02/02 10:00,93,0
+3,3,3,few clouds,Clouds,7,270,2018/02/02 11:00,86,0
+4.49,4,5,few clouds,Clouds,6,270,2018/02/02 12:00,80,0
+5.49,5,6,few clouds,Clouds,6,280,2018/02/02 13:00,81,0
+6.49,6,7,few clouds,Clouds,4,280,2018/02/02 14:00,75,0
+6,6,6,scattered clouds,Clouds,5,290,2018/02/02 15:00,81,0
+6,6,6,broken clouds,Clouds,5,280,2018/02/02 16:00,81,0
+5,5,5,broken clouds,Clouds,5,260,2018/02/02 17:00,80,0
+5,5,5,broken clouds,Clouds,3,250,2018/02/02 18:00,75,0
+4.43,4,5,broken clouds,Clouds,4,250,2018/02/02 19:00,75,0
+5,5,5,broken clouds,Clouds,5,240,2018/02/02 20:00,75,0
+5,5,5,broken clouds,Clouds,4,240,2018/02/02 21:00,100,0
+4,4,4,light rain,Rain,3,220,2018/02/02 22:00,86,0
+4,4,4,light rain,Rain,4,220,2018/02/02 23:00,93,0
+3.57,3,4,light intensity drizzle rain,Drizzle,2,170,2018/02/03 00:00,100,0
+3.57,3,4,light intensity drizzle rain,Drizzle,1,0,2018/02/03 01:00,100,0
+4,4,4,light intensity drizzle rain,Drizzle,6,270,2018/02/03 02:00,93,0
+4,4,4,light intensity drizzle,Drizzle,5,280,2018/02/03 03:00,93,0
+4,4,4,broken clouds,Clouds,5,280,2018/02/03 04:00,100,0
+3.57,3,4,scattered clouds,Clouds,5,290,2018/02/03 05:00,93,0
+2.57,2,3,broken clouds,Clouds,5,280,2018/02/03 06:00,93,0
+2,2,2,scattered clouds,Clouds,6,270,2018/02/03 07:00,93,0
+2,2,2,broken clouds,Clouds,6,280,2018/02/03 08:00,93,0
+2,2,2,broken clouds,Clouds,6,280,2018/02/03 09:00,93,0
+3,3,3,broken clouds,Clouds,7,290,2018/02/03 10:00,93,0
+3.43,3,4,light intensity shower rain,Rain,7,290,2018/02/03 11:00,86,0
+4,4,4,broken clouds,Clouds,7,290,2018/02/03 12:00,93,0
+4.43,4,5,broken clouds,Clouds,7,300,2018/02/03 13:00,86,0
+5,5,5,broken clouds,Clouds,7,310,2018/02/03 14:00,86,0
+5.43,5,6,broken clouds,Clouds,6,320,2018/02/03 15:00,75,0
+6,6,6,broken clouds,Clouds,10,330,2018/02/03 16:00,75,0
+5,5,5,broken clouds,Clouds,8,320,2018/02/03 17:00,80,0
+4,4,4,broken clouds,Clouds,7,330,2018/02/03 18:00,80,0
+4,4,4,broken clouds,Clouds,6,320,2018/02/03 19:00,80,0
+3,3,3,scattered clouds,Clouds,7,320,2018/02/03 20:00,86,0
+3,3,3,few clouds,Clouds,6,320,2018/02/03 21:00,86,0
+3,3,3,few clouds,Clouds,7,330,2018/02/03 22:00,86,0
+3,3,3,scattered clouds,Clouds,6,330,2018/02/03 23:00,86,0
+3,3,3,broken clouds,Clouds,7,330,2018/02/04 00:00,86,0
+2,2,2,few clouds,Clouds,6,340,2018/02/04 01:00,93,0
+0.87,0,2,scattered clouds,Clouds,5,330,2018/02/04 02:00,93,0
+1.87,1,3,broken clouds,Clouds,5,330,2018/02/04 03:00,86,0
+1.43,1,2,scattered clouds,Clouds,4,320,2018/02/04 04:00,100,0
+1.43,1,2,broken clouds,Clouds,3,350,2018/02/04 05:00,93,0
+0.3,-1,2,broken clouds,Clouds,4,330,2018/02/04 06:00,93,0
+0.87,0,2,scattered clouds,Clouds,4,330,2018/02/04 07:00,93,0
+1.43,1,2,broken clouds,Clouds,1,0,2018/02/04 08:00,93,0
+2,2,2,broken clouds,Clouds,3,320,2018/02/04 09:00,93,0
+2.43,2,3,light intensity shower rain,Rain,4,350,2018/02/04 10:00,93,0
+3.43,3,4,light intensity shower rain,Rain,3,10,2018/02/04 11:00,93,0
+4.43,4,5,broken clouds,Clouds,2,360,2018/02/04 12:00,93,0
+5,5,5,proximity shower rain,Rain,2,10,2018/02/04 13:00,93,0
+5.87,5,7,light intensity shower rain,Rain,2,70,2018/02/04 14:00,81,0
+6,6,6,scattered clouds,Clouds,3,120,2018/02/04 15:00,75,0
+6.43,6,7,proximity shower rain,Rain,3,110,2018/02/04 16:00,70,0
+5,5,5,proximity shower rain,Rain,2,100,2018/02/04 17:00,86,0
+4.57,4,5,broken clouds,Clouds,2,70,2018/02/04 18:00,80,0
+2.43,2,3,broken clouds,Clouds,2,30,2018/02/04 19:00,86,0
+1.43,1,2,scattered clouds,Clouds,2,40,2018/02/04 20:00,93,0
+2,2,2,scattered clouds,Clouds,1,100,2018/02/04 21:00,93,0
+1.13,0,2,scattered clouds,Clouds,1,0,2018/02/04 22:00,100,0
+-0.43,-1,0,scattered clouds,Clouds,2,150,2018/02/04 23:00,92,0
+1.43,1,2,light intensity shower rain,Rain,1,0,2018/02/05 00:00,93,0
+1.13,0,2,few clouds,Clouds,2,300,2018/02/05 01:00,100,0
+-1.43,-2,-1,broken clouds,Clouds,1,0,2018/02/05 02:00,100,0
+-0.7,-2,1,broken clouds,Clouds,2,350,2018/02/05 03:00,100,0
+1,1,1,light intensity shower rain,Rain,2,260,2018/02/05 04:00,100,0
+1,1,1,broken clouds,Clouds,1,300,2018/02/05 05:00,100,0
+1,1,1,broken clouds,Clouds,1,310,2018/02/05 06:00,100,0
+1,1,1,broken clouds,Clouds,1,300,2018/02/05 07:00,100,0
+1,1,1,broken clouds,Clouds,1,0,2018/02/05 08:00,100,0
+1,1,1,broken clouds,Clouds,1,0,2018/02/05 09:00,100,0
+1,1,1,broken clouds,Clouds,1,80,2018/02/05 10:00,100,0
+2,2,2,broken clouds,Clouds,1,0,2018/02/05 11:00,93,0
+3,3,3,broken clouds,Clouds,4,130,2018/02/05 12:00,69,0
+4,4,4,broken clouds,Clouds,4,140,2018/02/05 13:00,60,0
+4,4,4,broken clouds,Clouds,2,170,2018/02/05 14:00,55,0
+5,5,5,broken clouds,Clouds,2,130,2018/02/05 15:00,52,0
+4,4,4,broken clouds,Clouds,2,120,2018/02/05 16:00,60,0
+3.51,3,4,scattered clouds,Clouds,3,120,2018/02/05 17:00,64,0
+1.7,0,3,scattered clouds,Clouds,2,110,2018/02/05 18:00,100,0
+0.26,-2,2,scattered clouds,Clouds,2,110,2018/02/05 19:00,79,0
+-0.87,-2,0,broken clouds,Clouds,2,140,2018/02/05 20:00,86,0
+-0.43,-1,0,broken clouds,Clouds,1,0,2018/02/05 21:00,86,0
+1,1,1,broken clouds,Clouds,2,230,2018/02/05 22:00,74,0
+0,0,0,light snow,Snow,4,270,2018/02/05 23:00,100,0
+0,0,0,light snow,Snow,3,270,2018/02/06 00:00,100,0
+0,0,0,light snow,Snow,3,270,2018/02/06 01:00,100,0
+-0.57,-1,0,light snow,Snow,2,260,2018/02/06 02:00,100,0
+0,0,0,light snow,Snow,3,270,2018/02/06 03:00,100,0
+0,0,0,light rain and snow,Snow,4,270,2018/02/06 04:00,100,0
+0,0,0,broken clouds,Clouds,5,280,2018/02/06 05:00,100,0
+0,0,0,light snow,Snow,5,290,2018/02/06 06:00,100,0
+1,1,1,broken clouds,Clouds,5,300,2018/02/06 07:00,100,0
+1,1,1,broken clouds,Clouds,5,300,2018/02/06 08:00,100,0
+1,1,1,broken clouds,Clouds,6,310,2018/02/06 09:00,86,0
+0.51,0,1,scattered clouds,Clouds,3,300,2018/02/06 10:00,100,0
+1.51,1,2,scattered clouds,Clouds,6,320,2018/02/06 11:00,86,0
+2,2,2,scattered clouds,Clouds,7,320,2018/02/06 12:00,80,0
+3,3,3,few clouds,Clouds,7,320,2018/02/06 13:00,74,0
+3,3,3,few clouds,Clouds,9,340,2018/02/06 14:00,74,0
+3.51,3,4,scattered clouds,Clouds,10,330,2018/02/06 15:00,74,0
+3.51,3,4,few clouds,Clouds,9,330,2018/02/06 16:00,64,0
+3,3,3,few clouds,Clouds,7,330,2018/02/06 17:00,64,0
+2.13,1,3,few clouds,Clouds,6,330,2018/02/06 18:00,74,0
+-1,-1,-1,few clouds,Clouds,3,300,2018/02/06 19:00,86,0
+0,0,0,few clouds,Clouds,4,290,2018/02/06 20:00,100,0
+-0.57,-1,0,few clouds,Clouds,5,300,2018/02/06 21:00,100,0
+-1,-1,-1,few clouds,Clouds,6,290,2018/02/06 22:00,92,0
+-1.57,-2,-1,few clouds,Clouds,5,280,2018/02/06 23:00,92,0
+-1,-1,-1,few clouds,Clouds,6,290,2018/02/07 00:00,92,0
+-2,-2,-2,few clouds,Clouds,4,280,2018/02/07 01:00,92,0
+-1,-1,-1,few clouds,Clouds,2,200,2018/02/07 02:00,92,0
+-1.43,-2,-1,few clouds,Clouds,3,280,2018/02/07 03:00,92,0
+-1,-1,-1,few clouds,Clouds,4,310,2018/02/07 04:00,92,0
+-2,-2,-2,few clouds,Clouds,2,230,2018/02/07 05:00,92,0
+-2.57,-3,-2,few clouds,Clouds,4,280,2018/02/07 06:00,92,0
+-2.51,-3,-2,few clouds,Clouds,5,270,2018/02/07 07:00,92,0
+-2,-2,-2,few clouds,Clouds,2,230,2018/02/07 08:00,92,0
+-1,-1,-1,scattered clouds,Clouds,4,260,2018/02/07 09:00,92,0
+0,0,0,broken clouds,Clouds,5,260,2018/02/07 10:00,100,0
+1,1,1,broken clouds,Clouds,5,250,2018/02/07 11:00,100,0
+2.51,2,3,broken clouds,Clouds,5,250,2018/02/07 12:00,93,0
+3.51,3,4,broken clouds,Clouds,6,250,2018/02/07 13:00,100,0
+4,4,4,broken clouds,Clouds,5,250,2018/02/07 14:00,100,0
+4,4,4,light intensity drizzle,Drizzle,5,230,2018/02/07 15:00,80,0
+3,3,3,light rain,Rain,5,220,2018/02/07 16:00,86,0
+3,3,3,light rain,Rain,4,210,2018/02/07 17:00,86,0
+3,3,3,light rain,Rain,4,210,2018/02/07 18:00,86,0
+3.57,3,4,broken clouds,Clouds,5,210,2018/02/07 19:00,93,0
+4,4,4,broken clouds,Clouds,6,210,2018/02/07 20:00,86,0
+5,5,5,broken clouds,Clouds,6,220,2018/02/07 21:00,80,0
+5,5,5,broken clouds,Clouds,7,230,2018/02/07 22:00,86,0
+5,5,5,broken clouds,Clouds,7,230,2018/02/07 23:00,86,0
+5.43,5,6,light intensity drizzle,Drizzle,5,220,2018/02/08 00:00,87,0
+6,6,6,broken clouds,Clouds,8,230,2018/02/08 01:00,87,0
+6,6,6,light intensity drizzle,Drizzle,7,230,2018/02/08 02:00,93,0
+6,6,6,light intensity drizzle,Drizzle,7,230,2018/02/08 03:00,93,0
+6,6,6,light intensity drizzle rain,Drizzle,6,230,2018/02/08 04:00,93,0
+7,7,7,light intensity drizzle,Drizzle,7,230,2018/02/08 05:00,93,0
+7,7,7,broken clouds,Clouds,6,230,2018/02/08 06:00,93,0
+7,7,7,light intensity drizzle,Drizzle,6,230,2018/02/08 07:00,100,0
+7,7,7,light intensity drizzle,Drizzle,5,240,2018/02/08 08:00,100,0
+7.51,7,8,light intensity drizzle,Drizzle,5,230,2018/02/08 09:00,100,0
+8,8,8,light intensity drizzle,Drizzle,5,240,2018/02/08 10:00,93,0
+8,8,8,light intensity drizzle,Drizzle,5,250,2018/02/08 11:00,93,0
+7.51,7,8,light intensity drizzle rain,Drizzle,4,280,2018/02/08 12:00,100,0
+8,8,8,broken clouds,Clouds,3,240,2018/02/08 13:00,87,0
+8,8,8,broken clouds,Clouds,4,230,2018/02/08 14:00,87,0
+8,8,8,broken clouds,Clouds,5,230,2018/02/08 15:00,81,0
+8,8,8,broken clouds,Clouds,6,240,2018/02/08 16:00,75,0
+7,7,7,broken clouds,Clouds,5,250,2018/02/08 17:00,75,0
+6,6,6,broken clouds,Clouds,3,230,2018/02/08 18:00,81,0
+6,6,6,broken clouds,Clouds,4,230,2018/02/08 19:00,81,0
+5.43,5,6,broken clouds,Clouds,4,220,2018/02/08 20:00,81,0
+5,5,5,broken clouds,Clouds,4,220,2018/02/08 21:00,80,0
+5,5,5,broken clouds,Clouds,5,210,2018/02/08 22:00,86,0
+5,5,5,broken clouds,Clouds,4,210,2018/02/08 23:00,80,0
+5,5,5,light rain,Rain,4,220,2018/02/09 00:00,86,0
+2.57,2,3,light rain,Rain,11,270,2018/02/09 01:00,93,0
+2,2,2,light rain,Rain,10,280,2018/02/09 02:00,100,0
+1.43,1,2,broken clouds,Clouds,10,270,2018/02/09 03:00,80,0
+1,1,1,light rain,Rain,11,290,2018/02/09 04:00,80,0
+0.57,0,1,light snow,Snow,9,280,2018/02/09 05:00,100,0
+0,0,0,broken clouds,Clouds,8,270,2018/02/09 06:00,100,0
+0,0,0,few clouds,Clouds,7,270,2018/02/09 07:00,100,0
+0,0,0,few clouds,Clouds,8,270,2018/02/09 08:00,100,0
+0,0,0,few clouds,Clouds,6,280,2018/02/09 09:00,100,0
+0.49,0,1,few clouds,Clouds,8,270,2018/02/09 10:00,86,0
+1.49,1,2,few clouds,Clouds,7,270,2018/02/09 11:00,80,0
+3,3,3,few clouds,Clouds,8,270,2018/02/09 12:00,100,0
+4,4,4,few clouds,Clouds,8,280,2018/02/09 13:00,100,0
+4,4,4,few clouds,Clouds,8,280,2018/02/09 14:00,100,0
+4.51,4,5,scattered clouds,Clouds,7,260,2018/02/09 15:00,100,0
+5,5,5,scattered clouds,Clouds,5,280,2018/02/09 16:00,100,0
+4,4,4,few clouds,Clouds,5,260,2018/02/09 17:00,69,0
+2.43,2,3,few clouds,Clouds,4,250,2018/02/09 18:00,69,0
+2,2,2,few clouds,Clouds,3,220,2018/02/09 19:00,80,0
+2,2,2,few clouds,Clouds,3,200,2018/02/09 20:00,80,0
+2,2,2,scattered clouds,Clouds,3,200,2018/02/09 21:00,80,0
+2,2,2,scattered clouds,Clouds,4,210,2018/02/09 22:00,100,0
+3,3,3,broken clouds,Clouds,5,220,2018/02/09 23:00,100,0
+4,4,4,broken clouds,Clouds,6,220,2018/02/10 00:00,100,0
+4,4,4,broken clouds,Clouds,6,210,2018/02/10 01:00,100,0
+4,4,4,light rain,Rain,7,210,2018/02/10 02:00,80,0
+4,4,4,light rain,Rain,7,200,2018/02/10 03:00,93,0
+5,5,5,light rain,Rain,7,190,2018/02/10 04:00,86,0
+6,6,6,light rain,Rain,9,210,2018/02/10 05:00,93,0
+8,8,8,light rain,Rain,7,220,2018/02/10 06:00,87,0
+8,8,8,light rain,Rain,9,230,2018/02/10 07:00,93,0
+8,8,8,light intensity drizzle rain,Drizzle,9,230,2018/02/10 08:00,93,0
+9,9,9,light intensity drizzle rain,Drizzle,8,240,2018/02/10 09:00,93,0
+9,9,9,light intensity drizzle rain,Drizzle,9,240,2018/02/10 10:00,100,0
+9,9,9,light intensity drizzle rain,Drizzle,10,260,2018/02/10 11:00,93,0
+10,10,10,scattered clouds,Clouds,8,270,2018/02/10 12:00,87,0
+9.43,9,10,scattered clouds,Clouds,8,270,2018/02/10 13:00,76,0
+10,10,10,scattered clouds,Clouds,7,270,2018/02/10 14:00,71,0
+9.43,9,10,broken clouds,Clouds,8,260,2018/02/10 15:00,71,0
+9.43,9,10,broken clouds,Clouds,6,220,2018/02/10 16:00,71,0
+9.43,9,10,light rain,Rain,6,200,2018/02/10 17:00,76,0
+9.49,9,10,light rain,Rain,6,190,2018/02/10 18:00,71,0
+10,10,10,light rain,Rain,10,220,2018/02/10 19:00,87,0
+10,10,10,light rain,Rain,12,230,2018/02/10 20:00,87,0
+7.13,6,8,broken clouds,Clouds,15,270,2018/02/10 21:00,81,0
+5,5,5,broken clouds,Clouds,13,280,2018/02/10 22:00,86,0
+5,5,5,light rain,Rain,12,280,2018/02/10 23:00,80,0
+3.57,3,4,light rain,Rain,10,310,2018/02/11 00:00,93,0
+3,3,3,light rain,Rain,10,280,2018/02/11 01:00,86,0
+2.57,2,3,broken clouds,Clouds,10,270,2018/02/11 02:00,100,0
+2,2,2,scattered clouds,Clouds,9,270,2018/02/11 03:00,100,0
+1,1,1,scattered clouds,Clouds,8,260,2018/02/11 04:00,100,0
+1,1,1,scattered clouds,Clouds,7,260,2018/02/11 05:00,86,0
+1,1,1,scattered clouds,Clouds,8,260,2018/02/11 06:00,86,0
+1,1,1,broken clouds,Clouds,9,270,2018/02/11 07:00,86,0
+1,1,1,light shower sleet,Snow,9,260,2018/02/11 08:00,86,0
+1,1,1,broken clouds,Clouds,9,260,2018/02/11 09:00,86,0
+0.43,0,1,light shower snow,Snow,9,250,2018/02/11 10:00,86,0
+1.43,1,2,broken clouds,Clouds,10,260,2018/02/11 11:00,80,0
+2.43,2,3,scattered clouds,Clouds,11,280,2018/02/11 12:00,74,0
+2.43,2,3,scattered clouds,Clouds,11,280,2018/02/11 13:00,74,0
+3,3,3,light intensity shower rain,Rain,12,280,2018/02/11 14:00,74,0
+2.43,2,3,light shower snow,Snow,9,280,2018/02/11 15:00,74,0
+3,3,3,light intensity shower rain,Rain,10,290,2018/02/11 16:00,69,0
+1,1,1,light shower snow,Snow,8,280,2018/02/11 17:00,80,0
+1,1,1,light shower sleet,Snow,9,280,2018/02/11 18:00,86,0
+1,1,1,light shower sleet,Snow,5,260,2018/02/11 19:00,86,0
+1,1,1,few clouds,Clouds,7,250,2018/02/11 20:00,80,0
+0,0,0,few clouds,Clouds,9,260,2018/02/11 21:00,100,0
+0,0,0,scattered clouds,Clouds,7,260,2018/02/11 22:00,100,0
+-0.57,-1,0,few clouds,Clouds,6,260,2018/02/11 23:00,100,0
+0,0,0,few clouds,Clouds,8,260,2018/02/12 00:00,100,0
+-0.57,-1,0,few clouds,Clouds,7,250,2018/02/12 01:00,100,0
+-1,-1,-1,few clouds,Clouds,7,250,2018/02/12 02:00,92,0
+-1,-1,-1,few clouds,Clouds,7,240,2018/02/12 03:00,92,0
+-0.43,-1,0,few clouds,Clouds,6,230,2018/02/12 04:00,92,0
+-0.43,-1,0,few clouds,Clouds,6,240,2018/02/12 05:00,92,0
+0,0,0,few clouds,Clouds,6,240,2018/02/12 06:00,100,0
+0,0,0,few clouds,Clouds,6,240,2018/02/12 07:00,100,0
+0,0,0,few clouds,Clouds,6,230,2018/02/12 08:00,100,0
+1,1,1,broken clouds,Clouds,6,230,2018/02/12 09:00,86,0
+1,1,1,broken clouds,Clouds,7,230,2018/02/12 10:00,86,0
+1,1,1,broken clouds,Clouds,5,220,2018/02/12 11:00,86,0
+3.51,3,4,scattered clouds,Clouds,7,230,2018/02/12 12:00,100,0
+5,5,5,few clouds,Clouds,8,230,2018/02/12 13:00,100,0
+5,5,5,few clouds,Clouds,9,230,2018/02/12 14:00,65,0
+5.49,5,6,few clouds,Clouds,8,230,2018/02/12 15:00,60,0
+5.49,5,6,few clouds,Clouds,8,210,2018/02/12 16:00,56,0
+5.49,5,6,scattered clouds,Clouds,8,200,2018/02/12 17:00,56,0
+5,5,5,scattered clouds,Clouds,7,190,2018/02/12 18:00,65,0
+4,4,4,scattered clouds,Clouds,6,160,2018/02/12 19:00,69,0
+4,4,4,scattered clouds,Clouds,6,160,2018/02/12 20:00,100,0
+5,5,5,broken clouds,Clouds,8,180,2018/02/12 21:00,100,0
+5,5,5,broken clouds,Clouds,9,180,2018/02/12 22:00,75,0
+6,6,6,broken clouds,Clouds,11,170,2018/02/12 23:00,70,0
+6,6,6,broken clouds,Clouds,8,150,2018/02/13 00:00,75,0
+6,6,6,light rain,Rain,8,150,2018/02/13 01:00,81,0
+6,6,6,light rain,Rain,6,150,2018/02/13 02:00,75,0
+4.99,4,6,light rain,Rain,6,170,2018/02/13 03:00,81,0
+1,1,1,light rain and snow,Snow,7,240,2018/02/13 04:00,100,0
+2,2,2,light rain,Rain,6,270,2018/02/13 05:00,93,0
+2,2,2,broken clouds,Clouds,7,280,2018/02/13 06:00,100,0
+2,2,2,light rain,Rain,6,290,2018/02/13 07:00,93,0
+2,2,2,broken clouds,Clouds,6,310,2018/02/13 08:00,100,0
+1.51,1,2,broken clouds,Clouds,6,290,2018/02/13 09:00,86,0
+2,2,2,scattered clouds,Clouds,7,280,2018/02/13 10:00,100,0
+3,3,3,few clouds,Clouds,7,280,2018/02/13 11:00,100,0
+4,4,4,few clouds,Clouds,8,290,2018/02/13 12:00,100,0
+4.49,4,5,few clouds,Clouds,8,280,2018/02/13 13:00,100,0
+4,4,4,few clouds,Clouds,8,280,2018/02/13 14:00,69,0
+5,5,5,scattered clouds,Clouds,6,290,2018/02/13 15:00,60,0
+5,5,5,scattered clouds,Clouds,6,280,2018/02/13 16:00,65,0
+4.49,4,5,few clouds,Clouds,5,270,2018/02/13 17:00,60,0
+3,3,3,few clouds,Clouds,5,260,2018/02/13 18:00,64,0
+1.87,1,3,few clouds,Clouds,5,250,2018/02/13 19:00,69,0
+1.43,1,2,broken clouds,Clouds,3,220,2018/02/13 20:00,74,0
+2,2,2,few clouds,Clouds,3,170,2018/02/13 21:00,74,0
+1.43,1,2,few clouds,Clouds,3,170,2018/02/13 22:00,69,0
+1.57,1,2,scattered clouds,Clouds,3,170,2018/02/13 23:00,74,0
+2.57,2,3,broken clouds,Clouds,4,160,2018/02/14 00:00,69,0
+2.43,2,3,scattered clouds,Clouds,6,180,2018/02/14 01:00,69,0
+3.43,3,4,scattered clouds,Clouds,6,170,2018/02/14 02:00,69,0
+4,4,4,broken clouds,Clouds,5,170,2018/02/14 03:00,69,0
+5,5,5,broken clouds,Clouds,6,170,2018/02/14 04:00,100,0
+6,6,6,broken clouds,Clouds,7,170,2018/02/14 05:00,100,0
+6,6,6,broken clouds,Clouds,9,170,2018/02/14 06:00,70,0
+6,6,6,broken clouds,Clouds,11,160,2018/02/14 07:00,75,0
+6,6,6,light rain,Rain,12,160,2018/02/14 08:00,75,0
+7,7,7,light intensity drizzle,Drizzle,11,170,2018/02/14 09:00,75,0
+7.51,7,8,light rain,Rain,13,170,2018/02/14 10:00,81,0
+8.51,8,9,broken clouds,Clouds,11,180,2018/02/14 11:00,81,0
+9,9,9,light rain,Rain,7,180,2018/02/14 12:00,81,0
+10,10,10,light intensity drizzle rain,Drizzle,6,160,2018/02/14 13:00,87,0
+9.99,9,11,light intensity drizzle rain,Drizzle,9,220,2018/02/14 14:00,71,0
+9,9,9,broken clouds,Clouds,9,250,2018/02/14 15:00,76,0
+9.49,9,10,scattered clouds,Clouds,8,250,2018/02/14 16:00,61,0
+9,9,9,few clouds,Clouds,8,240,2018/02/14 17:00,61,0
+8,8,8,few clouds,Clouds,4,220,2018/02/14 18:00,61,0
+7,7,7,few clouds,Clouds,7,230,2018/02/14 19:00,65,0
+5.43,5,6,few clouds,Clouds,4,220,2018/02/14 20:00,75,0
+6,6,6,few clouds,Clouds,4,210,2018/02/14 21:00,75,0
+6,6,6,few clouds,Clouds,7,220,2018/02/14 22:00,70,0
+6,6,6,light rain,Rain,9,240,2018/02/14 23:00,75,0
+5,5,5,light intensity shower rain,Rain,9,230,2018/02/15 00:00,80,0
+4.43,4,5,broken clouds,Clouds,6,230,2018/02/15 01:00,80,0
+4,4,4,broken clouds,Clouds,6,230,2018/02/15 02:00,86,0
+4,4,4,light intensity shower rain,Rain,9,230,2018/02/15 03:00,80,0
+3.57,3,4,scattered clouds,Clouds,8,220,2018/02/15 04:00,74,0
+3,3,3,scattered clouds,Clouds,8,230,2018/02/15 05:00,74,0
+2,2,2,scattered clouds,Clouds,9,230,2018/02/15 06:00,80,0
+2,2,2,scattered clouds,Clouds,9,230,2018/02/15 07:00,74,0
+2,2,2,scattered clouds,Clouds,8,230,2018/02/15 08:00,80,0
+1,1,1,light shower snow,Snow,9,240,2018/02/15 09:00,86,0
+2,2,2,light shower sleet,Snow,8,240,2018/02/15 10:00,80,0
+3.43,3,4,scattered clouds,Clouds,9,240,2018/02/15 11:00,69,0
+4,4,4,scattered clouds,Clouds,10,240,2018/02/15 12:00,69,0
+4.57,4,5,light intensity shower rain,Rain,8,240,2018/02/15 13:00,100,0
+4.43,4,5,scattered clouds,Clouds,11,240,2018/02/15 14:00,65,0
+4.57,4,5,scattered clouds,Clouds,9,250,2018/02/15 15:00,99,0
+5,5,5,scattered clouds,Clouds,10,240,2018/02/15 16:00,99,0
+4,4,4,few clouds,Clouds,10,240,2018/02/15 17:00,69,0
+4,4,4,few clouds,Clouds,11,260,2018/02/15 18:00,64,0
+2.43,2,3,few clouds,Clouds,9,250,2018/02/15 19:00,74,0
+2.43,2,3,few clouds,Clouds,7,240,2018/02/15 20:00,74,0
+1.43,1,2,few clouds,Clouds,5,230,2018/02/15 21:00,74,0
+2,2,2,few clouds,Clouds,7,240,2018/02/15 22:00,80,0
+1.57,1,2,few clouds,Clouds,5,220,2018/02/15 23:00,86,0
+2,2,2,scattered clouds,Clouds,6,230,2018/02/16 00:00,80,0
+2,2,2,few clouds,Clouds,6,220,2018/02/16 01:00,80,0
+2,2,2,few clouds,Clouds,6,230,2018/02/16 02:00,80,0
+2,2,2,few clouds,Clouds,7,230,2018/02/16 03:00,80,0
+2,2,2,few clouds,Clouds,5,230,2018/02/16 04:00,74,0
+2,2,2,few clouds,Clouds,5,230,2018/02/16 05:00,80,0
+3,3,3,scattered clouds,Clouds,4,220,2018/02/16 06:00,74,0
+2.57,2,3,scattered clouds,Clouds,3,180,2018/02/16 07:00,74,0
+3.13,2,4,broken clouds,Clouds,4,190,2018/02/16 08:00,80,0
+3.57,3,4,broken clouds,Clouds,4,200,2018/02/16 09:00,100,0
+6,6,6,broken clouds,Clouds,5,200,2018/02/16 10:00,70,0
+6.43,6,7,broken clouds,Clouds,6,210,2018/02/16 11:00,70,0
+7.43,7,8,broken clouds,Clouds,6,210,2018/02/16 12:00,70,0
+8,8,8,broken clouds,Clouds,8,200,2018/02/16 13:00,70,0
+7,7,7,light intensity shower rain,Rain,7,220,2018/02/16 14:00,75,0
+8,8,8,broken clouds,Clouds,8,200,2018/02/16 15:00,65,0
+8,8,8,broken clouds,Clouds,7,190,2018/02/16 16:00,92,0
+7.43,7,8,broken clouds,Clouds,6,190,2018/02/16 17:00,61,0
+7,7,7,broken clouds,Clouds,7,180,2018/02/16 18:00,65,0
+6.43,6,7,light rain,Rain,4,190,2018/02/16 19:00,70,0
+5.43,5,6,light rain,Rain,5,180,2018/02/16 20:00,75,0
+5.43,5,6,light intensity shower rain,Rain,5,180,2018/02/16 21:00,81,0
+6,6,6,light rain,Rain,3,160,2018/02/16 22:00,87,0
+6,6,6,light rain,Rain,3,200,2018/02/16 23:00,87,0
+5.43,5,6,light intensity shower rain,Rain,5,210,2018/02/17 00:00,87,0
+5,5,5,broken clouds,Clouds,4,230,2018/02/17 01:00,93,0
+5,5,5,broken clouds,Clouds,4,250,2018/02/17 02:00,93,0
+4,4,4,scattered clouds,Clouds,3,230,2018/02/17 03:00,93,0
+3,3,3,few clouds,Clouds,3,230,2018/02/17 04:00,100,0
+3,3,3,few clouds,Clouds,2,220,2018/02/17 05:00,93,0
+3.13,2,4,few clouds,Clouds,2,240,2018/02/17 06:00,100,0
+3,3,3,few clouds,Clouds,6,240,2018/02/17 07:00,93,0
+3,3,3,few clouds,Clouds,6,250,2018/02/17 08:00,93,0
+4,4,4,few clouds,Clouds,7,250,2018/02/17 09:00,86,0
+5,5,5,few clouds,Clouds,6,250,2018/02/17 10:00,86,0
+6,6,6,few clouds,Clouds,6,240,2018/02/17 11:00,81,0
+6,6,6,scattered clouds,Clouds,4,240,2018/02/17 12:00,81,0
+7,7,7,scattered clouds,Clouds,5,230,2018/02/17 13:00,81,0
+8.43,8,9,scattered clouds,Clouds,4,220,2018/02/17 14:00,70,0
+8.43,8,9,scattered clouds,Clouds,5,250,2018/02/17 15:00,66,0
+8.43,8,9,scattered clouds,Clouds,4,210,2018/02/17 16:00,61,0
+8.43,8,9,scattered clouds,Clouds,4,240,2018/02/17 17:00,61,0
+6.43,6,7,few clouds,Clouds,2,230,2018/02/17 18:00,70,0
+5.43,5,6,scattered clouds,Clouds,2,210,2018/02/17 19:00,75,0
+3.57,3,4,few clouds,Clouds,2,210,2018/02/17 20:00,86,0
+2.7,1,4,scattered clouds,Clouds,2,210,2018/02/17 21:00,100,0
+3.13,2,4,broken clouds,Clouds,2,210,2018/02/17 22:00,93,0
+3.7,2,5,broken clouds,Clouds,2,120,2018/02/17 23:00,93,0
+4.13,3,5,broken clouds,Clouds,1,0,2018/02/18 00:00,93,0
+5.13,4,6,broken clouds,Clouds,2,110,2018/02/18 01:00,93,0
+4.13,3,5,broken clouds,Clouds,1,140,2018/02/18 02:00,93,0
+4.57,4,5,broken clouds,Clouds,2,160,2018/02/18 03:00,93,0
+5,5,5,broken clouds,Clouds,2,140,2018/02/18 04:00,93,0
+6,6,6,broken clouds,Clouds,2,150,2018/02/18 05:00,93,0
+4.43,4,5,broken clouds,Clouds,4,130,2018/02/18 06:00,100,0
+3.17,1,6,mist,Mist,4,140,2018/02/18 07:00,100,0
+3.73,2,6,scattered clouds,Clouds,4,150,2018/02/18 08:00,93,0
+4.3,3,6,broken clouds,Clouds,4,150,2018/02/18 09:00,100,0
+5.87,5,7,light rain,Rain,4,160,2018/02/18 10:00,93,0
+6.43,6,7,light rain,Rain,2,160,2018/02/18 11:00,93,0
+7.43,7,8,light rain,Rain,2,160,2018/02/18 12:00,93,0
+8,8,8,light intensity drizzle rain,Drizzle,2,160,2018/02/18 13:00,93,0
+9.57,9,10,light intensity drizzle rain,Drizzle,2,220,2018/02/18 14:00,93,0
+9.57,9,10,light intensity drizzle,Drizzle,4,230,2018/02/18 15:00,100,0
+10,10,10,light intensity drizzle rain,Drizzle,5,240,2018/02/18 16:00,93,0
+10,10,10,light intensity drizzle rain,Drizzle,5,250,2018/02/18 17:00,93,0
+10,10,10,light intensity drizzle rain,Drizzle,5,250,2018/02/18 18:00,100,0
+10,10,10,light intensity drizzle rain,Drizzle,5,250,2018/02/18 19:00,100,0
+10,10,10,light intensity drizzle rain,Drizzle,5,250,2018/02/18 20:00,100,0
+10,10,10,light intensity drizzle rain,Drizzle,8,260,2018/02/18 21:00,100,0
+10,10,10,light intensity drizzle,Drizzle,7,260,2018/02/18 22:00,100,0
+10,10,10,light intensity drizzle,Drizzle,6,260,2018/02/18 23:00,100,0
+10,10,10,mist,Mist,8,260,2018/02/19 00:00,93,0
+10,10,10,broken clouds,Clouds,7,260,2018/02/19 01:00,93,0
+10,10,10,mist,Mist,6,260,2018/02/19 02:00,93,0
+10,10,10,mist,Mist,5,250,2018/02/19 03:00,93,0
+10,10,10,mist,Mist,4,260,2018/02/19 04:00,93,0
+10,10,10,broken clouds,Clouds,4,260,2018/02/19 05:00,93,0
+9,9,9,broken clouds,Clouds,6,260,2018/02/19 06:00,100,0
+9,9,9,broken clouds,Clouds,4,270,2018/02/19 07:00,100,0
+9,9,9,light intensity drizzle,Drizzle,5,270,2018/02/19 08:00,100,0
+9,9,9,light intensity drizzle,Drizzle,5,270,2018/02/19 09:00,100,0
+9,9,9,broken clouds,Clouds,5,270,2018/02/19 10:00,100,0
+10,10,10,broken clouds,Clouds,5,260,2018/02/19 11:00,93,0
+10,10,10,broken clouds,Clouds,5,260,2018/02/19 12:00,93,0
+10.43,10,11,broken clouds,Clouds,4,260,2018/02/19 13:00,87,0
+11,11,11,broken clouds,Clouds,5,280,2018/02/19 14:00,87,0
+12,12,12,broken clouds,Clouds,4,270,2018/02/19 15:00,81,0
+12,12,12,broken clouds,Clouds,3,280,2018/02/19 16:00,81,0
+12,12,12,scattered clouds,Clouds,4,290,2018/02/19 17:00,76,0
+10.43,10,11,broken clouds,Clouds,3,270,2018/02/19 18:00,81,0
+11,11,11,light rain,Rain,3,280,2018/02/19 19:00,81,0
+10,10,10,light intensity drizzle rain,Drizzle,5,270,2018/02/19 20:00,93,0
+8.57,8,9,light intensity drizzle,Drizzle,7,310,2018/02/19 21:00,93,0
+7.57,7,8,broken clouds,Clouds,5,310,2018/02/19 22:00,87,0
+6,6,6,broken clouds,Clouds,5,290,2018/02/19 23:00,93,0
+5,5,5,scattered clouds,Clouds,4,280,2018/02/20 00:00,93,0
+4.43,4,5,scattered clouds,Clouds,4,290,2018/02/20 01:00,93,0
+3.43,3,4,scattered clouds,Clouds,6,290,2018/02/20 02:00,93,0
+2.87,2,4,few clouds,Clouds,5,300,2018/02/20 03:00,93,0
+1.87,1,3,few clouds,Clouds,6,290,2018/02/20 04:00,93,0
+2.43,2,3,few clouds,Clouds,6,280,2018/02/20 05:00,93,0
+2.43,2,3,few clouds,Clouds,5,280,2018/02/20 06:00,93,0
+2.43,2,3,few clouds,Clouds,5,290,2018/02/20 07:00,93,0
+1.43,1,2,few clouds,Clouds,3,300,2018/02/20 08:00,93,0
+1.3,0,3,few clouds,Clouds,2,300,2018/02/20 09:00,93,0
+2.87,2,4,few clouds,Clouds,5,300,2018/02/20 10:00,93,0
+5.87,5,7,few clouds,Clouds,6,320,2018/02/20 11:00,81,0
+6.43,6,7,few clouds,Clouds,5,320,2018/02/20 12:00,81,0
+8,8,8,few clouds,Clouds,6,320,2018/02/20 13:00,75,0
+9,9,9,few clouds,Clouds,7,330,2018/02/20 14:00,70,0
+9,9,9,few clouds,Clouds,6,340,2018/02/20 15:00,66,0
+9,9,9,few clouds,Clouds,6,340,2018/02/20 16:00,66,0
+7.93,7.93,7.93,few clouds,Clouds,6,358,2018/02/20 17:00,95,0
+8,8,8,few clouds,Clouds,5,10,2018/02/20 18:00,65,0
+6.51,6,7,few clouds,Clouds,4,360,2018/02/20 19:00,75,0
+4.27,2,6,few clouds,Clouds,1,0,2018/02/20 20:00,93,0
+2.7,1,4,few clouds,Clouds,2,310,2018/02/20 21:00,86,0
+1.7,0,3,few clouds,Clouds,3,320,2018/02/20 22:00,100,0
+0,0,0,Sky is Clear,Clear,3,310,2018/02/20 23:00,100,0
+0.57,0,1,Sky is Clear,Clear,1,0,2018/02/21 00:00,100,0
+0,0,0,Sky is Clear,Clear,1,0,2018/02/21 01:00,100,0
+6.008,6.008,6.008,few clouds,Clouds,3,25,2018/02/21 02:00,100,0
+-0.99,-2,0,Sky is Clear,Clear,1,300,2018/02/21 03:00,100,0
+-1,-1,-1,Sky is Clear,Clear,3,300,2018/02/21 04:00,92,0
+-1,-1,-1,Sky is Clear,Clear,1,0,2018/02/21 05:00,100,0
+5.926,5.926,5.926,overcast clouds,Clouds,2,57,2018/02/21 06:00,100,0
+-0.49,-1,0,scattered clouds,Clouds,1,270,2018/02/21 07:00,100,0
+0.13,-1,1,broken clouds,Clouds,2,300,2018/02/21 08:00,92,0
+-0.57,-1,0,scattered clouds,Clouds,2,340,2018/02/21 09:00,100,0
+1.3,0,3,few clouds,Clouds,1,0,2018/02/21 10:00,93,0
+4.3,3,6,few clouds,Clouds,1,0,2018/02/21 11:00,93,0
+6.87,6,8,few clouds,Clouds,3,160,2018/02/21 12:00,75,0
+8.49,8,9,few clouds,Clouds,3,130,2018/02/21 13:00,70,0
+8,8,8,few clouds,Clouds,4,140,2018/02/21 14:00,65,0
+8.43,8,9,few clouds,Clouds,5,120,2018/02/21 15:00,61,0
+8,8,8,few clouds,Clouds,5,120,2018/02/21 16:00,61,0
+7,7,7,few clouds,Clouds,5,130,2018/02/21 17:00,70,0
+6,6,6,few clouds,Clouds,4,140,2018/02/21 18:00,70,0
+4.43,4,5,scattered clouds,Clouds,4,140,2018/02/21 19:00,80,0
+4.43,4,5,scattered clouds,Clouds,3,150,2018/02/21 20:00,80,0
+4,4,4,scattered clouds,Clouds,2,160,2018/02/21 21:00,86,0
+3.57,3,4,few clouds,Clouds,2,140,2018/02/21 22:00,86,0
+2.23,1,3,broken clouds,Clouds,2,160,2018/02/21 23:00,100,0
+1,1,1,broken clouds,Clouds,2,160,2018/02/22 00:00,100,0
+3.7,2,5,broken clouds,Clouds,1,0,2018/02/22 01:00,93,0
+4.13,3,5,broken clouds,Clouds,1,160,2018/02/22 02:00,86,0
+4.13,3,5,broken clouds,Clouds,2,160,2018/02/22 03:00,86,0
+5.57,5,6,broken clouds,Clouds,2,170,2018/02/22 04:00,80,0
+5,5,5,broken clouds,Clouds,2,150,2018/02/22 05:00,86,0
+5,5,5,broken clouds,Clouds,2,160,2018/02/22 06:00,86,0
+5,5,5,broken clouds,Clouds,3,150,2018/02/22 07:00,86,0
+5,5,5,broken clouds,Clouds,4,150,2018/02/22 08:00,86,0
+6,6,6,broken clouds,Clouds,5,150,2018/02/22 09:00,81,0
+6,6,6,broken clouds,Clouds,4,150,2018/02/22 10:00,81,0
+6,6,6,broken clouds,Clouds,5,140,2018/02/22 11:00,81,0
+6,6,6,broken clouds,Clouds,5,150,2018/02/22 12:00,75,0
+5.55,5,6,light intensity shower rain,Rain,7,160,2018/02/22 13:00,80,0
+6,6,6,light intensity drizzle,Drizzle,6,150,2018/02/22 14:00,75,0
+6,6,6,broken clouds,Clouds,5,160,2018/02/22 15:00,75,0
+6,6,6,broken clouds,Clouds,6,170,2018/02/22 16:00,70,0
+6,6,6,broken clouds,Clouds,5,150,2018/02/22 17:00,70,0
+5,5,5,broken clouds,Clouds,6,150,2018/02/22 18:00,75,0
+4,4,4,broken clouds,Clouds,5,160,2018/02/22 19:00,100,0
+4,4,4,broken clouds,Clouds,5,160,2018/02/22 20:00,100,0
+3.61,3,4,scattered clouds,Clouds,4,160,2018/02/22 21:00,100,0
+3,3,3,scattered clouds,Clouds,3,160,2018/02/22 22:00,74,0
+3,3,3,few clouds,Clouds,3,170,2018/02/22 23:00,74,0
+3,3,3,few clouds,Clouds,3,150,2018/02/23 00:00,74,0
+5.293,5.293,5.293,broken clouds,Clouds,8,167,2018/02/23 01:00,100,0
+4,4,4,broken clouds,Clouds,5,160,2018/02/23 02:00,100,0
+4,4,4,broken clouds,Clouds,6,160,2018/02/23 03:00,100,0
+3.43,3,4,broken clouds,Clouds,5,150,2018/02/23 04:00,69,0
+3,3,3,broken clouds,Clouds,7,140,2018/02/23 05:00,69,0
+3,3,3,broken clouds,Clouds,5,150,2018/02/23 06:00,100,0
+3.43,3,4,broken clouds,Clouds,6,160,2018/02/23 07:00,100,0
+3,3,3,scattered clouds,Clouds,6,160,2018/02/23 08:00,74,0
+2.43,2,3,scattered clouds,Clouds,5,160,2018/02/23 09:00,69,0
+3,3,3,scattered clouds,Clouds,8,150,2018/02/23 10:00,69,0
+3.43,3,4,broken clouds,Clouds,9,150,2018/02/23 11:00,64,0
+4,4,4,broken clouds,Clouds,9,160,2018/02/23 12:00,64,0
+4.51,4,5,broken clouds,Clouds,9,150,2018/02/23 13:00,64,0
+4.57,4,5,broken clouds,Clouds,9,150,2018/02/23 14:00,69,0
+4,4,4,broken clouds,Clouds,9,150,2018/02/23 15:00,64,0
+4,4,4,broken clouds,Clouds,8,150,2018/02/23 16:00,64,0
+3,3,3,broken clouds,Clouds,7,140,2018/02/23 17:00,69,0
+3,3,3,broken clouds,Clouds,9,140,2018/02/23 18:00,69,0
+2.77,2,4,broken clouds,Clouds,6,140,2018/02/23 19:00,64,0
+2.99,2,4,broken clouds,Clouds,6,140,2018/02/23 20:00,64,0
+2.16,1,4,broken clouds,Clouds,7,140,2018/02/23 21:00,69,0
+2.87,2,4,broken clouds,Clouds,8,140,2018/02/23 22:00,100,0
+2.87,2,4,broken clouds,Clouds,8,140,2018/02/23 23:00,69,0
+3.43,3,4,broken clouds,Clouds,6,160,2018/02/24 00:00,64,0
+3.43,3,4,broken clouds,Clouds,7,140,2018/02/24 01:00,64,0
+3,3,3,broken clouds,Clouds,8,150,2018/02/24 02:00,69,0
+3,3,3,broken clouds,Clouds,7,160,2018/02/24 03:00,64,0
+2.49,2,3,broken clouds,Clouds,9,160,2018/02/24 04:00,64,0
+2,2,2,broken clouds,Clouds,8,160,2018/02/24 05:00,64,0
+1.43,1,2,broken clouds,Clouds,8,160,2018/02/24 06:00,69,0
+1.43,1,2,broken clouds,Clouds,6,150,2018/02/24 07:00,69,0
+1.39,1,2,broken clouds,Clouds,6,150,2018/02/24 08:00,69,0
+1.49,1,2,broken clouds,Clouds,6,150,2018/02/24 09:00,69,0
+2.43,2,3,broken clouds,Clouds,6,150,2018/02/24 10:00,64,0
+2.57,2,3,broken clouds,Clouds,6,140,2018/02/24 11:00,69,0
+3,3,3,broken clouds,Clouds,6,140,2018/02/24 12:00,64,0
+3,3,3,broken clouds,Clouds,5,140,2018/02/24 13:00,64,0
+4,4,4,broken clouds,Clouds,5,140,2018/02/24 14:00,64,0
+4.57,4,5,scattered clouds,Clouds,6,130,2018/02/24 15:00,64,0
+4,4,4,scattered clouds,Clouds,6,120,2018/02/24 16:00,64,0
+4,4,4,scattered clouds,Clouds,5,100,2018/02/24 17:00,64,0
+2.57,2,3,broken clouds,Clouds,3,110,2018/02/24 18:00,74,0
+1.13,0,2,broken clouds,Clouds,3,80,2018/02/24 19:00,100,0
+0.13,-1,1,broken clouds,Clouds,2,110,2018/02/24 20:00,86,0
+-0.16,-2,1,scattered clouds,Clouds,2,110,2018/02/24 21:00,86,0
+-0.48,-2,1,scattered clouds,Clouds,2,110,2018/02/24 22:00,86,0
+0.26,-2,2,Sky is Clear,Clear,3,120,2018/02/24 23:00,86,0
+2,2,2,Sky is Clear,Clear,5,130,2018/02/25 00:00,69,0
+1.87,1,3,Sky is Clear,Clear,4,130,2018/02/25 01:00,59,0
+1.87,1,3,Sky is Clear,Clear,5,130,2018/02/25 02:00,64,0
+1.87,1,3,Sky is Clear,Clear,7,130,2018/02/25 03:00,64,0
+1.99,1,3,Sky is Clear,Clear,7,130,2018/02/25 04:00,69,0
+1.87,1,3,Sky is Clear,Clear,7,130,2018/02/25 05:00,69,0
+2.43,2,3,few clouds,Clouds,7,120,2018/02/25 06:00,74,0
+2.43,2,3,few clouds,Clouds,7,120,2018/02/25 07:00,69,0
+2.43,2,3,few clouds,Clouds,6,120,2018/02/25 08:00,69,0
+2.49,2,3,few clouds,Clouds,5,120,2018/02/25 09:00,74,0
+4,4,4,few clouds,Clouds,8,120,2018/02/25 10:00,64,0
+5,5,5,few clouds,Clouds,9,130,2018/02/25 11:00,60,0
+5.57,5,6,few clouds,Clouds,8,130,2018/02/25 12:00,65,0
+5.57,5,6,few clouds,Clouds,7,140,2018/02/25 13:00,60,0
+6.13,5,7,few clouds,Clouds,7,130,2018/02/25 14:00,60,0
+6.13,5,7,few clouds,Clouds,7,130,2018/02/25 15:00,65,0
+6.13,5,7,few clouds,Clouds,6,120,2018/02/25 16:00,60,0
+5.57,5,6,few clouds,Clouds,5,110,2018/02/25 17:00,56,0
+4.57,4,5,few clouds,Clouds,3,90,2018/02/25 18:00,64,0
+2.13,1,3,few clouds,Clouds,4,90,2018/02/25 19:00,74,0
+2.13,1,3,Sky is Clear,Clear,4,90,2018/02/25 20:00,80,0
+1.13,0,2,Sky is Clear,Clear,3,110,2018/02/25 21:00,100,0
+0.7,-1,2,Sky is Clear,Clear,3,110,2018/02/25 22:00,80,0
+2.43,2,3,Sky is Clear,Clear,4,130,2018/02/25 23:00,69,0
+3,3,3,Sky is Clear,Clear,5,140,2018/02/26 00:00,69,0
+2.43,2,3,Sky is Clear,Clear,4,130,2018/02/26 01:00,74,0
+2,2,2,Sky is Clear,Clear,5,120,2018/02/26 02:00,74,0
+2,2,2,Sky is Clear,Clear,4,130,2018/02/26 03:00,74,0
+1.43,1,2,scattered clouds,Clouds,5,130,2018/02/26 04:00,74,0
+1.43,1,2,scattered clouds,Clouds,5,130,2018/02/26 05:00,69,0
+0.87,0,2,broken clouds,Clouds,7,120,2018/02/26 06:00,64,0
+0.43,0,1,scattered clouds,Clouds,4,110,2018/02/26 07:00,69,0
+0,0,0,scattered clouds,Clouds,6,110,2018/02/26 08:00,100,0
+1,1,1,broken clouds,Clouds,6,120,2018/02/26 09:00,64,0
+2,2,2,broken clouds,Clouds,7,120,2018/02/26 10:00,64,0
+2,2,2,broken clouds,Clouds,6,100,2018/02/26 11:00,64,0
+2,2,2,broken clouds,Clouds,5,110,2018/02/26 12:00,64,0
+2,2,2,broken clouds,Clouds,6,100,2018/02/26 13:00,64,0
+2,2,2,broken clouds,Clouds,7,90,2018/02/26 14:00,59,0
+2,2,2,broken clouds,Clouds,6,90,2018/02/26 15:00,59,0
+1.49,1,2,broken clouds,Clouds,6,90,2018/02/26 16:00,59,0
+1.43,1,2,broken clouds,Clouds,6,90,2018/02/26 17:00,55,0
+1.49,1,2,broken clouds,Clouds,7,90,2018/02/26 18:00,55,0
+1,1,1,broken clouds,Clouds,6,100,2018/02/26 19:00,55,0
+1,1,1,light shower snow,Snow,5,90,2018/02/26 20:00,55,0
+1,1,1,broken clouds,Clouds,5,90,2018/02/26 21:00,59,0
+2,2,2,broken clouds,Clouds,6,80,2018/02/26 22:00,55,0
+1.57,1,2,broken clouds,Clouds,7,90,2018/02/26 23:00,59,0
+1.57,1,2,broken clouds,Clouds,6,90,2018/02/27 00:00,55,0
+1,1,1,broken clouds,Clouds,5,80,2018/02/27 01:00,55,0
+1,1,1,broken clouds,Clouds,4,90,2018/02/27 02:00,59,0
+1,1,1,broken clouds,Clouds,4,100,2018/02/27 03:00,59,0
+0.57,0,1,broken clouds,Clouds,3,70,2018/02/27 04:00,100,0
+0.57,0,1,broken clouds,Clouds,3,30,2018/02/27 05:00,100,0
+0.13,-1,1,broken clouds,Clouds,2,360,2018/02/27 06:00,68,0
+-0.43,-1,0,broken clouds,Clouds,5,340,2018/02/27 07:00,74,0
+-1.43,-2,-1,broken clouds,Clouds,5,350,2018/02/27 08:00,74,0
+-1,-1,-1,broken clouds,Clouds,5,350,2018/02/27 09:00,68,0
+0,0,0,broken clouds,Clouds,6,350,2018/02/27 10:00,100,0
+1.3,0,3,broken clouds,Clouds,6,360,2018/02/27 11:00,64,0
+2.43,2,3,light shower snow,Snow,8,10,2018/02/27 12:00,64,0
+3,3,3,light shower snow,Snow,9,30,2018/02/27 13:00,69,0
+3.51,3,4,light shower snow,Snow,11,60,2018/02/27 14:00,69,0
+3,3,3,few clouds,Clouds,10,60,2018/02/27 15:00,64,0
+2.49,2,3,proximity shower rain,Rain,10,80,2018/02/27 16:00,55,0
+2,2,2,scattered clouds,Clouds,8,80,2018/02/27 17:00,59,0
+1.13,0,2,proximity shower rain,Rain,5,60,2018/02/27 18:00,100,0
+0.13,-1,1,light shower snow,Snow,5,40,2018/02/27 19:00,100,0
+-0.57,-1,0,broken clouds,Clouds,6,80,2018/02/27 20:00,100,0
+0.57,0,1,broken clouds,Clouds,7,70,2018/02/27 21:00,100,0
+-0.43,-1,0,scattered clouds,Clouds,6,50,2018/02/27 22:00,74,0
+-1,-1,-1,light shower snow,Snow,8,30,2018/02/27 23:00,86,0
+1.708,1.708,1.708,overcast clouds,Clouds,6,60,2018/02/28 00:00,100,0
+1.708,1.708,1.708,overcast clouds,Clouds,6,60,2018/02/28 01:00,100,0
+-1.01,-2,0,light shower snow,Snow,7,50,2018/02/28 02:00,100,0
+-2,-2,-2,light shower snow,Snow,4,80,2018/02/28 03:00,100,0
+-2,-2,-2,shower snow,Snow,7,80,2018/02/28 04:00,92,0
+-2.57,-3,-2,shower snow,Snow,8,100,2018/02/28 05:00,92,0
+-2.57,-3,-2,light shower snow,Snow,8,110,2018/02/28 06:00,79,0
+-2,-2,-2,light shower snow,Snow,10,90,2018/02/28 07:00,68,0
+-2,-2,-2,broken clouds,Clouds,8,70,2018/02/28 08:00,58,0
+-2,-2,-2,light shower snow,Snow,9,70,2018/02/28 09:00,68,0
+-2,-2,-2,light shower snow,Snow,8,60,2018/02/28 10:00,68,0
+0.91,0.91,0.91,scattered clouds,Clouds,12,98,2018/02/28 11:00,100,0
+-3,-3,-3,light shower snow,Snow,9,100,2018/02/28 12:00,86,0
+-1.57,-2,-1,light shower snow,Snow,8,100,2018/02/28 13:00,68,0
+-1.51,-2,-1,broken clouds,Clouds,12,100,2018/02/28 14:00,63,0
+-1,-1,-1,broken clouds,Clouds,10,100,2018/02/28 15:00,63,0
+-1,-1,-1,proximity shower rain,Rain,11,80,2018/02/28 16:00,58,0
+-1.49,-2,-1,light shower snow,Snow,12,80,2018/02/28 17:00,86,0
+-3.13,-4,-2,light shower snow,Snow,12,90,2018/02/28 18:00,74,0
+-2.87,-4,-2,light shower snow,Snow,10,80,2018/02/28 19:00,92,0
+-2.87,-4,-2,light shower snow,Snow,10,100,2018/02/28 20:00,100,0
+-4,-4,-4,light shower snow,Snow,10,100,2018/02/28 21:00,100,0
+1.114,1.114,1.114,scattered clouds,Clouds,15,89,2018/02/28 22:00,100,0
+-3.43,-4,-3,broken clouds,Clouds,10,90,2018/02/28 23:00,92,0
+-4,-4,-4,broken clouds,Clouds,10,90,2018/03/01 00:00,85,0
+-4.49,-5,-4,light shower snow,Snow,11,60,2018/03/01 01:00,100,0
+-5,-5,-5,light shower snow,Snow,11,100,2018/03/01 02:00,100,0
+-5,-5,-5,light shower snow,Snow,10,90,2018/03/01 03:00,100,0
+-5,-5,-5,light shower snow,Snow,9,100,2018/03/01 04:00,100,0
+-4.57,-5,-4,light shower snow,Snow,9,90,2018/03/01 05:00,92,0
+-5,-5,-5,light shower snow,Snow,13,80,2018/03/01 06:00,100,0
+-4,-4,-4,light shower snow,Snow,12,80,2018/03/01 07:00,85,0
+-3,-3,-3,light shower snow,Snow,13,80,2018/03/01 08:00,79,0
+-3.51,-4,-3,broken clouds,Clouds,12,80,2018/03/01 09:00,86,0
+-3.51,-4,-3,shower snow,Snow,13,90,2018/03/01 10:00,86,0
+-3,-3,-3,shower snow,Snow,12,90,2018/03/01 11:00,92,0
+-2,-2,-2,light shower snow,Snow,13,80,2018/03/01 12:00,86,0
+-2,-2,-2,light shower snow,Snow,13,80,2018/03/01 13:00,92,0
+-1.43,-2,-1,light shower snow,Snow,13,80,2018/03/01 14:00,92,0
+-1.43,-2,-1,light shower snow,Snow,14,80,2018/03/01 15:00,92,0
+-1,-1,-1,light shower snow,Snow,14,80,2018/03/01 16:00,86,0
+-1.57,-2,-1,shower snow,Snow,15,80,2018/03/01 17:00,80,0
+-1.57,-2,-1,light shower snow,Snow,13,80,2018/03/01 18:00,74,0
+-1,-1,-1,light shower snow,Snow,14,80,2018/03/01 19:00,86,0
+-1.57,-2,-1,light shower snow,Snow,15,80,2018/03/01 20:00,92,0
+-1.57,-2,-1,light shower snow,Snow,14,80,2018/03/01 21:00,92,0
+-1,-1,-1,scattered clouds,Clouds,14,80,2018/03/01 22:00,100,0
+-1,-1,-1,light snow,Snow,14,80,2018/03/01 23:00,100,0
+-1,-1,-1,light snow,Snow,15,80,2018/03/02 00:00,100,0
+-1,-1,-1,light snow,Snow,15,80,2018/03/02 01:00,100,0
+-1,-1,-1,light snow,Snow,16,80,2018/03/02 02:00,100,0
+-1,-1,-1,snow,Snow,15,70,2018/03/02 03:00,100,0
+-1,-1,-1,light snow,Snow,15,80,2018/03/02 04:00,100,0
+-1,-1,-1,light snow,Snow,17,80,2018/03/02 05:00,100,0
+-1,-1,-1,light snow,Snow,15,80,2018/03/02 06:00,100,0
+-1,-1,-1,light snow,Snow,15,80,2018/03/02 07:00,100,0
+-1,-1,-1,light snow,Snow,17,80,2018/03/02 08:00,100,0
+-1,-1,-1,light snow,Snow,16,80,2018/03/02 09:00,100,0
+-1,-1,-1,light snow,Snow,14,80,2018/03/02 10:00,100,0
+-1,-1,-1,light snow,Snow,17,80,2018/03/02 11:00,100,0
+-0.57,-1,0,light snow,Snow,16,80,2018/03/02 12:00,100,0
+-0.51,-1,0,light snow,Snow,13,80,2018/03/02 13:00,100,0
+0,0,0,light snow,Snow,15,80,2018/03/02 14:00,100,0
+-0.57,-1,0,light snow,Snow,12,80,2018/03/02 15:00,100,0
+-0.57,-1,0,light snow,Snow,14,80,2018/03/02 16:00,100,0
+-0.57,-1,0,snow,Snow,14,80,2018/03/02 17:00,100,0
+-0.57,-1,0,snow,Snow,13,80,2018/03/02 18:00,100,0
+-1,-1,-1,snow,Snow,14,80,2018/03/02 19:00,100,0
+-1,-1,-1,snow,Snow,14,90,2018/03/02 20:00,100,0
+-1,-1,-1,snow,Snow,14,90,2018/03/02 21:00,100,0
+-1,-1,-1,snow,Snow,12,90,2018/03/02 22:00,100,0
+0,0,0,snow,Snow,12,90,2018/03/02 23:00,100,0
+-1,-1,-1,snow,Snow,11,100,2018/03/03 00:00,100,0
+-1,-1,-1,snow,Snow,11,90,2018/03/03 01:00,100,0
+-1,-1,-1,light snow,Snow,11,100,2018/03/03 02:00,100,0
+0,0,0,light snow,Snow,10,90,2018/03/03 03:00,100,0
+0,0,0,light snow,Snow,9,90,2018/03/03 04:00,100,0
+0,0,0,light snow,Snow,9,80,2018/03/03 05:00,100,0
+0,0,0,light snow,Snow,11,90,2018/03/03 06:00,100,0
+0,0,0,light snow,Snow,11,80,2018/03/03 07:00,100,0
+0.43,0,1,broken clouds,Clouds,11,80,2018/03/03 08:00,100,0
+0,0,0,broken clouds,Clouds,10,80,2018/03/03 09:00,100,0
+1,1,1,mist,Mist,11,80,2018/03/03 10:00,100,0
+1,1,1,light snow,Snow,10,80,2018/03/03 11:00,100,0
+1,1,1,light snow,Snow,9,90,2018/03/03 12:00,100,0
+1,1,1,mist,Mist,8,90,2018/03/03 13:00,100,0
+1.57,1,2,mist,Mist,7,80,2018/03/03 14:00,100,0
+1.57,1,2,mist,Mist,7,90,2018/03/03 15:00,100,0
+2,2,2,mist,Mist,6,90,2018/03/03 16:00,93,0
+2,2,2,mist,Mist,9,90,2018/03/03 17:00,93,0
+2,2,2,light intensity drizzle,Drizzle,9,90,2018/03/03 18:00,100,0
+2,2,2,light rain,Rain,9,80,2018/03/03 19:00,100,0
+2,2,2,mist,Mist,8,90,2018/03/03 20:00,100,0
+2,2,2,mist,Mist,9,90,2018/03/03 21:00,100,0
+2,2,2,mist,Mist,10,90,2018/03/03 22:00,100,0
+2,2,2,light rain,Rain,8,100,2018/03/03 23:00,100,0
+2,2,2,light rain,Rain,8,90,2018/03/04 00:00,100,0
+1,1,1,light rain,Rain,7,90,2018/03/04 01:00,100,0
+1,1,1,light rain,Rain,8,90,2018/03/04 02:00,100,0
+1,1,1,light rain,Rain,7,90,2018/03/04 03:00,100,0
+1.43,1,2,light rain,Rain,7,90,2018/03/04 04:00,93,0
+2,2,2,light rain,Rain,6,80,2018/03/04 05:00,93,0
+2,2,2,mist,Mist,6,80,2018/03/04 06:00,93,0
+2,2,2,broken clouds,Clouds,6,80,2018/03/04 07:00,93,0
+2,2,2,broken clouds,Clouds,6,80,2018/03/04 08:00,93,0
+2,2,2,mist,Mist,7,70,2018/03/04 09:00,93,0
+2,2,2,light rain,Rain,6,80,2018/03/04 10:00,93,0
+2.43,2,3,light rain,Rain,6,80,2018/03/04 11:00,93,0
+3,3,3,light rain,Rain,5,70,2018/03/04 12:00,93,0
+3,3,3,light rain,Rain,6,80,2018/03/04 13:00,100,0
+4,4,4,light intensity drizzle,Drizzle,5,80,2018/03/04 14:00,93,0
+4,4,4,light rain,Rain,5,80,2018/03/04 15:00,100,0
+4,4,4,light intensity drizzle,Drizzle,5,80,2018/03/04 16:00,100,0
+4,4,4,light intensity drizzle,Drizzle,4,80,2018/03/04 17:00,100,0
+4,4,4,light intensity drizzle,Drizzle,2,100,2018/03/04 18:00,100,0
+4,4,4,light rain,Rain,2,70,2018/03/04 19:00,100,0
+4,4,4,light rain,Rain,3,50,2018/03/04 20:00,100,0
+4,4,4,light rain,Rain,2,60,2018/03/04 21:00,100,0
+3.43,3,4,fog,Fog,3,60,2018/03/04 22:00,93,0
+3.49,3,4,fog,Fog,3,50,2018/03/04 23:00,100,0
+2.43,2,3,fog,Fog,2,110,2018/03/05 00:00,100,0
+2.43,2,3,mist,Mist,2,100,2018/03/05 01:00,100,0
+3,3,3,mist,Mist,2,100,2018/03/05 02:00,100,0
+3.43,3,4,light intensity drizzle rain,Drizzle,3,120,2018/03/05 03:00,100,0
+3.49,3,4,light rain,Rain,2,90,2018/03/05 04:00,93,0
+3,3,3,light rain,Rain,3,70,2018/03/05 05:00,100,0
+3,3,3,light intensity drizzle rain,Drizzle,3,70,2018/03/05 06:00,100,0
+3,3,3,fog,Fog,3,70,2018/03/05 07:00,100,0
+3,3,3,mist,Mist,2,310,2018/03/05 08:00,100,0
+2.87,2,4,light intensity drizzle rain,Drizzle,1,0,2018/03/05 09:00,100,0
+2.99,2,4,light intensity drizzle rain,Drizzle,1,0,2018/03/05 10:00,100,0
+2.45,2,3,light intensity drizzle rain,Drizzle,5,230,2018/03/05 11:00,100,0
+3,3,3,light intensity drizzle,Drizzle,4,240,2018/03/05 12:00,100,0
+4,4,4,mist,Mist,5,260,2018/03/05 13:00,100,0
+4.57,4,5,mist,Mist,4,220,2018/03/05 14:00,93,0
+4,4,4,broken clouds,Clouds,2,280,2018/03/05 15:00,93,0
+3.49,3,4,mist,Mist,2,240,2018/03/05 16:00,93,0
+3.43,3,4,light intensity drizzle,Drizzle,2,270,2018/03/05 17:00,93,0
+3.43,3,4,light rain,Rain,1,0,2018/03/05 18:00,93,0
+3,3,3,light intensity drizzle rain,Drizzle,2,280,2018/03/05 19:00,100,0
+2.43,2,3,mist,Mist,2,280,2018/03/05 20:00,100,0
+2.43,2,3,broken clouds,Clouds,1,0,2018/03/05 21:00,93,0
+3,3,3,mist,Mist,1,0,2018/03/05 22:00,93,0
+3,3,3,broken clouds,Clouds,1,0,2018/03/05 23:00,93,0
+2.43,2,3,broken clouds,Clouds,1,250,2018/03/06 00:00,100,0
+2.49,2,3,broken clouds,Clouds,2,250,2018/03/06 01:00,100,0
+3,3,3,light rain,Rain,4,270,2018/03/06 02:00,100,0
+2.43,2,3,mist,Mist,3,250,2018/03/06 03:00,100,0
+2.49,2,3,mist,Mist,2,250,2018/03/06 04:00,100,0
+2.49,2,3,mist,Mist,3,240,2018/03/06 05:00,100,0
+2.43,2,3,mist,Mist,4,260,2018/03/06 06:00,93,0
+3,3,3,mist,Mist,4,250,2018/03/06 07:00,93,0
+2.39,2,3,mist,Mist,3,250,2018/03/06 08:00,93,0
+3,3,3,mist,Mist,3,250,2018/03/06 09:00,93,0
+3.43,3,4,broken clouds,Clouds,3,240,2018/03/06 10:00,86,0
+5.49,5,6,broken clouds,Clouds,4,240,2018/03/06 11:00,70,0
+6,6,6,broken clouds,Clouds,3,210,2018/03/06 12:00,75,0
+6.49,6,7,broken clouds,Clouds,4,260,2018/03/06 13:00,100,0
+6.49,6,7,broken clouds,Clouds,4,250,2018/03/06 14:00,100,0
+6,6,6,broken clouds,Clouds,4,230,2018/03/06 15:00,60,0
+6.51,6,7,broken clouds,Clouds,4,230,2018/03/06 16:00,100,0
+6.51,6,7,broken clouds,Clouds,4,230,2018/03/06 17:00,100,0
+6.49,6,7,scattered clouds,Clouds,4,220,2018/03/06 18:00,100,0
+4.43,4,5,broken clouds,Clouds,2,200,2018/03/06 19:00,100,0
+3.43,3,4,scattered clouds,Clouds,2,190,2018/03/06 20:00,69,0
+3.43,3,4,broken clouds,Clouds,2,190,2018/03/06 21:00,100,0
+3.43,3,4,broken clouds,Clouds,2,200,2018/03/06 22:00,100,0
+4,4,4,light intensity shower rain,Rain,3,200,2018/03/06 23:00,86,0
+3.43,3,4,broken clouds,Clouds,4,220,2018/03/07 00:00,86,0
+4,4,4,broken clouds,Clouds,5,230,2018/03/07 01:00,86,0
+4,4,4,light intensity shower rain,Rain,5,230,2018/03/07 02:00,86,0
+4,4,4,broken clouds,Clouds,5,230,2018/03/07 03:00,86,0
+3,3,3,light intensity shower rain,Rain,4,220,2018/03/07 04:00,100,0
+3,3,3,broken clouds,Clouds,5,230,2018/03/07 05:00,86,0
+3,3,3,broken clouds,Clouds,6,230,2018/03/07 06:00,100,0
+3,3,3,scattered clouds,Clouds,6,230,2018/03/07 07:00,100,0
+2.43,2,3,scattered clouds,Clouds,5,230,2018/03/07 08:00,100,0
+3.49,3,4,scattered clouds,Clouds,7,230,2018/03/07 09:00,100,0
+3.49,3,4,scattered clouds,Clouds,8,230,2018/03/07 10:00,80,0
+5,5,5,scattered clouds,Clouds,9,240,2018/03/07 11:00,75,0
+6,6,6,scattered clouds,Clouds,8,250,2018/03/07 12:00,70,0
+6,6,6,scattered clouds,Clouds,8,240,2018/03/07 13:00,70,0
+7,7,7,scattered clouds,Clouds,8,240,2018/03/07 14:00,52,0
+8,8,8,proximity shower rain,Rain,8,230,2018/03/07 15:00,49,0
+7,7,7,proximity shower rain,Rain,8,250,2018/03/07 16:00,52,0
+6,6,6,proximity shower rain,Rain,7,250,2018/03/07 17:00,100,0
+6,6,6,scattered clouds,Clouds,5,210,2018/03/07 18:00,60,0
+4.43,4,5,broken clouds,Clouds,3,210,2018/03/07 19:00,100,0
+2.43,2,3,few clouds,Clouds,3,190,2018/03/07 20:00,100,0
+2,2,2,few clouds,Clouds,2,210,2018/03/07 21:00,100,0
+2,2,2,scattered clouds,Clouds,2,200,2018/03/07 22:00,80,0
+2,2,2,scattered clouds,Clouds,2,170,2018/03/07 23:00,80,0
+0.7,-1,2,broken clouds,Clouds,1,0,2018/03/08 00:00,92,0
+0.7,-1,2,broken clouds,Clouds,0,0,2018/03/08 01:00,100,0
+0.26,-2,2,broken clouds,Clouds,2,320,2018/03/08 02:00,92,0
+-0.87,-2,0,broken clouds,Clouds,2,280,2018/03/08 03:00,92,0
+-0.3,-2,1,broken clouds,Clouds,3,270,2018/03/08 04:00,100,0
+0.57,0,1,scattered clouds,Clouds,4,270,2018/03/08 05:00,100,0
+0,0,0,scattered clouds,Clouds,3,250,2018/03/08 06:00,100,0
+0,0,0,scattered clouds,Clouds,5,240,2018/03/08 07:00,100,0
+1,1,1,scattered clouds,Clouds,5,240,2018/03/08 08:00,86,0
+3,3,3,broken clouds,Clouds,6,240,2018/03/08 09:00,100,0
+4,4,4,broken clouds,Clouds,6,230,2018/03/08 10:00,80,0
+4,4,4,light intensity shower rain,Rain,7,240,2018/03/08 11:00,80,0
+4,4,4,broken clouds,Clouds,6,240,2018/03/08 12:00,86,0
+6,6,6,broken clouds,Clouds,6,240,2018/03/08 13:00,75,0
+6.51,6,7,broken clouds,Clouds,6,270,2018/03/08 14:00,81,0
+7.51,7,8,broken clouds,Clouds,6,280,2018/03/08 15:00,75,0
+8,8,8,scattered clouds,Clouds,7,280,2018/03/08 16:00,70,0
+7.51,7,8,scattered clouds,Clouds,5,290,2018/03/08 17:00,75,0
+6.57,6,7,few clouds,Clouds,5,270,2018/03/08 18:00,81,0
+5,5,5,light intensity shower rain,Rain,4,280,2018/03/08 19:00,80,0
+4.57,4,5,broken clouds,Clouds,2,280,2018/03/08 20:00,80,0
+2.87,2,4,scattered clouds,Clouds,3,260,2018/03/08 21:00,80,0
+2.43,2,3,Sky is Clear,Clear,4,270,2018/03/08 22:00,86,0
+1,1,1,Sky is Clear,Clear,2,260,2018/03/08 23:00,86,0
+0,0,0,Sky is Clear,Clear,3,260,2018/03/09 00:00,100,0
+1.57,1,2,Sky is Clear,Clear,2,240,2018/03/09 01:00,100,0
+0,0,0,scattered clouds,Clouds,2,230,2018/03/09 02:00,100,0
+-0.87,-2,0,scattered clouds,Clouds,2,250,2018/03/09 03:00,100,0
+-1,-1,-1,broken clouds,Clouds,2,280,2018/03/09 04:00,92,0
+-2.43,-3,-2,few clouds,Clouds,2,280,2018/03/09 05:00,92,0
+-3,-3,-3,Sky is Clear,Clear,2,270,2018/03/09 06:00,100,0
+-2.43,-3,-2,Sky is Clear,Clear,1,0,2018/03/09 07:00,92,0
+-1.43,-2,-1,fog,Fog,1,290,2018/03/09 08:00,92,0
+0.51,0,1,broken clouds,Clouds,1,0,2018/03/09 09:00,100,0
+4,4,4,broken clouds,Clouds,2,100,2018/03/09 10:00,86,0
+6,6,6,broken clouds,Clouds,3,90,2018/03/09 11:00,100,0
+6.51,6,7,broken clouds,Clouds,4,80,2018/03/09 12:00,81,0
+6,6,6,broken clouds,Clouds,5,80,2018/03/09 13:00,81,0
+6,6,6,mist,Mist,5,90,2018/03/09 14:00,87,0
+6,6,6,mist,Mist,5,110,2018/03/09 15:00,87,0
+6,6,6,broken clouds,Clouds,5,90,2018/03/09 16:00,87,0
+5.49,5,6,broken clouds,Clouds,5,70,2018/03/09 17:00,81,0
+5,5,5,light intensity drizzle,Drizzle,6,80,2018/03/09 18:00,93,0
+5,5,5,light intensity drizzle rain,Drizzle,6,80,2018/03/09 19:00,93,0
+5,5,5,light rain,Rain,7,70,2018/03/09 20:00,86,0
+5,5,5,light rain,Rain,7,70,2018/03/09 21:00,86,0
+5,5,5,light rain,Rain,7,60,2018/03/09 22:00,93,0
+5,5,5,light intensity drizzle rain,Drizzle,8,70,2018/03/09 23:00,93,0
+5,5,5,light intensity drizzle rain,Drizzle,8,80,2018/03/10 00:00,100,0
+5,5,5,light intensity drizzle rain,Drizzle,7,80,2018/03/10 01:00,100,0
+5,5,5,light intensity drizzle rain,Drizzle,7,90,2018/03/10 02:00,100,0
+5,5,5,light intensity drizzle rain,Drizzle,6,90,2018/03/10 03:00,100,0
+6,6,6,light intensity drizzle rain,Drizzle,5,90,2018/03/10 04:00,100,0
+6,6,6,light intensity drizzle,Drizzle,5,80,2018/03/10 05:00,100,0
+6,6,6,drizzle,Drizzle,3,80,2018/03/10 06:00,100,0
+6,6,6,drizzle,Drizzle,3,40,2018/03/10 07:00,100,0
+6,6,6,fog,Fog,3,80,2018/03/10 08:00,107,0
+6.43,6,7,mist,Mist,3,90,2018/03/10 09:00,100,0
+7,7,7,mist,Mist,5,130,2018/03/10 10:00,100,0
+8.57,8,9,light intensity drizzle,Drizzle,8,140,2018/03/10 11:00,100,0
+10.13,9,11,broken clouds,Clouds,6,130,2018/03/10 12:00,93,0
+10.13,9,11,broken clouds,Clouds,5,120,2018/03/10 13:00,100,0
+10.7,9,12,broken clouds,Clouds,5,140,2018/03/10 14:00,100,0
+10.57,10,11,broken clouds,Clouds,3,200,2018/03/10 15:00,93,0
+11.57,11,12,broken clouds,Clouds,7,200,2018/03/10 16:00,81,0
+11.57,11,12,scattered clouds,Clouds,7,200,2018/03/10 17:00,76,0
+10,10,10,scattered clouds,Clouds,6,200,2018/03/10 18:00,76,0
+9.57,9,10,scattered clouds,Clouds,6,200,2018/03/10 19:00,81,0
+9,9,9,scattered clouds,Clouds,7,200,2018/03/10 20:00,81,0
+8,8,8,scattered clouds,Clouds,4,210,2018/03/10 21:00,81,0
+8,8,8,few clouds,Clouds,6,210,2018/03/10 22:00,81,0
+7,7,7,few clouds,Clouds,5,210,2018/03/10 23:00,87,0
+7,7,7,few clouds,Clouds,3,130,2018/03/11 00:00,81,0
+5.87,5,7,few clouds,Clouds,3,190,2018/03/11 01:00,87,0
+4.7,3,6,Sky is Clear,Clear,2,130,2018/03/11 02:00,93,0
+2.7,1,4,Sky is Clear,Clear,3,140,2018/03/11 03:00,95,0
+4.7,3,6,Sky is Clear,Clear,2,140,2018/03/11 04:00,93,0
+6,6,6,Sky is Clear,Clear,3,150,2018/03/11 05:00,93,0
+5.13,4,6,fog,Fog,3,110,2018/03/11 06:00,100,0
+5,5,5,fog,Fog,3,80,2018/03/11 07:00,100,0
+5,5,5,fog,Fog,4,80,2018/03/11 08:00,100,0
+4.87,4,6,fog,Fog,3,90,2018/03/11 09:00,100,0
+5.3,4,7,mist,Mist,3,100,2018/03/11 10:00,100,0
+7,7,7,broken clouds,Clouds,3,50,2018/03/11 11:00,100,0
+7.57,7,8,light intensity drizzle,Drizzle,2,70,2018/03/11 12:00,100,0
+8,8,8,broken clouds,Clouds,4,50,2018/03/11 13:00,93,0
+8.43,8,9,broken clouds,Clouds,4,50,2018/03/11 14:00,81,0
+9.13,8,10,broken clouds,Clouds,6,50,2018/03/11 15:00,87,0
+7.57,7,8,broken clouds,Clouds,6,40,2018/03/11 16:00,93,0
+7,7,7,light rain,Rain,5,50,2018/03/11 17:00,93,0
+7,7,7,mist,Mist,6,50,2018/03/11 18:00,93,0
+7,7,7,mist,Mist,5,50,2018/03/11 19:00,93,0
+7.57,7,8,light rain,Rain,5,60,2018/03/11 20:00,93,0
+7,7,7,mist,Mist,3,70,2018/03/11 21:00,93,0
+7,7,7,light rain,Rain,4,70,2018/03/11 22:00,93,0
+7,7,7,light rain,Rain,4,70,2018/03/11 23:00,93,0
+7,7,7,light rain,Rain,4,60,2018/03/12 00:00,93,0
+6.57,6,7,light rain,Rain,4,40,2018/03/12 01:00,100,0
+6.57,6,7,light rain,Rain,3,40,2018/03/12 02:00,100,0
+6.57,6,7,light rain,Rain,4,30,2018/03/12 03:00,100,0
+6.57,6,7,light rain,Rain,3,30,2018/03/12 04:00,100,0
+6.57,6,7,mist,Mist,5,40,2018/03/12 05:00,100,0
+6.57,6,7,mist,Mist,4,40,2018/03/12 06:00,100,0
+6,6,6,light rain,Rain,4,360,2018/03/12 07:00,100,0
+6,6,6,mist,Mist,4,10,2018/03/12 08:00,93,0
+6,6,6,light intensity drizzle,Drizzle,4,20,2018/03/12 09:00,93,0
+7,7,7,broken clouds,Clouds,4,20,2018/03/12 10:00,93,0
+7,7,7,broken clouds,Clouds,4,10,2018/03/12 11:00,93,0
+8,8,8,broken clouds,Clouds,4,10,2018/03/12 12:00,87,0
+8,8,8,broken clouds,Clouds,2,310,2018/03/12 13:00,87,0
+9,9,9,broken clouds,Clouds,4,300,2018/03/12 14:00,81,0
+9.49,9,10,broken clouds,Clouds,5,290,2018/03/12 15:00,76,0
+10,10,10,broken clouds,Clouds,6,280,2018/03/12 16:00,81,0
+10,10,10,broken clouds,Clouds,5,290,2018/03/12 17:00,76,0
+8.57,8,9,proximity shower rain,Rain,5,310,2018/03/12 18:00,87,0
+7.43,7,8,broken clouds,Clouds,5,300,2018/03/12 19:00,87,0
+7.57,7,8,light intensity shower rain,Rain,4,300,2018/03/12 20:00,93,0
+7,7,7,broken clouds,Clouds,4,290,2018/03/12 21:00,87,0
+7,7,7,broken clouds,Clouds,4,290,2018/03/12 22:00,81,0
+6,6,6,broken clouds,Clouds,5,290,2018/03/12 23:00,87,0
+5,5,5,broken clouds,Clouds,4,290,2018/03/13 00:00,86,0
+3.43,3,4,few clouds,Clouds,4,270,2018/03/13 01:00,86,0
+3,3,3,few clouds,Clouds,4,270,2018/03/13 02:00,93,0
+2.43,2,3,scattered clouds,Clouds,5,270,2018/03/13 03:00,86,0
+1.43,1,2,few clouds,Clouds,3,250,2018/03/13 04:00,100,0
+2,2,2,broken clouds,Clouds,4,250,2018/03/13 05:00,100,0
+2,2,2,broken clouds,Clouds,3,250,2018/03/13 06:00,80,0
+1.43,1,2,scattered clouds,Clouds,4,250,2018/03/13 07:00,100,0
+1.87,1,3,broken clouds,Clouds,4,250,2018/03/13 08:00,100,0
+4.51,4,5,scattered clouds,Clouds,2,240,2018/03/13 09:00,80,0
+6,6,6,scattered clouds,Clouds,3,230,2018/03/13 10:00,75,0
+8,8,8,scattered clouds,Clouds,4,220,2018/03/13 11:00,70,0
+8,8,8,scattered clouds,Clouds,4,220,2018/03/13 12:00,61,0
+9.49,9,10,scattered clouds,Clouds,5,210,2018/03/13 13:00,53,0
+9.49,9,10,scattered clouds,Clouds,6,210,2018/03/13 14:00,53,0
+9,9,9,broken clouds,Clouds,5,210,2018/03/13 15:00,57,0
+9,9,9,broken clouds,Clouds,6,190,2018/03/13 16:00,57,0
+9,9,9,broken clouds,Clouds,4,160,2018/03/13 17:00,57,0
+9,9,9,broken clouds,Clouds,5,150,2018/03/13 18:00,61,0
+7.57,7,8,broken clouds,Clouds,6,140,2018/03/13 19:00,81,0
+6.43,6,7,broken clouds,Clouds,7,130,2018/03/13 20:00,81,0
+7,7,7,broken clouds,Clouds,7,140,2018/03/13 21:00,87,0
+8,8,8,broken clouds,Clouds,8,150,2018/03/13 22:00,81,0
+7.57,7,8,broken clouds,Clouds,9,140,2018/03/13 23:00,87,0
+7.57,7,8,light rain,Rain,8,130,2018/03/14 00:00,87,0
+7.57,7,8,overcast clouds,Clouds,7,150,2018/03/14 01:00,87,0
+7.57,7,8,light intensity drizzle rain,Drizzle,9,150,2018/03/14 02:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,8,150,2018/03/14 03:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,13,150,2018/03/14 04:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,13,150,2018/03/14 05:00,93,0
+7.57,7,8,light intensity drizzle rain,Drizzle,12,150,2018/03/14 06:00,93,0
+7.57,7,8,light rain,Rain,12,140,2018/03/14 07:00,93,0
+7.57,7,8,light rain,Rain,12,140,2018/03/14 08:00,93,0
+8.01,7,9,light rain,Rain,12,140,2018/03/14 09:00,100,0
+8.51,8,9,light rain,Rain,11,150,2018/03/14 10:00,93,0
+9.01,8,10,light rain,Rain,13,140,2018/03/14 11:00,93,0
+9.01,8,10,light rain,Rain,12,150,2018/03/14 12:00,93,0
+9.01,8,10,light rain,Rain,13,150,2018/03/14 13:00,93,0
+8.51,8,9,light rain,Rain,13,150,2018/03/14 14:00,93,0
+8.51,8,9,light rain,Rain,13,140,2018/03/14 15:00,93,0
+8.01,7,9,light rain,Rain,12,140,2018/03/14 16:00,100,0
+8.13,7,9,light rain,Rain,12,140,2018/03/14 17:00,100,0
+8.57,8,9,moderate rain,Rain,14,140,2018/03/14 18:00,93,0
+8.57,8,9,light rain,Rain,8,160,2018/03/14 19:00,93,0
+8.57,8,9,light rain,Rain,10,160,2018/03/14 20:00,93,0
+8.57,8,9,light rain,Rain,8,150,2018/03/14 21:00,93,0
+8.57,8,9,light rain,Rain,7,150,2018/03/14 22:00,93,0
+7.57,7,8,light rain,Rain,8,140,2018/03/14 23:00,100,0
+7.57,7,8,light rain,Rain,4,120,2018/03/15 00:00,93,0
+7,7,7,light rain,Rain,8,140,2018/03/15 01:00,100,0
+7,7,7,light rain,Rain,11,130,2018/03/15 02:00,93,0
+7.57,7,8,broken clouds,Clouds,5,160,2018/03/15 03:00,93,0
+7,7,7,broken clouds,Clouds,7,140,2018/03/15 04:00,93,0
+7,7,7,light intensity drizzle rain,Drizzle,5,140,2018/03/15 05:00,100,0
+7,7,7,light intensity drizzle rain,Drizzle,5,140,2018/03/15 06:00,93,0
+7,7,7,light intensity drizzle rain,Drizzle,6,130,2018/03/15 07:00,93,0
+7,7,7,light intensity drizzle rain,Drizzle,6,140,2018/03/15 08:00,100,0
+7.51,7,8,broken clouds,Clouds,6,140,2018/03/15 09:00,100,0
+8.01,7,9,broken clouds,Clouds,6,150,2018/03/15 10:00,100,0
+10.01,9,11,broken clouds,Clouds,7,140,2018/03/15 11:00,93,0
+10.52,9,12,mist,Mist,6,140,2018/03/15 12:00,93,0
+10.01,9,11,light intensity shower rain,Rain,8,140,2018/03/15 13:00,93,0
+10.01,9,11,scattered clouds,Clouds,8,140,2018/03/15 14:00,93,0
+10.52,9,12,scattered clouds,Clouds,8,150,2018/03/15 15:00,87,0
+10.51,10,11,scattered clouds,Clouds,8,140,2018/03/15 16:00,81,0
+10.13,9,11,broken clouds,Clouds,7,130,2018/03/15 17:00,81,0
+9.57,9,10,proximity shower rain,Rain,8,140,2018/03/15 18:00,76,0
+9,9,9,proximity shower rain,Rain,5,130,2018/03/15 19:00,76,0
+8.13,7,9,broken clouds,Clouds,4,100,2018/03/15 20:00,93,0
+8.57,8,9,broken clouds,Clouds,4,130,2018/03/15 21:00,81,0
+8.57,8,9,light intensity drizzle,Drizzle,6,130,2018/03/15 22:00,87,0
+8,8,8,light intensity shower rain,Rain,7,140,2018/03/15 23:00,87,0
+7.57,7,8,light intensity shower rain,Rain,6,140,2018/03/16 00:00,100,0
+7.57,7,8,light intensity shower rain,Rain,6,140,2018/03/16 01:00,100,0
+7.57,7,8,light intensity shower rain,Rain,5,130,2018/03/16 02:00,100,0
+7,7,7,light intensity shower rain,Rain,4,130,2018/03/16 03:00,100,0
+7,7,7,light intensity shower rain,Rain,3,130,2018/03/16 04:00,100,0
+6.57,6,7,light intensity shower rain,Rain,7,170,2018/03/16 05:00,100,0
+6,6,6,light intensity shower rain,Rain,1,180,2018/03/16 06:00,100,0
+6,6,6,mist,Mist,2,140,2018/03/16 07:00,93,0
+6.43,6,7,broken clouds,Clouds,2,130,2018/03/16 08:00,93,0
+7,7,7,light rain,Rain,2,110,2018/03/16 09:00,100,0
+8,8,8,light rain,Rain,3,90,2018/03/16 10:00,93,0
+8.51,8,9,broken clouds,Clouds,3,110,2018/03/16 11:00,93,0
+8.51,8,9,light rain,Rain,3,100,2018/03/16 12:00,93,0
+9.01,8,10,proximity shower rain,Rain,4,90,2018/03/16 13:00,93,0
+9.01,8,10,broken clouds,Clouds,6,100,2018/03/16 14:00,93,0
+9.52,8,11,broken clouds,Clouds,6,100,2018/03/16 15:00,100,0
+9.01,8,10,broken clouds,Clouds,6,110,2018/03/16 16:00,93,0
+8.57,8,9,broken clouds,Clouds,7,120,2018/03/16 17:00,87,0
+7.57,7,8,scattered clouds,Clouds,6,100,2018/03/16 18:00,93,0
+6.57,6,7,scattered clouds,Clouds,6,110,2018/03/16 19:00,93,0
+6.13,5,7,light rain,Rain,5,90,2018/03/16 20:00,100,0
+6.57,6,7,scattered clouds,Clouds,5,100,2018/03/16 21:00,93,0
+6.57,6,7,scattered clouds,Clouds,5,90,2018/03/16 22:00,93,0
+7,7,7,broken clouds,Clouds,6,80,2018/03/16 23:00,87,0
+6.57,6,7,light rain,Rain,6,80,2018/03/17 00:00,93,0
+6.57,6,7,light rain,Rain,7,80,2018/03/17 01:00,93,0
+6,6,6,light rain,Rain,9,80,2018/03/17 02:00,87,0
+5.57,5,6,light rain,Rain,10,90,2018/03/17 03:00,93,0
+4.57,4,5,light rain,Rain,11,90,2018/03/17 04:00,93,0
+4,4,4,light rain,Rain,11,80,2018/03/17 05:00,86,0
+4,4,4,light rain,Rain,11,90,2018/03/17 06:00,80,0
+3.57,3,4,broken clouds,Clouds,10,90,2018/03/17 07:00,86,0
+3,3,3,broken clouds,Clouds,10,90,2018/03/17 08:00,86,0
+3,3,3,light rain,Rain,11,80,2018/03/17 09:00,100,0
+2,2,2,light rain,Rain,11,90,2018/03/17 10:00,80,0
+2,2,2,light shower sleet,Snow,10,80,2018/03/17 11:00,74,0
+2,2,2,light shower sleet,Snow,12,80,2018/03/17 12:00,69,0
+2,2,2,broken clouds,Clouds,13,80,2018/03/17 13:00,64,0
+2,2,2,broken clouds,Clouds,10,80,2018/03/17 14:00,59,0
+2,2,2,broken clouds,Clouds,11,80,2018/03/17 15:00,55,0
+2,2,2,broken clouds,Clouds,12,80,2018/03/17 16:00,55,0
+2,2,2,broken clouds,Clouds,12,80,2018/03/17 17:00,55,0
+1,1,1,light shower snow,Snow,10,80,2018/03/17 18:00,69,0
+1,1,1,broken clouds,Clouds,11,70,2018/03/17 19:00,55,0
+-0.43,-1,0,light shower snow,Snow,10,70,2018/03/17 20:00,80,0
+-0.57,-1,0,light shower snow,Snow,10,60,2018/03/17 21:00,100,0
+-0.57,-1,0,proximity shower rain,Rain,11,60,2018/03/17 22:00,100,0
+-1,-1,-1,light shower snow,Snow,10,70,2018/03/17 23:00,74,0
+-0.43,-1,0,proximity shower rain,Rain,11,70,2018/03/18 00:00,74,0
+-1.57,-2,-1,light shower snow,Snow,9,60,2018/03/18 01:00,74,0
+-1.43,-2,-1,light shower snow,Snow,10,60,2018/03/18 02:00,86,0
+-0.57,-1,0,broken clouds,Clouds,11,70,2018/03/18 03:00,100,0
+-1.57,-2,-1,light shower snow,Snow,9,70,2018/03/18 04:00,80,0
+-0.57,-1,0,light shower snow,Snow,10,60,2018/03/18 05:00,100,0
+-0.57,-1,0,light shower snow,Snow,11,60,2018/03/18 06:00,100,0
+-1,-1,-1,light shower snow,Snow,11,60,2018/03/18 07:00,86,0
+-0.57,-1,0,light shower snow,Snow,11,60,2018/03/18 08:00,100,0
+-1,-1,-1,shower snow,Snow,10,70,2018/03/18 09:00,92,0
+-1,-1,-1,shower snow,Snow,10,70,2018/03/18 10:00,100,0
+-1,-1,-1,light shower snow,Snow,11,70,2018/03/18 11:00,100,0
+-0.57,-1,0,light shower snow,Snow,11,80,2018/03/18 12:00,100,0
+-0.57,-1,0,light shower snow,Snow,10,70,2018/03/18 13:00,100,0
+0,0,0,light shower snow,Snow,10,80,2018/03/18 14:00,100,0
+0.43,0,1,light shower snow,Snow,10,70,2018/03/18 15:00,74,0
+1,1,1,broken clouds,Clouds,12,80,2018/03/18 16:00,74,0
+0.3,-1,2,broken clouds,Clouds,12,80,2018/03/18 17:00,64,0
+1.43,1,2,broken clouds,Clouds,12,80,2018/03/18 18:00,59,0
+1.43,1,2,broken clouds,Clouds,9,80,2018/03/18 19:00,64,0
+1.43,1,2,broken clouds,Clouds,11,70,2018/03/18 20:00,59,0
+1,1,1,broken clouds,Clouds,12,80,2018/03/18 21:00,64,0
+1,1,1,broken clouds,Clouds,10,70,2018/03/18 22:00,64,0
+1,1,1,broken clouds,Clouds,11,80,2018/03/18 23:00,69,0
+1,1,1,broken clouds,Clouds,9,80,2018/03/19 00:00,64,0
+1,1,1,broken clouds,Clouds,9,70,2018/03/19 01:00,64,0
+1,1,1,light snow,Snow,9,80,2018/03/19 02:00,64,0
+1,1,1,broken clouds,Clouds,9,80,2018/03/19 03:00,64,0
+1,1,1,broken clouds,Clouds,9,80,2018/03/19 04:00,64,0
+1.57,1,2,light snow,Snow,9,80,2018/03/19 05:00,69,0
+1,1,1,broken clouds,Clouds,8,80,2018/03/19 06:00,64,0
+2,2,2,light snow,Snow,9,80,2018/03/19 07:00,59,0
+2,2,2,broken clouds,Clouds,8,70,2018/03/19 08:00,64,0
+2,2,2,broken clouds,Clouds,7,70,2018/03/19 09:00,64,0
+2,2,2,light shower snow,Snow,7,70,2018/03/19 10:00,64,0
+2.43,2,3,broken clouds,Clouds,10,80,2018/03/19 11:00,64,0
+3.43,3,4,broken clouds,Clouds,9,70,2018/03/19 12:00,60,0
+3.43,3,4,broken clouds,Clouds,8,60,2018/03/19 13:00,64,0
+4.43,4,5,scattered clouds,Clouds,9,50,2018/03/19 14:00,60,0
+4.87,4,6,scattered clouds,Clouds,9,50,2018/03/19 15:00,100,0
+4.43,4,5,broken clouds,Clouds,8,50,2018/03/19 16:00,65,0
+5,5,5,scattered clouds,Clouds,9,40,2018/03/19 17:00,65,0
+5,5,5,few clouds,Clouds,8,50,2018/03/19 18:00,60,0
+4.57,4,5,few clouds,Clouds,5,40,2018/03/19 19:00,64,0
+3.57,3,4,few clouds,Clouds,5,60,2018/03/19 20:00,64,0
+2.57,2,3,few clouds,Clouds,3,40,2018/03/19 21:00,69,0
+2,2,2,few clouds,Clouds,2,20,2018/03/19 22:00,69,0
+1.43,1,2,few clouds,Clouds,4,60,2018/03/19 23:00,74,0
+1.43,1,2,scattered clouds,Clouds,3,70,2018/03/20 00:00,74,0
+1,1,1,scattered clouds,Clouds,2,40,2018/03/20 01:00,74,0
+0.57,0,1,scattered clouds,Clouds,1,0,2018/03/20 02:00,100,0
+-0.87,-2,0,scattered clouds,Clouds,2,10,2018/03/20 03:00,79,0
+-1.87,-3,-1,scattered clouds,Clouds,2,310,2018/03/20 04:00,92,0
+-2.57,-3,-2,scattered clouds,Clouds,3,310,2018/03/20 05:00,92,0
+-3.43,-4,-3,scattered clouds,Clouds,3,320,2018/03/20 06:00,92,0
+-4.43,-5,-4,few clouds,Clouds,3,300,2018/03/20 07:00,100,0
+-3.13,-4,-2,few clouds,Clouds,3,280,2018/03/20 08:00,92,0
+1,1,1,few clouds,Clouds,3,270,2018/03/20 09:00,80,0
+2.49,2,3,few clouds,Clouds,3,290,2018/03/20 10:00,100,0
+4.49,4,5,scattered clouds,Clouds,3,290,2018/03/20 11:00,100,0
+5.49,5,6,scattered clouds,Clouds,3,290,2018/03/20 12:00,60,0
+7,7,7,scattered clouds,Clouds,3,300,2018/03/20 13:00,48,0
+8,8,8,scattered clouds,Clouds,2,320,2018/03/20 14:00,42,0
+8,8,8,scattered clouds,Clouds,2,300,2018/03/20 15:00,39,0
+9,9,9,broken clouds,Clouds,3,310,2018/03/20 16:00,36,0
+9,9,9,broken clouds,Clouds,2,280,2018/03/20 17:00,36,0
+8,8,8,broken clouds,Clouds,3,270,2018/03/20 18:00,39,0
+5.7,4,7,broken clouds,Clouds,3,150,2018/03/20 19:00,51,0
+3,3,3,broken clouds,Clouds,2,180,2018/03/20 20:00,69,0
+1.43,1,2,broken clouds,Clouds,3,270,2018/03/20 21:00,64,0
+0.43,0,1,Sky is Clear,Clear,3,270,2018/03/20 22:00,69,0
+0.43,0,1,Sky is Clear,Clear,3,260,2018/03/20 23:00,64,0
+1.43,1,2,Sky is Clear,Clear,3,260,2018/03/21 00:00,64,0
+0.87,0,2,Sky is Clear,Clear,3,250,2018/03/21 01:00,64,0
+-0.13,-1,1,Sky is Clear,Clear,3,240,2018/03/21 02:00,74,0
+0,0,0,Sky is Clear,Clear,4,240,2018/03/21 03:00,100,0
+0,0,0,Sky is Clear,Clear,4,240,2018/03/21 04:00,100,0
+-0.57,-1,0,Sky is Clear,Clear,4,250,2018/03/21 05:00,100,0
+-0.57,-1,0,few clouds,Clouds,4,240,2018/03/21 06:00,100,0
+0.43,0,1,broken clouds,Clouds,2,220,2018/03/21 07:00,80,0
+2,2,2,broken clouds,Clouds,3,240,2018/03/21 08:00,74,0
+3.51,3,4,broken clouds,Clouds,4,230,2018/03/21 09:00,74,0
+5,5,5,broken clouds,Clouds,5,240,2018/03/21 10:00,100,0
+6,6,6,broken clouds,Clouds,7,250,2018/03/21 11:00,70,0
+7,7,7,broken clouds,Clouds,8,270,2018/03/21 12:00,65,0
+8,8,8,broken clouds,Clouds,6,250,2018/03/21 13:00,65,0
+8.99,8,10,scattered clouds,Clouds,9,250,2018/03/21 14:00,61,0
+9,9,9,broken clouds,Clouds,10,260,2018/03/21 15:00,66,0
+9.49,9,10,broken clouds,Clouds,10,260,2018/03/21 16:00,66,0
+9.43,9,10,broken clouds,Clouds,10,260,2018/03/21 17:00,66,0
+9,9,9,broken clouds,Clouds,10,260,2018/03/21 18:00,70,0
+9,9,9,broken clouds,Clouds,8,260,2018/03/21 19:00,70,0
+9,9,9,broken clouds,Clouds,8,260,2018/03/21 20:00,70,0
+8,8,8,broken clouds,Clouds,7,260,2018/03/21 21:00,75,0
+8,8,8,broken clouds,Clouds,8,260,2018/03/21 22:00,75,0
+8,8,8,broken clouds,Clouds,6,260,2018/03/21 23:00,70,0
+6.43,6,7,few clouds,Clouds,4,230,2018/03/22 00:00,75,0
+5.43,5,6,Sky is Clear,Clear,4,230,2018/03/22 01:00,81,0
+5,5,5,Sky is Clear,Clear,5,240,2018/03/22 02:00,80,0
+5,5,5,Sky is Clear,Clear,4,240,2018/03/22 03:00,80,0
+5,5,5,Sky is Clear,Clear,4,230,2018/03/22 04:00,80,0
+5,5,5,Sky is Clear,Clear,4,220,2018/03/22 05:00,80,0
+5,5,5,Sky is Clear,Clear,3,210,2018/03/22 06:00,75,0
+6,6,6,broken clouds,Clouds,3,200,2018/03/22 07:00,75,0
+6.43,6,7,broken clouds,Clouds,4,190,2018/03/22 08:00,70,0
+7.51,7,8,broken clouds,Clouds,7,200,2018/03/22 09:00,75,0
+8,8,8,broken clouds,Clouds,7,210,2018/03/22 10:00,65,0
+9,9,9,broken clouds,Clouds,7,210,2018/03/22 11:00,61,0
+9,9,9,broken clouds,Clouds,9,210,2018/03/22 12:00,66,0
+9,9,9,broken clouds,Clouds,11,210,2018/03/22 13:00,66,0
+9,9,9,broken clouds,Clouds,9,220,2018/03/22 14:00,66,0
+9,9,9,light rain,Rain,10,200,2018/03/22 15:00,70,0
+7.49,7,8,light rain,Rain,7,190,2018/03/22 16:00,81,0
+7.43,7,8,light rain,Rain,7,190,2018/03/22 17:00,81,0
+8.43,8,9,light rain,Rain,8,190,2018/03/22 18:00,81,0
+8.43,8,9,light rain,Rain,6,200,2018/03/22 19:00,81,0
+8.43,8,9,light rain,Rain,8,200,2018/03/22 20:00,81,0
+8.43,8,9,light rain,Rain,6,200,2018/03/22 21:00,81,0
+9,9,9,light rain,Rain,2,140,2018/03/22 22:00,87,0
+9.43,9,10,light rain,Rain,2,140,2018/03/22 23:00,87,0
+9,9,9,light rain,Rain,1,0,2018/03/23 00:00,93,0
+9,9,9,broken clouds,Clouds,5,220,2018/03/23 01:00,93,0
+9,9,9,broken clouds,Clouds,6,210,2018/03/23 02:00,93,0
+8,8,8,broken clouds,Clouds,8,230,2018/03/23 03:00,87,0
+7,7,7,light rain,Rain,9,230,2018/03/23 04:00,87,0
+6,6,6,light rain,Rain,9,220,2018/03/23 05:00,93,0
+6,6,6,light rain,Rain,11,240,2018/03/23 06:00,93,0
+6,6,6,broken clouds,Clouds,11,250,2018/03/23 07:00,87,0
+6,6,6,broken clouds,Clouds,12,260,2018/03/23 08:00,81,0
+7,7,7,broken clouds,Clouds,12,260,2018/03/23 09:00,81,0
+7,7,7,broken clouds,Clouds,11,260,2018/03/23 10:00,81,0
+7.51,7,8,broken clouds,Clouds,8,250,2018/03/23 11:00,81,0
+8.49,8,9,proximity shower rain,Rain,7,240,2018/03/23 12:00,66,0
+8.49,8,9,proximity shower rain,Rain,7,250,2018/03/23 13:00,66,0
+9,9,9,proximity shower rain,Rain,5,250,2018/03/23 14:00,66,0
+8.49,8,9,broken clouds,Clouds,4,230,2018/03/23 15:00,66,0
+9,9,9,broken clouds,Clouds,3,220,2018/03/23 16:00,61,0
+9,9,9,broken clouds,Clouds,2,200,2018/03/23 17:00,61,0
+8.43,8,9,broken clouds,Clouds,3,120,2018/03/23 18:00,66,0
+7.57,7,8,broken clouds,Clouds,2,120,2018/03/23 19:00,81,0
+7.13,6,8,broken clouds,Clouds,2,130,2018/03/23 20:00,87,0
+6.57,6,7,light rain,Rain,2,60,2018/03/23 21:00,93,0
+6,6,6,light rain,Rain,2,90,2018/03/23 22:00,87,0
+5.57,5,6,light rain,Rain,2,90,2018/03/23 23:00,93,0
+5,5,5,light rain,Rain,1,90,2018/03/24 00:00,86,0
+4.57,4,5,light intensity drizzle,Drizzle,2,110,2018/03/24 01:00,93,0
+5,5,5,light rain,Rain,2,10,2018/03/24 02:00,93,0
+4.57,4,5,light rain,Rain,3,360,2018/03/24 03:00,93,0
+4.57,4,5,broken clouds,Clouds,2,340,2018/03/24 04:00,100,0
+4.13,3,5,broken clouds,Clouds,3,340,2018/03/24 05:00,93,0
+3.57,3,4,broken clouds,Clouds,2,340,2018/03/24 06:00,93,0
+9,9,9,broken clouds,Clouds,3,10,2018/03/24 13:00,96,0
+9,9,9,scattered clouds,Clouds,4,340,2018/03/24 14:00,57,0
+9.87,9,11,scattered clouds,Clouds,2,340,2018/03/24 15:00,93,0
+10.43,10,11,scattered clouds,Clouds,3,330,2018/03/24 16:00,93,0
+10.57,10,11,scattered clouds,Clouds,3,320,2018/03/24 17:00,46,0
+10.57,10,11,scattered clouds,Clouds,4,140,2018/03/24 18:00,92,0
+8.13,7,9,broken clouds,Clouds,3,150,2018/03/24 19:00,56,0
+6.13,5,7,broken clouds,Clouds,1,0,2018/03/24 20:00,95,0
+5.27,3,7,broken clouds,Clouds,2,300,2018/03/24 21:00,95,0
+5,5,5,broken clouds,Clouds,2,290,2018/03/24 22:00,80,0
+5,5,5,broken clouds,Clouds,3,290,2018/03/24 23:00,80,0
+4,4,4,broken clouds,Clouds,2,270,2018/03/25 00:00,86,0
+3.87,3,5,broken clouds,Clouds,4,260,2018/03/25 01:00,80,0
+2,2,2,scattered clouds,Clouds,3,250,2018/03/25 02:00,100,0
+1.43,1,2,few clouds,Clouds,3,250,2018/03/25 03:00,93,0
+1.43,1,2,few clouds,Clouds,3,260,2018/03/25 04:00,93,0
+1.43,1,2,few clouds,Clouds,3,250,2018/03/25 05:00,93,0
+0.87,0,2,few clouds,Clouds,4,260,2018/03/25 06:00,93,0
+0.3,-1,2,scattered clouds,Clouds,4,270,2018/03/25 07:00,93,0
+1.43,1,2,few clouds,Clouds,4,260,2018/03/25 08:00,93,0
+4,4,4,few clouds,Clouds,4,250,2018/03/25 09:00,86,0
+5.43,5,6,few clouds,Clouds,5,270,2018/03/25 10:00,81,0
+7.43,7,8,few clouds,Clouds,4,260,2018/03/25 11:00,75,0
+8.3,7,10,scattered clouds,Clouds,3,290,2018/03/25 12:00,61,0
+9.43,9,10,scattered clouds,Clouds,5,260,2018/03/25 13:00,61,0
+9.87,9,11,scattered clouds,Clouds,4,280,2018/03/25 14:00,53,0
+10.43,10,11,scattered clouds,Clouds,5,290,2018/03/25 15:00,50,0
+10,10,10,scattered clouds,Clouds,5,290,2018/03/25 16:00,53,0
+10.57,10,11,scattered clouds,Clouds,5,270,2018/03/25 17:00,53,0
+9.57,9,10,broken clouds,Clouds,4,280,2018/03/25 18:00,61,0
+8.57,8,9,broken clouds,Clouds,3,290,2018/03/25 19:00,65,0
+5.43,5,6,broken clouds,Clouds,2,290,2018/03/25 20:00,70,0
+6,6,6,broken clouds,Clouds,3,270,2018/03/25 21:00,75,0
+6,6,6,broken clouds,Clouds,3,280,2018/03/25 22:00,75,0
+6,6,6,broken clouds,Clouds,3,280,2018/03/25 23:00,81,0
+6,6,6,broken clouds,Clouds,3,260,2018/03/26 00:00,81,0
+6,6,6,broken clouds,Clouds,3,260,2018/03/26 01:00,81,0
+3.87,3,5,broken clouds,Clouds,2,240,2018/03/26 02:00,86,0
+3.3,2,5,broken clouds,Clouds,4,250,2018/03/26 03:00,80,0
+3.43,3,4,scattered clouds,Clouds,4,250,2018/03/26 04:00,86,0
+1.87,1,3,few clouds,Clouds,3,270,2018/03/26 05:00,93,0
+3,3,3,scattered clouds,Clouds,2,250,2018/03/26 06:00,93,0
+2.43,2,3,broken clouds,Clouds,3,250,2018/03/26 07:00,93,0
+3.49,3,4,broken clouds,Clouds,3,260,2018/03/26 08:00,93,0
+5.98,5.98,5.98,Sky is Clear,Clear,1,236,2018/03/26 09:00,100,0
+8,8,8,broken clouds,Clouds,3,150,2018/03/26 10:00,65,0
+9,9,9,broken clouds,Clouds,3,120,2018/03/26 11:00,66,0
+10,10,10,broken clouds,Clouds,3,120,2018/03/26 12:00,66,0
+10.55,10,11,broken clouds,Clouds,4,110,2018/03/26 13:00,61,0
+10.49,10,11,broken clouds,Clouds,4,110,2018/03/26 14:00,62,0
+10.49,10,11,broken clouds,Clouds,4,130,2018/03/26 15:00,62,0
+10,10,10,light rain,Rain,5,200,2018/03/26 16:00,71,0
+10,10,10,light rain,Rain,6,170,2018/03/26 17:00,71,0
+9,9,9,light rain,Rain,5,160,2018/03/26 18:00,81,0
+8.57,8,9,light rain,Rain,5,140,2018/03/26 19:00,87,0
+8.57,8,9,light rain,Rain,6,150,2018/03/26 20:00,87,0
+7.57,7,8,light rain,Rain,8,140,2018/03/26 21:00,93,0
+8,8,8,light rain,Rain,8,160,2018/03/26 22:00,87,0
+8.57,8,9,light rain,Rain,3,160,2018/03/26 23:00,93,0
+9.13,8,10,light intensity drizzle rain,Drizzle,4,150,2018/03/27 00:00,93,0
+10,10,10,light rain,Rain,2,170,2018/03/27 01:00,93,0
+10,10,10,light intensity drizzle rain,Drizzle,7,240,2018/03/27 02:00,93,0
+10,10,10,light intensity drizzle,Drizzle,6,240,2018/03/27 03:00,93,0
+10,10,10,broken clouds,Clouds,5,240,2018/03/27 04:00,93,0
+10,10,10,light intensity drizzle rain,Drizzle,5,240,2018/03/27 05:00,93,0
+9.13,8,10,light intensity drizzle rain,Drizzle,8,280,2018/03/27 06:00,93,0
+7.57,7,8,light intensity drizzle,Drizzle,10,280,2018/03/27 07:00,93,0
+8,8,8,light intensity drizzle,Drizzle,9,280,2018/03/27 08:00,87,0
+8,8,8,broken clouds,Clouds,10,280,2018/03/27 09:00,81,0
+8,8,8,light intensity drizzle,Drizzle,9,280,2018/03/27 10:00,81,0
+8.49,8,9,light intensity drizzle,Drizzle,8,290,2018/03/27 11:00,81,0
+8,8,8,light intensity drizzle,Drizzle,7,280,2018/03/27 12:00,81,0
+8.51,8,9,proximity shower rain,Rain,7,280,2018/03/27 13:00,75,0
+8.49,8,9,broken clouds,Clouds,10,270,2018/03/27 14:00,66,0
+8.51,8,9,proximity shower rain,Rain,9,280,2018/03/27 15:00,65,0
+8,8,8,proximity shower rain,Rain,9,280,2018/03/27 16:00,65,0
+7.39,7,8,broken clouds,Clouds,9,260,2018/03/27 17:00,70,0
+7.61,7,8,proximity shower rain,Rain,3,290,2018/03/27 18:00,70,0
+6.57,6,7,proximity shower rain,Rain,5,290,2018/03/27 19:00,87,0
+5,5,5,light intensity shower rain,Rain,4,280,2018/03/27 20:00,80,0
+5,5,5,broken clouds,Clouds,2,320,2018/03/27 21:00,86,0
+4.43,4,5,scattered clouds,Clouds,4,250,2018/03/27 22:00,80,0
+4,4,4,scattered clouds,Clouds,4,240,2018/03/27 23:00,86,0
+4,4,4,broken clouds,Clouds,3,240,2018/03/28 00:00,86,0
+4,4,4,broken clouds,Clouds,4,250,2018/03/28 01:00,86,0
+4,4,4,broken clouds,Clouds,4,250,2018/03/28 02:00,86,0
+4,4,4,broken clouds,Clouds,5,250,2018/03/28 03:00,86,0
+3.43,3,4,broken clouds,Clouds,5,250,2018/03/28 04:00,86,0
+3,3,3,broken clouds,Clouds,5,270,2018/03/28 05:00,93,0
+3,3,3,light intensity shower rain,Rain,5,260,2018/03/28 06:00,93,0
+3,3,3,broken clouds,Clouds,4,270,2018/03/28 07:00,93,0
+3.43,3,4,broken clouds,Clouds,6,270,2018/03/28 08:00,86,0
+4,4,4,scattered clouds,Clouds,6,270,2018/03/28 09:00,93,0
+4,4,4,broken clouds,Clouds,7,270,2018/03/28 10:00,86,0
+6.45,6,7,broken clouds,Clouds,7,280,2018/03/28 11:00,70,0
+7,7,7,broken clouds,Clouds,6,270,2018/03/28 12:00,70,0
+8.51,8,9,scattered clouds,Clouds,8,270,2018/03/28 13:00,61,0
+7.49,7,8,proximity shower rain,Rain,6,260,2018/03/28 14:00,98,0
+8.51,8,9,proximity shower rain,Rain,8,260,2018/03/28 15:00,61,0
+7.51,7,8,proximity shower rain,Rain,5,300,2018/03/28 16:00,98,0
+7.43,7,8,proximity shower rain,Rain,6,250,2018/03/28 17:00,52,0
+7,7,7,proximity shower rain,Rain,6,260,2018/03/28 18:00,56,0
+6,6,6,proximity shower rain,Rain,3,270,2018/03/28 19:00,60,0
+5,5,5,proximity shower rain,Rain,2,230,2018/03/28 20:00,100,0
+3,3,3,few clouds,Clouds,2,180,2018/03/28 21:00,100,0
+2.43,2,3,scattered clouds,Clouds,2,200,2018/03/28 22:00,100,0
+3,3,3,scattered clouds,Clouds,3,210,2018/03/28 23:00,74,0
+3,3,3,scattered clouds,Clouds,2,150,2018/03/29 00:00,100,0
+2.57,2,3,scattered clouds,Clouds,2,170,2018/03/29 01:00,100,0
+3.13,2,4,broken clouds,Clouds,2,130,2018/03/29 02:00,100,0
+2.26,0,4,few clouds,Clouds,1,120,2018/03/29 03:00,100,0
+0.26,-2,2,few clouds,Clouds,1,0,2018/03/29 04:00,100,0
+-0.48,-2,1,few clouds,Clouds,1,0,2018/03/29 05:00,92,0
+-0.3,-2,1,few clouds,Clouds,2,130,2018/03/29 06:00,92,0
+0.13,-1,1,scattered clouds,Clouds,3,140,2018/03/29 07:00,100,0
+3.43,3,4,broken clouds,Clouds,3,140,2018/03/29 08:00,86,0
+5,5,5,proximity shower rain,Rain,5,140,2018/03/29 09:00,86,0
+6,6,6,proximity shower rain,Rain,5,140,2018/03/29 10:00,81,0
+5.49,5,6,light intensity shower rain,Rain,7,120,2018/03/29 11:00,87,0
+4.49,4,5,light intensity shower rain,Rain,4,130,2018/03/29 12:00,86,0
+4.99,4,6,light rain,Rain,7,130,2018/03/29 13:00,87,0
+5,5,5,light rain,Rain,6,130,2018/03/29 14:00,86,0
+4.51,4,5,light rain,Rain,4,130,2018/03/29 15:00,93,0
+6,6,6,light rain,Rain,6,100,2018/03/29 16:00,87,0
+5.43,5,6,light rain,Rain,4,130,2018/03/29 17:00,87,0
+5.43,5,6,light rain,Rain,5,70,2018/03/29 18:00,87,0
+5.43,5,6,moderate rain,Rain,5,70,2018/03/29 19:00,87,0
+4,4,4,light rain,Rain,4,150,2018/03/29 20:00,93,0
+3.43,3,4,light rain,Rain,2,130,2018/03/29 21:00,93,0
+4,4,4,moderate rain,Rain,4,80,2018/03/29 22:00,93,0
+3,3,3,light rain,Rain,2,350,2018/03/29 23:00,93,0
+3,3,3,light intensity drizzle,Drizzle,1,320,2018/03/30 00:00,93,0
+2.43,2,3,light rain,Rain,1,300,2018/03/30 01:00,100,0
+2.43,2,3,broken clouds,Clouds,1,0,2018/03/30 02:00,100,0
+3.43,3,4,light rain,Rain,3,70,2018/03/30 03:00,93,0
+3.49,3,4,broken clouds,Clouds,3,80,2018/03/30 04:00,100,0
+3,3,3,broken clouds,Clouds,1,130,2018/03/30 05:00,100,0
+2.57,2,3,broken clouds,Clouds,1,0,2018/03/30 06:00,100,0
+2,2,2,mist,Mist,2,10,2018/03/30 07:00,100,0
+2.49,2,3,fog,Fog,4,50,2018/03/30 08:00,100,0
+3.87,3,5,fog,Fog,3,60,2018/03/30 09:00,93,0
+5,5,5,broken clouds,Clouds,5,40,2018/03/30 10:00,93,0
+6,6,6,proximity shower rain,Rain,5,40,2018/03/30 11:00,81,0
+5.57,5,6,light intensity shower rain,Rain,3,30,2018/03/30 12:00,86,0
+5.13,4,6,proximity shower rain,Rain,2,90,2018/03/30 13:00,93,0
+5,5,5,light intensity shower rain,Rain,1,0,2018/03/30 14:00,93,0
+4.3,3,6,light intensity shower rain,Rain,7,10,2018/03/30 15:00,87,0
+6,6,6,broken clouds,Clouds,6,20,2018/03/30 16:00,87,0
+6,6,6,broken clouds,Clouds,5,30,2018/03/30 17:00,81,0
+6,6,6,broken clouds,Clouds,4,10,2018/03/30 18:00,81,0
+5,5,5,broken clouds,Clouds,5,20,2018/03/30 19:00,86,0
+5,5,5,broken clouds,Clouds,2,360,2018/03/30 20:00,80,0
+4.57,4,5,broken clouds,Clouds,3,340,2018/03/30 21:00,86,0
+4.57,4,5,broken clouds,Clouds,4,330,2018/03/30 22:00,86,0
+4.57,4,5,broken clouds,Clouds,3,350,2018/03/30 23:00,86,0
+4,4,4,broken clouds,Clouds,5,350,2018/03/31 00:00,86,0
+4,4,4,broken clouds,Clouds,5,340,2018/03/31 01:00,86,0
+4,4,4,broken clouds,Clouds,5,340,2018/03/31 02:00,93,0
+4,4,4,broken clouds,Clouds,5,340,2018/03/31 03:00,93,0
+4,4,4,broken clouds,Clouds,6,330,2018/03/31 04:00,93,0
+4,4,4,broken clouds,Clouds,5,340,2018/03/31 05:00,93,0
+3.57,3,4,broken clouds,Clouds,4,340,2018/03/31 06:00,93,0
+3.57,3,4,scattered clouds,Clouds,5,330,2018/03/31 07:00,93,0
+3,3,3,broken clouds,Clouds,5,340,2018/03/31 08:00,100,0
+4.43,4,5,broken clouds,Clouds,5,350,2018/03/31 09:00,86,0
+5.43,5,6,broken clouds,Clouds,6,360,2018/03/31 10:00,81,0
+6,6,6,broken clouds,Clouds,7,10,2018/03/31 11:00,75,0
+6,6,6,broken clouds,Clouds,7,20,2018/03/31 12:00,81,0
+6,6,6,broken clouds,Clouds,6,30,2018/03/31 13:00,75,0
+6,6,6,broken clouds,Clouds,7,30,2018/03/31 14:00,70,0
+6,6,6,broken clouds,Clouds,6,20,2018/03/31 15:00,75,0
+6,6,6,broken clouds,Clouds,6,10,2018/03/31 16:00,70,0
+6,6,6,broken clouds,Clouds,6,10,2018/03/31 17:00,70,0
+6,6,6,broken clouds,Clouds,6,20,2018/03/31 18:00,70,0
+6,6,6,broken clouds,Clouds,5,20,2018/03/31 19:00,70,0
+4.57,4,5,broken clouds,Clouds,5,30,2018/03/31 20:00,80,0
+4,4,4,broken clouds,Clouds,4,20,2018/03/31 21:00,80,0
+3.49,3,4,broken clouds,Clouds,5,20,2018/03/31 22:00,80,0
+1.51,1,2,scattered clouds,Clouds,3,30,2018/03/31 23:00,86,0
+0.87,0,2,scattered clouds,Clouds,2,320,2018/04/01 00:00,93,0
+1.43,1,2,scattered clouds,Clouds,1,0,2018/04/01 01:00,93,0
+2,2,2,scattered clouds,Clouds,1,0,2018/04/01 02:00,93,0
+2.43,2,3,light shower sleet,Snow,2,350,2018/04/01 03:00,93,0
+2.49,2,3,light intensity shower rain,Rain,1,360,2018/04/01 04:00,93,0
+2.43,2,3,broken clouds,Clouds,2,10,2018/04/01 05:00,93,0
+2.43,2,3,broken clouds,Clouds,2,70,2018/04/01 06:00,93,0
+2.43,2,3,broken clouds,Clouds,3,100,2018/04/01 07:00,93,0
+3.3,2,5,broken clouds,Clouds,3,90,2018/04/01 08:00,80,0
+3.87,3,5,broken clouds,Clouds,5,80,2018/04/01 09:00,80,0
+5,5,5,broken clouds,Clouds,5,100,2018/04/01 10:00,80,0
+5.43,5,6,broken clouds,Clouds,6,100,2018/04/01 11:00,75,0
+5.57,5,6,broken clouds,Clouds,6,90,2018/04/01 12:00,75,0
+6,6,6,broken clouds,Clouds,6,90,2018/04/01 13:00,75,0
+6,6,6,proximity shower rain,Rain,7,110,2018/04/01 14:00,70,0
+5.43,5,6,proximity shower rain,Rain,7,100,2018/04/01 15:00,70,0
+5.61,5,6,broken clouds,Clouds,7,90,2018/04/01 16:00,80,0
+5,5,5,broken clouds,Clouds,7,90,2018/04/01 17:00,75,0
+5,5,5,broken clouds,Clouds,8,90,2018/04/01 18:00,80,0
+5,5,5,light rain,Rain,8,90,2018/04/01 19:00,75,0
+4.43,4,5,light rain,Rain,8,90,2018/04/01 20:00,75,0
+4.43,4,5,light rain,Rain,8,90,2018/04/01 21:00,80,0
+4,4,4,light rain,Rain,9,110,2018/04/01 22:00,86,0
+3.43,3,4,light rain,Rain,8,110,2018/04/01 23:00,86,0
+4,4,4,light rain,Rain,8,90,2018/04/02 00:00,93,0
+4,4,4,light rain,Rain,8,90,2018/04/02 00:00,93,0
+3,3,3,light rain,Rain,7,110,2018/04/02 01:00,93,0
+3.43,3,4,light rain,Rain,9,90,2018/04/02 02:00,86,0
+3,3,3,light rain,Rain,10,90,2018/04/02 03:00,93,0
+3,3,3,moderate rain,Rain,9,90,2018/04/02 04:00,93,0
+3,3,3,light rain,Rain,10,80,2018/04/02 05:00,100,0
+3.43,3,4,light rain,Rain,9,90,2018/04/02 06:00,93,0
+3,3,3,light rain,Rain,9,90,2018/04/02 07:00,100,0
+4,4,4,light rain,Rain,9,80,2018/04/02 08:00,93,0
+4,4,4,light rain,Rain,9,80,2018/04/02 09:00,100,0
+4,4,4,light rain,Rain,8,80,2018/04/02 10:00,100,0
+4.39,4,5,light rain,Rain,8,70,2018/04/02 11:00,93,0
+5,5,5,moderate rain,Rain,7,60,2018/04/02 12:00,93,0
+5,5,5,light rain,Rain,7,60,2018/04/02 13:00,100,0
+5.43,5,6,moderate rain,Rain,5,50,2018/04/02 14:00,100,0
+6.43,6,7,moderate rain,Rain,4,40,2018/04/02 15:00,93,0
+7,7,7,light rain,Rain,3,20,2018/04/02 16:00,100,0
+7,7,7,fog,Fog,2,360,2018/04/02 17:00,100,0
+7,7,7,fog,Fog,2,350,2018/04/02 18:00,100,0
+7,7,7,fog,Fog,3,360,2018/04/02 19:00,100,0
+6.57,6,7,light rain,Rain,2,20,2018/04/02 20:00,100,0
+6.57,6,7,moderate rain,Rain,2,10,2018/04/02 21:00,100,0
+6.51,6,7,light rain,Rain,2,360,2018/04/02 22:00,100,0
+6,6,6,light rain,Rain,2,360,2018/04/02 23:00,100,0
+6,6,6,mist,Mist,2,40,2018/04/03 00:00,100,0
+10.81,8.94,10.81,clear sky,Clear,6.12,157.001,2018/04/09 12:00,89,0
+10.81,8.94,10.81,clear sky,Clear,6.12,157.001,2018/04/09 12:00,89,0
+10.1,8.69,10.1,clear sky,Clear,6.86,150.503,2018/04/09 15:00,90,0
+9.91,8.37,9.91,clear sky,Clear,4.69,138.5,2018/04/09 18:00,91,0
+8.79,7.33,8.79,light rain,Rain,5.06,106.5,2018/04/09 21:00,97,0.185
+6.45,6.45,7.27,light rain,Rain,4.82,76.0059,2018/04/10 00:00,97,0.57
+7.11,7.11,7.31,light rain,Rain,7.56,60.0039,2018/04/10 03:00,99,0.525
+8.21,8.03,8.21,light rain,Rain,9.06,75.0004,2018/04/10 06:00,94,0.775
+7.39,7.39,7.58,light rain,Rain,10.41,67.5023,2018/04/10 09:00,96,0.905
+6.93,6.93,7.34,light rain,Rain,9.66,68.0084,2018/04/10 09:00,97,0.22625
+7.14,7.14,7.44,light rain,Rain,8.71,42.5,2018/04/10 12:00,97,0.45
+7.41,7.32,7.41,light rain,Rain,8.92,34.0022,2018/04/10 15:00,98,0.29
+7.19,7.19,7.45,light rain,Rain,8.06,32.5049,2018/04/10 18:00,97,0.1075
+7.73,7.73,7.73,light rain,Rain,6.02,36.5026,2018/04/10 21:00,95,0.11
+7.66,7.66,7.93,light rain,Rain,5.27,54.0024,2018/04/11 00:00,94,0.05
+7.7,7.7,8.13,light rain,Rain,5.46,62.5067,2018/04/11 03:00,93,0.0875
+7.47,7.47,8.03,light rain,Rain,5.27,78.0002,2018/04/11 06:00,94,0.4
+7.63,7.63,8.31,light rain,Rain,5.27,73.0027,2018/04/11 09:00,92,0.015
+8.12,7.74,8.12,light rain,Rain,4.22,43.0025,2018/04/11 12:00,97,0.025
+7.55,7.55,7.83,scattered clouds,Clouds,4.01,43.0015,2018/04/11 15:00,98,0
+8.09,7.93,8.09,light rain,Rain,5.11,37.5002,2018/04/11 18:00,95,0.055
+8.23,8.23,8.73,light rain,Rain,5.81,59.0009,2018/04/11 21:00,90,0.185
+7.97,7.97,8.53,light rain,Rain,8.55,83.5006,2018/04/12 00:00,92,0.21
+6.86,6.86,7.9,light rain,Rain,7.98,82.0017,2018/04/12 03:00,95,0.545
+6.64,6.64,7.56,light rain,Rain,7.81,82.5028,2018/04/12 06:00,98,0.18
+6.4,6.4,7.54,light rain,Rain,7.06,80.0012,2018/04/12 09:00,98,0.4
+7.45,7.41,7.45,light rain,Rain,5.16,79.0002,2018/04/12 12:00,100,0.03156
+7.47,7.47,7.47,light rain,Rain,5.22,68.5,2018/04/12 15:00,98,0.02742
+7.56,7.56,7.8,light rain,Rain,4.57,53.5052,2018/04/12 18:00,96,1.00734
+7.95,7.95,8.23,light rain,Rain,5.72,60.5047,2018/04/12 21:00,95,0.48276
+7.63,7.63,8.11,light rain,Rain,5.93,71.0014,2018/04/13 00:00,96,0.2492
+6.86,6.86,7.6,light rain,Rain,5.31,69.0008,2018/04/13 03:00,99,0.18275
+6.77,6.77,7.44,light rain,Rain,4.48,53.004,2018/04/13 06:00,98,0.05679
+6.73,6.73,7.69,light rain,Rain,2.63,30.5067,2018/04/13 09:00,100,0.04733
+9.39,8.91,9.39,light rain,Rain,4.66,155,2018/04/13 18:00,94,0.00428
+9.87,9.39,9.87,light rain,Rain,4.51,181.003,2018/04/13 21:00,89,0.00442
+7.26,7.26,8.07,clear sky,Clear,4.31,193.503,2018/04/14 00:00,95,0
+5.9,5.9,7,clear sky,Clear,3.57,197.004,2018/04/14 03:00,100,0
+7.07,7.07,7.11,light rain,Rain,4.19,177.005,2018/04/14 06:00,100,0.00217
+8.11,8.11,8.4,light rain,Rain,4.84,169.502,2018/04/14 09:00,93,0.03015
+11.04,8.91,11.04,light rain,Rain,8.19,161.005,2018/04/14 12:00,93,0.02045
+11.09,9.36,11.09,light rain,Rain,8.11,164.001,2018/04/14 15:00,90,0.0033
