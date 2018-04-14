@@ -22,17 +22,22 @@ def index():
 @app.route('/station_info')
 def station_info():
 	try:
-		#info = session.query(Examp, latest).select_from(latest).join(Examp)
-		#.join(latest, Examp.id = latest.id).all() 
-		# Examp.lat, Examp.long, Examp.id,)
 		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
+		info2 = session.query(latest.bikes, latest.id)
+		#.join(latest, Examp.id = latest.id).all()
+		# Examp.lat, Examp.long, Examp.id,)
+		#info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
+		arr1 = []
+		for j in info2:
+			arr1.append(j)
 		arr = []
 		for i in info:
 			arr.append(i)
-		return jsonify(result = arr)
+
+		return jsonify(result = arr, bikeres = arr1)
 	except Exception as e:
 		return str(e)
-    
+
 @app.route('/station')
 def station():
 	try:
@@ -52,7 +57,7 @@ def station_occupancy():
 		id = request.args.get('id')
 		sql = session.query(latest.bikes, latest.stands).filter(latest.id == id)
 		arr = []
-		print(sql)
+
 		for i in sql:
 			arr.append(i[0])
 			arr.append(i[1])
@@ -60,7 +65,7 @@ def station_occupancy():
 		return jsonify(occupancy = arr)
 	except Exception as e:
 		return str(e)
-    
+
 @app.route('/occupancy')
 def occupancy():
     try:
