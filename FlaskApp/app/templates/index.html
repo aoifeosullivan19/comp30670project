@@ -332,7 +332,7 @@ window.onload=function(infoWeather) {
 	var id = data.result[val][3]
 	$.getJSON('/station_occupancy?id='+id, function(info){
             var div = document.getElementById('test');
-            div.innerHTML += "The closest location to " + address + " is " + location + ".";
+            div.innerHTML += "The closest location to " + address + " is " + location + ". ";
             div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
 	    div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
             startmap(lat, long, latend, longend)

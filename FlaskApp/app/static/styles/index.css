@@ -169,13 +169,12 @@ form ul li {
 }
 
 #test {
-    display: inline-block; 
+    position: relative;
     float: right;
     margin-left: 30%;
     margin-top: 0%;
     width: 40%;
     height: 40%;
-    font-size: 20px;
     background: rgba(220, 238, 254, 0.7);
     
 }
