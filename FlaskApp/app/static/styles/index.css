@@ -2,8 +2,10 @@
     width: 100%;
     background-color: aliceblue;
     position: relative;
+    display: inline-block;
     /*font-family: 'Allerta', "Courier New", "Lucida Console", sans-serif;*/
-    font-family: "Duru Sans", "Courier New", "Lucida Console", sans-serif;
+    /*font-family: "Duru Sans", "Courier New", "Lucida Console", sans-serif;*/
+    font-family: "Courier New", "Lucida Console", sans-serif;
        
 } 
 
@@ -27,6 +29,9 @@ header{
     overflow: hidden;
     padding: 15px 15px;
     height: 80px;
+    color: lightblue;
+    padding-bottom: 4%;
+    padding-top: 1%;
 }
 
 
@@ -41,7 +46,7 @@ header h1 {
 #weatherIcon{
     position: relative;
     float: right;
-    margin-right: 5%;
+    /*margin-right: 5%;*/
     margin-top: 1%;
     max-height: 90%;
     max-width: 20%;
@@ -51,7 +56,6 @@ header h1 {
     position: relative;
     float: right;
     margin-right: 1%;
-    margin-top: 1%;
     max-height: 90%;
     max-width: 50%;
     font-size: 15px;
@@ -71,12 +75,12 @@ a {
 
 ul li {
     list-style-type: none; 
-    color: black;
+    color: #0f0f3e;
 }
 
 
 a:hover {
-    color: aquamarine;
+    color: 	 #00ace6;
 }
 .wrapper {
     text-align: center;
@@ -97,6 +101,7 @@ a:hover {
 .button1, .button2 {
     display: inline-block;
     text-align: center;
+    color: #0f0f3e;
     background: rgba(220, 238, 254, 0.8);
     border-radius: 2px;
     width: 320px;
@@ -108,12 +113,18 @@ a:hover {
 
 #check {
     display: inline-block;
+    border: none;
+    margin: 2%;
     text-align: center;
     background: darkslateblue;
+    padding: 10px 25px;
     border-radius: 2px;
-    font-size: 10px;
+    /*font-size: 10px;*/
     color: #fff;
+    font-size: 70%;
 }
+
+
 #check:hover {
     background-color: #02b8dd;
     color: #fff;
@@ -164,27 +175,26 @@ form ul li {
 }
  
 #mapdiv {
-    margin-top: 7%;
+    float: left;
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 5px;
     
 }
 
 #test {
     position: relative;
-    float: right;
-    margin-left: 30%;
-    margin-top: 0%;
+    float: left;
     width: 40%;
-    height: 40%;
     background: rgba(220, 238, 254, 0.7);
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
     
 }
 
-#check {
-    display: inline-block; 
-    margin-right: 20%;
-    margin-top: 3%;
-    margin-left: 55%; 
-}
+
+
 #bike, #station {
 
     border: none;
@@ -281,4 +291,35 @@ main img {
 
 body {
     margin: 0;
+}
+footer {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: lightblue;
+    font-family: "Courier New", "Lucida Console", sans-serif;
+}
+#footerpic {
+    width: 30%;
+    height: auto;
+    position: relative;
+    float: right;
+}
+#footercontent {
+    width: 30%;
+    height: auto;
+    position: relative;
+    float:left;
+}
+
+#footer3 {
+    width: 30%;
+    height: auto;
+    position: relative;
+    float:left;
+    left: 5%;
+}
+#footercontent img {
+    width: 300px;
 }
