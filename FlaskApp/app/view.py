@@ -8,6 +8,7 @@ from sqlalchemy.orm import sessionmaker
 import pygal
 import pandas as pd
 import json
+import pickle
 
 engine = create_engine('mysql+pymysql://dublinbikesadmin:dublinbikes2018@dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com/dublinbikes')
 
@@ -126,6 +127,32 @@ def graph_info():
 		return jsonify(data = d, day = arr)
 	except Exception as e:
 		return str(e)
+
+@app.route('/weathergraph_info')
+def weathergraph_info():
+	try:
+		req = request.args.get('id')
+		id = req[:2]
+		weather = req[7:]
+		if weather == 'rain':
+
+			file = "app/pickleFiles/stationRain"+id+".pickle"
+			pickle_in = open(file,"rb")
+			data = pickle.load(pickle_in)
+		elif weather == 'sun':
+			file = "app/pickleFiles/stationDry"+id+".pickle"
+			pickle_in = open(file,"rb")
+			data = pickle.load(pickle_in)
+
+		pickle_inDays = open('app/pickleFiles/day.pickle','rb')
+
+		day = pickle.load(pickle_inDays)
+
+		return jsonify(data = data, day = day)
+
+	except Exception as e:
+		return str(e)
+
 
 
 if __name__ == '__main__':
