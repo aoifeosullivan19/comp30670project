@@ -129,7 +129,7 @@
         var icon = document.getElementById("weatherIcon");
         add0.innerHTML = " ";
         add0.innerHTML = "Today's Weather: " + weather[3];
-	   add0.innerHTML += "<br>Min temp: " + weather[1];
+	    add0.innerHTML += "<br>Min temp: " + weather[1];
         add0.innerHTML += "<br>Max temp: " + weather[2];
         if(weather[4] == 'Rain'){
             icon.innerHTML += "<img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png' alt='didnt work' style='width:60px;height:60px;'>";
@@ -192,7 +192,7 @@ function myFunction() {
 
 	   $.getJSON('/station_info', function(data) {
 
-        	for( i = 0; i <105; i++ ) {
+        	for( i = 0; i <104; i++ ) {
 
                 var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
                 var markers = [];
@@ -266,7 +266,7 @@ function myFunction() {
 	 
         
             var options = {
-                 title: 'Station: ' + arr1[0],
+                 title: 'Station: ' + loc,
                  vAxis: {title: 'Bikes'},
                  hAxis: {title: 'Time' },
 		          isStacked: true,
@@ -279,7 +279,7 @@ function myFunction() {
         
         chart = new google.visualization.AreaChart(document.getElementById('graph'));
                 chart.draw(data, options);
-        document.getElementById('radboxes').innerHTML = '<input type="radio" name = "weather" value = "rain"> Rain<br><input type="radio" name="weather" value = "sun" > Sun <br><input type = "button" name = "weatherbutton" onclick="getWeatherInfo('+id+');">Click for occupancy trends</button>'    
+        document.getElementById('radboxes').innerHTML = '<input type="radio" name = "weather" value = "rain"> Rain<br><input type="radio" name="weather" value = "sun" > Sun <br><input type = "button" name = "weatherbutton" onclick="getWeatherInfo('+id+');">Submit</button>'    
   	 })
 	}
         
@@ -288,13 +288,14 @@ function myFunction() {
         
         function getWeatherInfo(id){
         
-        //var val = document.querySelector('input[name="weather"]:checked').value;
+        var val = document.querySelector('input[name="weather"]:checked').value;
+        
        
          var data = new google.visualization.DataTable();
             data.addColumn('number','Day');
 	
 	   
-        $.getJSON('/weathergraph_info?id='+id, function(result){
+        $.getJSON('/weathergraph_info?id='+id+'?val='+val, function(result){
 	
 	       for (var d = 0; d < 7; d++){
 		      data.addColumn('number',result.day[d]);
@@ -312,7 +313,7 @@ function myFunction() {
             
             
 	       var options = {
-                 title: 'Station: ',
+                 title: 'Predicted Occupancy for Station: during '+val+' conditions',
                  vAxis: {title: 'Bikes'},
                  hAxis: {title: 'Time' },
 		         isStacked: true,

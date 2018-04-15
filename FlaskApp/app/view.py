@@ -130,20 +130,28 @@ def graph_info():
 
 @app.route('/weathergraph_info')
 def weathergraph_info():
-        try:
-                #weather = request.args.get('val')
-                id = request.args.get('id')
-                file = "app/pickleFiles/stationRain"+id+".pickle"
-                pickle_in = open(file,"rb")
-                data = pickle.load(pickle_in)
+	try:
+		req = request.args.get('id')
+		id = req[:2]
+		weather = req[7:]
+		if weather == 'rain':
 
-                pickle_inDays = open('app/pickleFiles/day.pickle','rb')
-                print(data)
-                day = pickle.load(pickle_inDays)
+			file = "app/pickleFiles/stationRain"+id+".pickle"
+			pickle_in = open(file,"rb")
+			data = pickle.load(pickle_in)
+		elif weather == 'sun':
+			file = "app/pickleFiles/stationDry"+id+".pickle"
+			pickle_in = open(file,"rb")
+			data = pickle.load(pickle_in)
 
-                return jsonify(data = data, day = day)
-        except Exception as e:
-                return str(e)
+		pickle_inDays = open('app/pickleFiles/day.pickle','rb')
+
+		day = pickle.load(pickle_inDays)
+
+		return jsonify(data = data, day = day)
+
+	except Exception as e:
+		return str(e)
 
 
 
