@@ -3,8 +3,6 @@
     background-color: aliceblue;
     position: relative;
     display: inline-block;
-    /*font-family: 'Allerta', "Courier New", "Lucida Console", sans-serif;*/
-    /*font-family: "Duru Sans", "Courier New", "Lucida Console", sans-serif;*/
     font-family: "Courier New", "Lucida Console", sans-serif;
        
 } 
@@ -24,12 +22,14 @@ body {
 /* https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 header{
-    background: black;
-    color: white;
+    /*background: black;*/
+    background: white;
+    /*color: white;*/
     overflow: hidden;
     padding: 15px 15px;
     height: 80px;
-    color: lightblue;
+    /*color: lightblue;*/
+    color: #0f0f3e;
     padding-bottom: 4%;
     padding-top: 1%;
 }
@@ -39,7 +39,8 @@ header h1 {
     float: left;
     margin-top: 20px;
     margin-left: 40px;
-    color: lightblue;
+    /*color: lightblue;*/
+    color: #0f0f3e;
     font-size: 45px;
 }
 
@@ -55,7 +56,7 @@ header h1 {
 #weather {
     position: relative;
     float: right;
-    margin-right: 1%;
+    margin-right: 2%;
     max-height: 90%;
     max-width: 50%;
     font-size: 15px;
@@ -116,7 +117,7 @@ a:hover {
     border: none;
     margin: 2%;
     text-align: center;
-    background: darkslateblue;
+    background-color: #0f0f3e;
     padding: 10px 25px;
     border-radius: 2px;
     /*font-size: 10px;*/
@@ -164,36 +165,90 @@ form ul li {
     width: 60%;
     height: 40%;
     font-size: 20px;
+    font-weight: normal;
     line-height: 20px;
     border-radius: 2px;
-    margin-left: 16%; 
+    margin-left: 16%;
+    color: #0f0f3e;
 }
 
+select {
+    width: 30%;
+    padding: 10px 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    background-color: white;
+}
+
+input[type=text] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px 16px;
+}
+/*https://www.w3schools.com/css/css_form.asp*/
+
+input[type=button] {
+    display: inline-block;
+    border: none;
+    margin: 2%;
+    text-align: center;
+    background-color: #0f0f3e;
+    padding: 10px 25px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 70%;
+}
+
+input[type=button]:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
 
 #start {
     margin-top: 5%;
 }
  
 #mapdiv {
+    position: relative;
     float: left;
-    border-style: solid;
-    border-color: darkblue;
-    border-width: 5px;
+    margin-top: 7%;
+
     
 }
 
 #test {
     position: relative;
     float: left;
+    margin-top: 7%;
     width: 40%;
+    margin-left: 5%;
     background: rgba(220, 238, 254, 0.7);
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
     
 }
 
+#content {
+    color: #0f0f3e;
+}
 
+#infobutton {
+    border: none;
+    margin: 2%;
+    text-align: center;
+    background-color: #0f0f3e;
+    padding: 8px 22px;
+    border-radius: 2px;
+    /*font-size: 10px;*/
+    color: #fff;
+    font-size: 70%;
+}
+#infobutton:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
 
 #bike, #station {
 
@@ -206,15 +261,6 @@ form ul li {
     margin: 4px 2px;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
     font-weight: bold;
-}
-.button .check {
-    width: 1000px;
-    height: 70px;
-    font-size: 30px;
-    line-height: 65px;
-    margin-left: 10%;
-    margin-top: 1%;
-
 }
 
 .button3:hover, .button4:hover {
@@ -296,8 +342,10 @@ footer {
     width: 100%;
     position: relative;
     display: inline-block;
-    background-color: black;
-    color: lightblue;
+    /*background-color: black;*/
+    /*color: lightblue;*/
+    background-color: white;
+    color: #0f0f3e;
     font-family: "Courier New", "Lucida Console", sans-serif;
 }
 #footerpic {

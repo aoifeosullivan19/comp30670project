@@ -36,10 +36,7 @@
 
 <header>
     <h1>DublinBikes.</h1>
-        <div id="weatherIcon">
-{#        <img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png'#}
-{#                               alt="didnt work" style="width:60px;height:60px;">#}
-    </div>
+        <div id="weatherIcon"></div>
      <div id="weather"></div>
 
     </header>
@@ -58,7 +55,8 @@
 
     <div id = 'trip'>
 	<p id = 'new'></p>
-	<p id = 'graph'></p><form id = "radboxes"></form>
+        <form id = "radboxes"></form>
+	<p id = 'graph'></p>
         <form>
 
             <ul><li>Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"></li>
@@ -111,9 +109,10 @@
     <p id = 'testing'></p>
 
        <div id="mapdiv" style = "width:50%;height:400px;" ></div>
-{#    <p id = 'test'></p>#}
 
     <div id="test"></div>
+
+
 </div>
 
     </div>
@@ -130,7 +129,7 @@
         var add0 = document.getElementById('weather');
         var icon = document.getElementById("weatherIcon");
         add0.innerHTML = " ";
-        add0.innerHTML = "<h3>Today's Weather </h3>" + "Description: " +  weather[3];
+        add0.innerHTML = "<h3>Current Weather </h3>" + "Description: " +  weather[3];
 	    add0.innerHTML += "<br>Min temp: " + weather[1] + "&#8451;";
         add0.innerHTML += "<br>Max temp: " + weather[2] + "&#8451;";
         if(weather[4] == 'Rain'){
@@ -205,10 +204,10 @@ function myFunction() {
                         marker = new google.maps.Circle({
                             center: position,
                             map: map,
-                            strokeColor: ' #248f24',
+                            strokeColor: '#2db300',
                             strokeOpacity: 0.8,
                             strokeWeight: 2,
-                            fillColor: ' #248f24',
+                            fillColor: '#2db300',
                             fillOpacity: 0.35,
                             title: data.result[i][0],
                             radius: data.bikeres[i][0] * 5 + 25,
@@ -225,7 +224,7 @@ function myFunction() {
                        x = data.result[i];
                         y = info.occupancy;
                         z = marker;
-              	         infoWindow.setContent('<b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button onclick="displayContent(x, y, z);">Click for occupancy trends</button></a>');
+              	         infoWindow.setContent('<div id="content"><b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button id="infobutton" onclick="displayContent(x, y, z);">Click for occupancy trends</button></a></div>');
 		                 infoWindow.setPosition(marker.getCenter());
 		                 infoWindow.open(map);
                	         map.setZoom(14);
@@ -279,7 +278,7 @@ function myFunction() {
 
         chart = new google.visualization.AreaChart(document.getElementById('graph'));
                 chart.draw(data, options);
-        document.getElementById('radboxes').innerHTML = '<input type="radio" name = "weather" value = "rain"> Rain<br><input type="radio" name="weather" value = "sun" > Sun <br><input type = "button" name = "weatherbutton" onclick="getWeatherInfo('+id+');">Submit</button>'
+        document.getElementById('radboxes').innerHTML = '<ul><li><h3>Pick weather condition </h3></li><br><li><input type="radio" name = "weather" value = "rain"> Rain<br></li><li><input type="radio" name="weather" value = "sun" > Sun <br></li><li><input type = "button" value = "submit" name = "weatherbutton" onclick="getWeatherInfo('+id+');"></button></li><br>'
   	 })
 	}
 
