@@ -3,7 +3,7 @@
     background-color: aliceblue;
     position: relative;
     display: inline-block;
-    font-family: "Courier New", "Lucida Console", sans-serif;
+    font-family: "Duru Sans", "Courier New", "Lucida Console", sans-serif;
        
 } 
 
@@ -22,14 +22,14 @@ body {
 /* https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 header{
-    /*background: black;*/
-    background: white;
-    /*color: white;*/
+    background: black;
+    /*background: white;*/
+    color: lightblue;
     overflow: hidden;
     padding: 15px 15px;
     height: 80px;
     /*color: lightblue;*/
-    color: #0f0f3e;
+    /*color: #0f0f3e;*/
     padding-bottom: 4%;
     padding-top: 1%;
 }
@@ -37,10 +37,10 @@ header{
 
 header h1 {
     float: left;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 40px;
-    /*color: lightblue;*/
-    color: #0f0f3e;
+    color: lightblue;
+    /*color: #0f0f3e;*/
     font-size: 45px;
 }
 
@@ -48,7 +48,7 @@ header h1 {
     position: relative;
     float: right;
     /*margin-right: 5%;*/
-    margin-top: 1%;
+    margin-top: 2%;
     max-height: 90%;
     max-width: 20%;
 }
@@ -59,10 +59,16 @@ header h1 {
     margin-right: 2%;
     max-height: 90%;
     max-width: 50%;
-    font-size: 15px;
+    font-size: 12px;
 }
 
-
+#legend {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 3px solid #000;
+      }
 .select {
     width = 700px;
     height = 500px;
@@ -127,19 +133,35 @@ a:hover {
 
 
 #check:hover {
-    background-color: #02b8dd;
-    color: #fff;
+    background-color:  #80e5ff;
+    color: #0f0f3e;
+    opacity: 0.8;
 }
 #graph {
-    margin-top: 10%; 
-    background: rgba(220, 238, 254, 0.7);
+    margin-top: 10%;
+    background-color: #cce6ff;
+    position: relative;
+    opacity: 0.8;
+    width: 70%;
+    display: inline-block;
     margin-left: 16%;
     margin-right: 12%;
 }
+#radiodiv {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 20%;
+    left: 70%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
 
 .button1:hover, .button2:hover {
-    background-color: #02b8dd;
-    color: #fff;
+    background-color:  #80e5ff;
+    /*color: #fff;*/
+    opacity: 0.8;
 }
 
 
@@ -152,7 +174,7 @@ a:hover {
     margin-top: 20%;
 }
 form {
-    margin-top: 10%; 
+    margin-top: 7%;
     background: rgba(220, 238, 254, 0.7);
     margin-left: 16%;
     margin-right: 12%;
@@ -177,7 +199,6 @@ select {
     padding: 10px 16px;
     border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f1f1f1;
     background-color: white;
 }
 
@@ -205,13 +226,18 @@ input[type=button] {
 
 input[type=button]:hover {
     background-color: #02b8dd;
-    color: #fff;
+    color: #0f0f3e;
 }
 
 #start {
     margin-top: 5%;
 }
- 
+
+#hold{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
 #mapdiv {
     position: relative;
     float: left;
@@ -239,15 +265,16 @@ input[type=button]:hover {
     margin: 2%;
     text-align: center;
     background-color: #0f0f3e;
-    padding: 8px 22px;
+    /*padding: 8px 16px;*/
     border-radius: 2px;
     /*font-size: 10px;*/
     color: #fff;
     font-size: 70%;
 }
 #infobutton:hover {
-    background-color: #02b8dd;
-    color: #fff;
+    background-color:  #80e5ff;
+    color: #0f0f3e;
+    opacity: 0.8;
 }
 
 #bike, #station {
@@ -342,23 +369,18 @@ footer {
     width: 100%;
     position: relative;
     display: inline-block;
-    /*background-color: black;*/
-    /*color: lightblue;*/
-    background-color: white;
-    color: #0f0f3e;
-    font-family: "Courier New", "Lucida Console", sans-serif;
+    background-color: black;
+    color: lightblue;
+    /*background-color: white;*/
+    /*color: #0f0f3e;*/
+    font-family: "Duru Sans", "Lucida Console", sans-serif;
 }
 #footerpic {
     width: 30%;
     height: auto;
     position: relative;
     float: right;
-}
-#footercontent {
-    width: 30%;
-    height: auto;
-    position: relative;
-    float:left;
+    left: 12%;
 }
 
 #footer3 {
@@ -366,8 +388,4 @@ footer {
     height: auto;
     position: relative;
     float:left;
-    left: 5%;
-}
-#footercontent img {
-    width: 300px;
 }
