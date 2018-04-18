@@ -61,35 +61,19 @@
 
             <ul><li>Please input your location: <input id = 'start' type = 'text' placeholder="Search Box"></li>
                 <li>Pick your time of departure:
-                <select name="Time">
+                <select id="Time">
                       <option value=" " selected></option>
                       <option value="12:00">00:00</option>
-                      <option value="01:00">01:00</option>
-                      <option value="02:00">02:00</option>
                       <option value="03:00">03:00</option>
-                      <option value="04:00">04:00</option>
-                      <option value="05:00">05:00</option>
                       <option value="06:00">06:00</option>
-                      <option value="07:00">07:00</option>
-                      <option value="08:00">08:00</option>
                       <option value="09:00">09:00</option>
-                      <option value="10:00">10:00</option>
-                      <option value="11:00">11:00</option>
                       <option value="12:00">12:00</option>
-                      <option value="13:00">13:00</option>
-                      <option value="14:00">14:00</option>
                       <option value="15:00">15:00</option>
-                      <option value="16:00">16:00</option>
-                      <option value="17:00">17:00</option>
                       <option value="18:00">18:00</option>
-                      <option value="19:00">19:00</option>
-                      <option value="20:00">20:00</option>
                       <option value="21:00">21:00</option>
-                      <option value="22:00">22:00</option>
-                      <option value="23:00">23:00</option>
                 </select></li>
                 <li>Pick your day of departure:
-                    <select name="Day">
+                    <select id="Day">
                         <option value=" " selected></option>
                         <option value="Monday">Monday</option>
                         <option value="Tuesday">Tuesday</option>
@@ -243,11 +227,7 @@ function myFunction() {
 	var stand = arr2[1]
 	var bike = arr2[0]
 	var id = arr1[3]
-	//add = document.getElementById('new');
-	//add.innerHTML = " ";
-	//add.innerHTML += "Location: " + loc + "<br>";
-	//add.innerHTML += "There are " + bike + " bikes available and ";
-	//add.innerHTML += stand + " stands available at " + loc;
+
    var data = new google.visualization.DataTable();
             data.addColumn('number','Day');
 	       $.getJSON('/graph_info?id='+id, function(result){
@@ -273,6 +253,7 @@ function myFunction() {
 		          isStacked: true,
 		          height: 600,
             }
+            
 	       chart = new google.visualization.AreaChart(document.getElementById('graph'));
                 chart.draw(data, options);
 
@@ -294,7 +275,7 @@ function myFunction() {
             data.addColumn('number','Day');
 
 
-        $.getJSON('/weathergraph_info?id='+id+'?val='+val, function(result){
+        $.getJSON('/weathergraph_info?id='+id+','+val, function(result){
 
 	       for (var d = 0; d < 7; d++){
 		      data.addColumn('number',result.day[d]);
@@ -368,7 +349,6 @@ function myFunction() {
 
     function distanceChecker(lat, long, address){
 	    $.getJSON('/station_info', function(data) {
-		$.each(data,  function(index) {
 	        var i;
             var j = 1;
             var location, min
@@ -388,7 +368,7 @@ function myFunction() {
 		            var val = 1
 	        }
 
-            for (i = 2; i < 103; i++){
+            for (i = 2; i < 104; i++){
                 if (min > distance(lat,long,data.result[i][1],data.result[i][2])){
                     min = distance(lat,long,data.result[i][1],data.result[i][2]);
                     location = data.result[i][0];
@@ -397,50 +377,40 @@ function myFunction() {
 		            var val = i
             }}
 
-	       var id = data.result[val][3]
-
-	       $.getJSON('/station_occupancy?id='+id, function(info){
+	        var id = data.result[val][3]
+           
+            var selectTime = document.getElementById("Time");
+            var time = selectTime.options[selectTime.selectedIndex].text;
+            
+            var selectDay = document.getElementById("Day");
+            var day = selectDay.options[selectDay.selectedIndex].text;
+            
+            if (day == "" || time == ""){
+                var div = document.getElementById('test');  
+                div.innerHTML += "Please enter both a date and time";
+            }
+            
+            
+	       $.getJSON('/occupancy_prediction?id='+id+","+time+","+day, function(info){
                 var div = document.getElementById('test');
                     div.innerHTML += "The closest location to " + address + " is " + location + ". ";
                     div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
-	                div.innerHTML += "There are " + info.occupancy[0] + " bikes available and " + info.occupancy[1] + " stands available."
+	                div.innerHTML += "<br>There will be a predicted " + info.occupancy[1] + " bikes available at this time.";
+                    if (info.occupancy[0] != false){
+                        div.innerHTML += "<br>The weather forcast for " + day + " at " + time + " is " + info.occupancy[0];
+                        div.innerHTML += "<br><br>You are location A, please follow the route outlined to the left to get to your nearest station, location B.";
+                    }
+                    else{
+                        div.innerHTML += "<br><br>You are location A, please follow the route outlined to the left to get to your nearest station, location B.";
+                        div.innerHTML += "<br><br>PLEASE NOTE: This prediction is only accurate 5 days in advance, for more accurate predictions please select a time within the next 5 days";
+                    }
+               
 
             startmap(lat, long, latend, longend)
-            var data = new google.visualization.DataTable();
-
-                data.addColumn('number','Day');
-
-                $.getJSON('/graph_info?id='+id, function(result){
-
-                    for (var d = 0; d < 7; d++){
-                        data.addColumn('number',result.day[d]);
-                            }
-
-                    for (var i = 0; i < 24; i++){
-                        var col = []
-                        col.push(i)
-
-                    for (var j = 0; j < 7; j++){
-                        col.push(result.data[i][j])
-                        }
-
-                        data.addRows([col]);
-                        }
-
-            var options = {
-                 title: 'Station: ' + location,
-                 vAxis: {title: 'Bikes'},
-                 hAxis: {title: 'Time' },
-                 height: 600,
-                 seriesType: 'line'
-                }
-
-        chart = new google.visualization.ComboChart(document.getElementById('graph'));
-        chart.draw(data, options);
-         })
+           
 	})})
-	})
-    }
+	}
+
         function distance(lat1,lon1,lat2,lon2) {
             var R = 6371; // Radius of the earth in km
             var dLat = deg2rad(lat2-lat1);  // deg2rad below

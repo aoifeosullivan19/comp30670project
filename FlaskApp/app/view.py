@@ -2,11 +2,13 @@
 from collections import defaultdict, OrderedDict
 from flask import render_template, jsonify, request
 from app import app
-from app.dbcon import Examp, Dynamic, latest, weather
-from sqlalchemy import create_engine
+from app.dbcon import Examp, Dynamic, latest, weather, weather_predictions
+from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
 import pygal
 import pandas as pd
+import datetime
+import time
 import json
 import pickle
 
@@ -25,9 +27,7 @@ def station_info():
 	try:
 		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
 		info2 = session.query(latest.bikes, latest.id)
-		#.join(latest, Examp.id = latest.id).all()
-		# Examp.lat, Examp.long, Examp.id,)
-		#info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
+
 		arr1 = []
 		for j in info2:
 			arr1.append(j)
@@ -62,28 +62,27 @@ def station_occupancy():
 		for i in sql:
 			arr.append(i[0])
 			arr.append(i[1])
-		print(arr)
+
 		return jsonify(occupancy = arr)
 	except Exception as e:
 		return str(e)
 
 @app.route('/occupancy')
 def occupancy():
-    try:
-        id = request.args.get('id')
-        #where Examp.id = latest.id
-        sql = session.query(latest.bikes, latest.stands).filter(latest.id == id)
-        arr = []
-        print(sql)
-        for i in sql:
-            arr.append(i[0])
-            arr.append(i[1])
-        print(arr)
-        return jsonify(occupancy = arr)
-    except Exception as e:
-        return str(e)
+	try:
+		id = request.args.get('id')
 
-    
+		sql = session.query(latest.bikes, latest.stands).filter(latest.id == id)
+		arr = []
+		for i in sql:
+			arr.append(i[0])
+			arr.append(i[1])
+
+		return jsonify(occupancy = arr)
+	except Exception as e:
+		return str(e)
+
+
 @app.route('/current_weather')
 def current_weather():
 	try:
@@ -94,7 +93,7 @@ def current_weather():
 		return jsonify(current = arr)
 	except Exception as e:
 		return str(e)
-    
+
 @app.route('/graph_info')
 def graph_info():
 	try:
@@ -132,8 +131,8 @@ def graph_info():
 def weathergraph_info():
 	try:
 		req = request.args.get('id')
-		id = req[:2]
-		weather = req[7:]
+		req = req.split(',')
+		id, weather = req[0], req[1]
 		if weather == 'rain':
 
 			file = "app/pickleFiles/stationRain"+id+".pickle"
@@ -152,6 +151,59 @@ def weathergraph_info():
 
 	except Exception as e:
 		return str(e)
+
+@app.route('/occupancy_prediction')
+def occupancy_prediction():
+	try:
+		req = request.args.get('id')
+		req = req.split(",")
+		id, time_req, day = req[0], req[1], req[2]
+
+		now = datetime.datetime.now().date()
+		day_num = time.strptime(day, "%A").tm_wday
+
+		date = next_weekday(now, day_num)
+		date = str(date)
+		date_time = date + " " + time_req + ":00"
+
+		info = session.query(weather_predictions.mainDescription).filter(weather_predictions.dt_txt == date_time).first()
+		if info == None:
+			arr = []
+			sql = session.query(func.avg(latest.bikes)).filter(latest.id == id).scalar()
+			arr.append(False)
+			arr.append(sql)
+			return jsonify(occupancy = arr)
+		else:
+			info = session.query(weather_predictions.mainDescription).filter(weather_predictions.dt_txt == date_time)
+			arr = []
+			for i in info:
+				arr.append(i)
+			weather = arr[0]
+
+			if weather == 'Rain' or weather == 'Drizzle' or weather == 'Fog' or weather == 'Snow':
+				file = "app/pickleFiles/stationRain"+id+".pickle"
+				pickle_in = open(file,"rb")
+				data = pickle.load(pickle_in)
+			else:
+				file = "app/pickleFiles/stationDry"+id+".pickle"
+				pickle_in = open(file,"rb")
+				data = pickle.load(pickle_in)
+
+				pred_time = int(time_req[:-3])
+
+				prediction = data[pred_time][day_num]
+				prediction = int(prediction)
+				arr.append(prediction)
+
+		return jsonify(occupancy = arr)
+	except Exception as e:
+		return str(e)
+
+def next_weekday(d, weekday):
+	days_ahead = weekday - d.weekday()
+	if days_ahead <= 0:
+		days_ahead += 7
+	return d + datetime.timedelta(days_ahead)
 
 
 
