@@ -19,7 +19,6 @@ class Dynamic(Base):
 	id = Column('number', Integer, primary_key=True)
 	bikes = Column('available_bikes', Integer)
 	stands = Column('available_bike_stands', Integer)
-#	time = Column('last_update', db.DateTime)
 
 
 class latest(Base):
@@ -27,7 +26,6 @@ class latest(Base):
         id = Column('number', Integer,ForeignKey('Examp.id'),  primary_key=True)
         bikes = Column('available_bikes', Integer)
         stands = Column('available_bike_stands', Integer)
-#       time = Column('last_update', db.DateTime)
 
 class weather(Base):
         __tablename__ = 'dynamic_weather'
@@ -41,6 +39,11 @@ class weather(Base):
         dt_txt = Column('dt_txt', Unicode, primary_key=True)
         humidity = Column('humidity', Float)
         rain = Column('rain', Float)
+
+class weather_predictions(Base):
+        __tablename__ = 'weather_predictions'
+        dt_txt = Column('dt_txt', Unicode, primary_key = True)
+        mainDescription = Column('mainDescription', Unicode)
 
 
 #https://www.youtube.com/watch?v=Tu4vRU4lt6k
