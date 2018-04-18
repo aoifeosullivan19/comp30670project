@@ -206,9 +206,8 @@ function myFunction() {
 	                   var bikes = info.occupancy[0]
         	           var stands = info.occupancy[1]
                        x = data.result[i];
-                        y = info.occupancy;
                         z = marker;
-              	         infoWindow.setContent('<div id="content"><b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button id="infobutton" onclick="displayContent(x, y, z);">Click for occupancy trends</button></a></div>');
+              	         infoWindow.setContent('<div id="content"><b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button id="infobutton" onclick="displayContent(x, z);">Click for occupancy trends</button></a></div>');
 		                 infoWindow.setPosition(marker.getCenter());
 		                 infoWindow.open(map);
                	         map.setZoom(14);
@@ -222,10 +221,8 @@ function myFunction() {
 
         //set array of markers in google map object
         //markers.setMap(map); or may map.setMarkers()
-    function displayContent(arr1, arr2, marker) {
+    function displayContent(arr1, marker) {
  	var loc = arr1[0]
-	var stand = arr2[1]
-	var bike = arr2[0]
 	var id = arr1[3]
 
    var data = new google.visualization.DataTable();
@@ -248,8 +245,8 @@ function myFunction() {
 
             var options = {
                  title: 'Station: ' + loc,
-                 vAxis: {title: 'Bikes'},
-                 hAxis: {title: 'Time' },
+                 vAxis: {title: 'Number of Bikes'},
+                 hAxis: {title: 'Time (24 hour)' },
 		          isStacked: true,
 		          height: 600,
             }
@@ -259,7 +256,7 @@ function myFunction() {
 
         chart = new google.visualization.AreaChart(document.getElementById('graph'));
                 chart.draw(data, options);
-        document.getElementById('radboxes').innerHTML = '<ul><li><h3>Pick weather condition </h3></li><br><li><input type="radio" name = "weather" value = "rain"> Rain<br></li><li><input type="radio" name="weather" value = "sun" > Sun <br></li><li><input type = "button" value = "submit" name = "weatherbutton" onclick="getWeatherInfo('+id+');"></button></li><br>'
+        document.getElementById('radboxes').innerHTML = '<ul><li><h3>Pick weather condition </h3></li><br><li><input type="radio" name = "weather" value = "Wet">Wet<br></li><li><input type="radio" name="weather" value = "Dry" >Dry<br></li><li><input type = "button" value = "submit" name = "weatherbutton" onclick="getWeatherInfo('+id+');"></button></li><br>'
   	 })
 	}
 
@@ -294,8 +291,8 @@ function myFunction() {
 
 	       var options = {
                  title: 'Predicted Occupancy for Station: during '+val+' conditions',
-                 vAxis: {title: 'Bikes'},
-                 hAxis: {title: 'Time' },
+                 vAxis: {title: 'Number of Bikes'},
+                 hAxis: {title: 'Time (24 hour)' },
 		         isStacked: true,
 		         height: 600,
 		}

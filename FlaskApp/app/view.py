@@ -133,12 +133,12 @@ def weathergraph_info():
 		req = request.args.get('id')
 		req = req.split(',')
 		id, weather = req[0], req[1]
-		if weather == 'rain':
+		if weather == 'Wet':
 
 			file = "app/pickleFiles/stationRain"+id+".pickle"
 			pickle_in = open(file,"rb")
 			data = pickle.load(pickle_in)
-		elif weather == 'sun':
+		elif weather == 'Dry':
 			file = "app/pickleFiles/stationDry"+id+".pickle"
 			pickle_in = open(file,"rb")
 			data = pickle.load(pickle_in)
