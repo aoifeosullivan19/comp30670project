@@ -253,8 +253,12 @@ function myFunction() {
             }
 
 	       chart = new google.visualization.AreaChart(document.getElementById('graph'));
-                chart.draw(data, options);
-                document.getElementById('rad').innerHTML = "";
+                    chart.draw(data, options);
+        $('body, html, #graph').scrollTop(1880);
+        
+        //$("#graph").animate({ scrollTop: 0 }, "fast");
+       
+       document.getElementById('rad').innerHTML = "";
        document.getElementById('rad').innerHTML += '<ul><li><h3>Pick Weather Condition </h3></li><br><li><input type="radio" name = "weather" value = "Wet"> Wet<br></li><li><input type="radio" name="weather" value = "Dry" > Dry <br></li><li><input type = "button" value = "Submit" name = "weatherbutton" onclick="getWeatherInfo('+id+');"></button></li><br>'
   	 })
 	}
