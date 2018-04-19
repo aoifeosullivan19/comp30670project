@@ -1,71 +1,82 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
+    <title>DublinBikes</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <link rel = "stylesheet" type="text/css" href ="{{ url_for('static',filename='styles/index.css') }}">
-    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js" type="text/javascript">
-</script>
-<script>
-    $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $('a[href^="#"]').on('click', function(event) {
-        event.preventDefault();
-        var hash = this.hash;
-        var target = this.hash;
-        var $target = $(target);
-        $('html, body').animate({
-        scrollTop: $(hash).offset().top
-        },
-        700, 'swing', function(){
-        window.location.hash = target;});
-    });
-});
-    // https://www.youtube.com/watch?v=_EGO-d9H184
-    //https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
-</script>
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $('a[href^="#"]').on('click', function(event) {
+                event.preventDefault();
+                var hash = this.hash;
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    },
+                    700, 'swing',
+                    function() {
+                        window.location.hash = target;
+                    });
+            });
+        });
+        // https://www.youtube.com/watch?v=_EGO-d9H184
+        //https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+    </script>
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 </head>
 
 
 <body>
 
-<div class="container">
-<div class="parallax">
+    <div class="container">
+        <div class="parallax">
 
-<header>
-    <h1>DublinBikes.</h1>
-        <div id="weatherIcon"></div>
-     <div id="weather"></div>
+            <header>
+                <h1>DublinBikes.</h1>
+                <div id="weatherIcon"></div>
+                <div id="weather"></div>
 
-    </header>
-    <main>
-    <div id="select">
-    <div class="wrapper">
-    <ul>
-        <a href="#map" class="button1"><li>Map View</li></a>
-        <a href="#trip" class="button2"><li>Journey Planner</li></a>
-        </ul>
+            </header>
+            <main>
+                <div id="select">
+                    <div class="wrapper">
+                        <ul>
+                            <a href="#map" class="button1">
+                                <li>Map View</li>
+                            </a>
+                            <a href="#trip" class="button2">
+                                <li>Journey Planner</li>
+                            </a>
+                        </ul>
 
-    </div>
-    </div>
-    </main>
-        <div id="map" style = "width:100%;height:700px;" ></div>
+                    </div>
+                </div>
+            </main>
+            <div id="map" style="width:100%;height:700px;"></div>
 
-     <div id="legend"><h3>Legend</h3></div>
+            <div id="legend">
+                <h3>Legend</h3>
+            </div>
 
-    <div id = 'trip'>
-	<p id = 'new'></p>
-        <form id = "radboxes"></form>
-	<div id = 'graph'>
+            <div id='trip'>
+                <p id='new'></p>
+                <form id="radboxes"></form>
+                <div id='graph'>
 
-    </div>
-        <div id="rad"></div>
-        <form>
-            <ul><li>Please input your location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id = 'start' type = 'text' placeholder="Search Box"></li>
-                <li>Pick your time of departure: &nbsp;&nbsp;&nbsp;
-                <select id="Time">
+                </div>
+                <div id="rad"></div>
+                <form>
+                    <ul>
+                        <li>Please input your location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id='start' type='text' placeholder="Search Box"></li>
+                        <li>Pick your time of departure: &nbsp;&nbsp;&nbsp;
+                            <select id="Time">
                       <option value=" " selected></option>
                       <option value="12:00">00:00</option>
                       <option value="03:00">03:00</option>
@@ -76,8 +87,8 @@
                       <option value="18:00">18:00</option>
                       <option value="21:00">21:00</option>
                 </select></li>
-                <li>Pick your day of departure: &nbsp;&nbsp;&nbsp;&nbsp;
-                    <select id="Day">
+                        <li>Pick your day of departure: &nbsp;&nbsp;&nbsp;&nbsp;
+                            <select id="Day">
                         <option value=" " selected></option>
                         <option value="Monday">Monday</option>
                         <option value="Tuesday">Tuesday</option>
@@ -87,100 +98,115 @@
                         <option value="Saturday">Saturday</option>
                         <option value="Sunday">Sunday</option>
                     </select></li>
-                <li>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button type="button" id = "check" onclick= "Submit()">Submit</button>
-                </li>
-            </ul>
-        </form>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" id="check" onclick="Submit()">Submit</button>
+                        </li>
+                    </ul>
+                </form>
 
-    </div>
-    <p id = 'testing'></p>
-     <div id='hold'>
+            </div>
+            <p id='testing'></p>
+            <div id='hold'>
 
-       <div id="mapdiv" style = "width:50%;height:400px;" ></div>
+                <div id="mapdiv" style="width:50%;height:400px;"></div>
 
-    <div id="test"></div>
-</div>
+                <div id="test"></div>
+            </div>
 
 
-</div>
+        </div>
 
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <script>
-    window.onload=function(infoWeather) {
-    // info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
-        $.getJSON('/current_weather', function(currWeather) {
-        var weather = currWeather.current[0];
-        var minTemp = currWeather.current[3];
-        var add0 = document.getElementById('weather');
-        var icon = document.getElementById("weatherIcon");
-        add0.innerHTML = " ";
-        add0.innerHTML = "<h3>Current Weather </h3>" + "Description: " +  weather[3];
-	    add0.innerHTML += "<br>Min temp: " + weather[1] + "&#8451;";
-        add0.innerHTML += "<br>Max temp: " + weather[2] + "&#8451;";
-        if(weather[4] == 'Rain'){
-            icon.innerHTML += "<img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png' alt='didnt work' style='width:60px;height:60px;'>";
-            }
-        if(weather[4] == 'Clouds'){
-            icon.innerHTML += "<img src='http://rs122.pbsrc.com/albums/o266/weatherstooge/TWC%20Icons%20-%201998-2006/Cloudy.png~c200' style='width:60px;height:60px;'>";
-            }
-        if(weather[4] == 'Clear'){
-           icon.innerHTML += "<img src='http://www.okeechobeebassfishingguide.com/wp-content/plugins/weather-and-weather-forecast-widget/weatherimages/Custom1/32.png' style='width:60px;height:60px;'>";
-            }
-        if(weather[4] == 'Drizzle'){
-           icon.innerHTML += "<img src='https://cdn3.iconfinder.com/data/icons/weather-color1/128/Weather1-13-512.png' style='width:60px;height:60px;'>";
+        
+        //Function to show weather infromation and corresponding icon
+        
+        window.onload = function(infoWeather) {
+           
+            $.getJSON('/current_weather', function(currWeather) {
+                var weather = currWeather.current[0];
+                var minTemp = currWeather.current[3];
+                var add0 = document.getElementById('weather');
+                var icon = document.getElementById("weatherIcon");
+                add0.innerHTML = " ";
+                add0.innerHTML = "<h3>Current Weather </h3>" + "Description: " + weather[3];
+                add0.innerHTML += "<br>Min temp: " + weather[1] + "&#8451;";
+                add0.innerHTML += "<br>Max temp: " + weather[2] + "&#8451;";
+                if (weather[4] == 'Rain') {
+                    icon.innerHTML += "<img src='https://pics.clipartpng.com/midle/Rain_Cloud_Weather_Icon_PNG_Clip_Art-1521.png' alt='didnt work' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Clouds') {
+                    icon.innerHTML += "<img src='http://rs122.pbsrc.com/albums/o266/weatherstooge/TWC%20Icons%20-%201998-2006/Cloudy.png~c200' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Clear') {
+                    icon.innerHTML += "<img src='http://www.okeechobeebassfishingguide.com/wp-content/plugins/weather-and-weather-forecast-widget/weatherimages/Custom1/32.png' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Drizzle') {
+                    icon.innerHTML += "<img src='https://cdn3.iconfinder.com/data/icons/weather-color1/128/Weather1-13-512.png' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Fog') {
+                    icon.innerHTML += "<img src='https://www.iconfinder.com/icons/118513/cloud_fog_foggy_weather_icon' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Mist') {
+                    icon.innerHTML += "<img src='https://cdn.iconscout.com/public/images/icon/premium/png-512/fog-haze-mist-smoke-pollution-smog-weather-forecast-39a0661b7d779874-512x512.png' style='width:60px;height:60px;'>";
+                }
+                if (weather[4] == 'Snow') {
+                    icon.innerHTML += "<img src='https://cdn1.iconfinder.com/data/icons/weather-elements/512/Weather_CloudSnow.png' style='width:60px;height:60px;'>";
+                }
+            })
         }
-        if(weather[4] == 'Fog'){
-            icon.innerHTML +=  "<img src='https://www.iconfinder.com/icons/118513/cloud_fog_foggy_weather_icon' style='width:60px;height:60px;'>";
+        // http://clubmate.fi/detect-click-with-pure-javascript/
+        
+        function myFunction() {
+            document.getElementById("trends").style.display = "block";
         }
-        if(weather[4] == 'Mist'){
-            icon.innerHTML += "<img src='https://cdn.iconscout.com/public/images/icon/premium/png-512/fog-haze-mist-smoke-pollution-smog-weather-forecast-39a0661b7d779874-512x512.png' style='width:60px;height:60px;'>";
-        }
-        if(weather[4] == 'Snow'){
-            icon.innerHTML += "<img src='https://cdn1.iconfinder.com/data/icons/weather-elements/512/Weather_CloudSnow.png' style='width:60px;height:60px;'>";
-        }
-    }) }
-// http://clubmate.fi/detect-click-with-pure-javascript/
-function myFunction() {
-    document.getElementById("trends").style.display = "block";
-    }
-    function Submit(){
-        document.getElementById('test').innerHTML = " "
-        var start = document.getElementById('start').value;
-        GetLatlong(start);
-    }
-    function myMap(){
-        google.charts.load('current', {'packages':['corechart']});
-        var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center: {lat: 53.3498, lng: -6.2603}
-        });
-        var marker;
-        var i;
-        var infoWindow = new google.maps.InfoWindow();
-	   $.getJSON('/station_info', function(data) {
-        	for( i = 0; i <104; i++ ) {
-                var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
-                var markers = [];
-                    if(data.bikeres[i][0] == '0'){
-                             marker = new google.maps.Circle({
-                                    center: position,
-                                    name: 'No Bikes',
-                                    map: map,
-                                    strokeColor: '#FF0000',
-                                    strokeOpacity: 0.8,
-                                    strokeWeight: 2,
-                                    fillColor: '#FF0000',
-                                    fillOpacity: 0.35,
-                                    title: data.result[i][0],
-                                    radius: data.bikeres[i][0] + 40,
-                                    clickable: true
 
-                    })}
-                    else {
+        function Submit() {
+            document.getElementById('test').innerHTML = " "
+            var start = document.getElementById('start').value;
+            GetLatlong(start);
+        }
+
+        function myMap() {
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: {
+                    lat: 53.3498,
+                    lng: -6.2603
+                }
+            });
+            
+            
+            //Creating map with circle markers with specific sizes bases on availability
+            var marker;
+            var i;
+            var infoWindow = new google.maps.InfoWindow();
+            $.getJSON('/station_info', function(data) {
+                for (i = 0; i < 104; i++) {
+                    var position = new google.maps.LatLng(data.result[i][1], data.result[i][2]);
+                    var markers = [];
+                    if (data.bikeres[i][0] == '0') {
+                        marker = new google.maps.Circle({
+                            center: position,
+                            name: 'No Bikes',
+                            map: map,
+                            strokeColor: '#FF0000',
+                            strokeOpacity: 0.8,
+                            strokeWeight: 2,
+                            fillColor: '#FF0000',
+                            fillOpacity: 0.35,
+                            title: data.result[i][0],
+                            radius: data.bikeres[i][0] + 40,
+                            clickable: true
+
+                        })
+                    } else {
                         marker = new google.maps.Circle({
                             center: position,
                             map: map,
@@ -194,229 +220,268 @@ function myFunction() {
                             radius: data.bikeres[i][0] * 5 + 25,
                             clickable: true
 
-                    })}
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function(){
-	           //marker.setMap(map);
-	               $.getJSON('/station_occupancy?id='+data.result[i][3], function(info){
-	                   var bikes = info.occupancy[0]
-        	           var stands = info.occupancy[1]
-                       x = data.result[i];
-                        z = marker;
-              	         infoWindow.setContent('<div id="content"><b>'+data.result[i][0]+'</b><br><br>Number of Bikes: '+bikes+'<br>Number of Stands: '+stands+'<br><br> <a href="#graph"><button id="infobutton" onclick="displayContent(x, z);">Click for occupancy trends</button></a></div>');
-		                 infoWindow.setPosition(marker.getCenter());
-		                 infoWindow.open(map);
-               	         map.setZoom(14);
-                         map.setCenter(marker.getCenter());
-	                   })
-	           }}(marker, i)))
-	       }
-	   })
-        var div = document.createElement('div');
-	    var nobikes = "<svg height='30' width='30'> <circle cx='10' cy='10' r='8' stroke='#FF0000' stroke-width='3' fill='#FF0000' fill-opacity='0.35' /> </svg> "
-        var freebikes = "<svg height='30' width='30'> <circle cx='10' cy='10' r='8' stroke='#2db300' stroke-width='3' fill='#2db300' fill-opacity='0.35' /> </svg> "
-        var maxfreebikes = "<svg height='80' width='80'> <circle cx='30' cy='30' r='20' stroke='#2db300' stroke-width='3' fill='#2db300' fill-opacity='0.35' /> </svg> "
-        div.innerHTML = "No Free Bikes <br>" + nobikes + "<br>" + "1 Free Bike <br>" + freebikes + "<br>40 Free Bikes <br>" + maxfreebikes;
-        legend.appendChild(div);
-        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
-
-    }
-        //set array of markers in google map object
-        //markers.setMap(map); or may map.setMarkers()
-    function displayContent(arr1, marker) {
- 	var loc = arr1[0]
-	var id = arr1[3]
-   var data = new google.visualization.DataTable();
-            data.addColumn('number','Day');
-	       $.getJSON('/graph_info?id='+id, function(result){
-	       for (var d = 0; d < 7; d++){
-		      data.addColumn('number',result.day[d]);
-			     }
-            for (var i = 0; i < 24; i++){
-		          var col = []
-		          col.push(i)
-            for (var j = 0; j < 7; j++){
-		          col.push(result.data[i][j])
-		          }
-            data.addRows([col]);
+                        })
+                    }
+                    
+                    //creating onclick events when markers are selected
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                            
+                            $.getJSON('/station_occupancy?id=' + data.result[i][3], function(info) {
+                                var bikes = info.occupancy[0]
+                                var stands = info.occupancy[1]
+                                x = data.result[i];
+                                z = marker;
+                                infoWindow.setContent('<div id="content"><b>' + data.result[i][0] + '</b><br><br>Number of Bikes: ' + bikes + '<br>Number of Stands: ' + stands + '<br><br> <a href="#graph"><button id="infobutton" onclick="displayContent(x, z);">Click for occupancy trends</button></a></div>');
+                                infoWindow.setPosition(marker.getCenter());
+                                infoWindow.open(map);
+                                map.setZoom(14);
+                                map.setCenter(marker.getCenter());
+                            })
+                        }
+                    }(marker, i)))
                 }
-            var options = {
-                 title: 'Station: ' + loc,
-                 vAxis: {title: 'Number of Bikes'},
-                 hAxis: {title: 'Time (24 hour)' },
-		          isStacked: true,
-		          height: 600,
-                backgroundColor: {
-                fill: '#e6f2ff',
-                fillOpacity: 0.9
-                },
-            }
+            })
+            var div = document.createElement('div');
+            var nobikes = "<svg height='30' width='30'> <circle cx='10' cy='10' r='8' stroke='#FF0000' stroke-width='3' fill='#FF0000' fill-opacity='0.35' /> </svg> "
+            var freebikes = "<svg height='30' width='30'> <circle cx='10' cy='10' r='8' stroke='#2db300' stroke-width='3' fill='#2db300' fill-opacity='0.35' /> </svg> "
+            var maxfreebikes = "<svg height='80' width='80'> <circle cx='30' cy='30' r='20' stroke='#2db300' stroke-width='3' fill='#2db300' fill-opacity='0.35' /> </svg> "
+            div.innerHTML = "No Free Bikes <br>" + nobikes + "<br>" + "1 Free Bike <br>" + freebikes + "<br>40 Free Bikes <br>" + maxfreebikes;
+            legend.appendChild(div);
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 
-	       chart = new google.visualization.AreaChart(document.getElementById('graph'));
-                    chart.draw(data, options);
-        $('body, html, #graph').scrollTop(1880);
-        
-        //$("#graph").animate({ scrollTop: 0 }, "fast");
-       
-       document.getElementById('rad').innerHTML = "";
-       document.getElementById('rad').innerHTML += '<ul><li><h3>Pick Weather Condition </h3></li><br><li><input type="radio" name = "weather" value = "Wet"> Wet<br></li><li><input type="radio" name="weather" value = "Dry" > Dry <br></li><li><input type = "button" value = "Submit" name = "weatherbutton" onclick="getWeatherInfo('+id+');"></button></li><br>'
-  	 })
-	}
-        function getWeatherInfo(id){
-        var val = document.querySelector('input[name="weather"]:checked').value;
-         var data = new google.visualization.DataTable();
-            data.addColumn('number','Day');
-        $.getJSON('/weathergraph_info?id='+id+','+val, function(result){
-	       for (var d = 0; d < 7; d++){
-		      data.addColumn('number',result.day[d]);
-			}
-	       for (var i = 0; i < 24; i++){
-		      var col = []
-		      col.push(i)
-            for (var j = 0; j < 7; j++){
-		      col.push(result.data[i][j])
-		          }
-            data.addRows([col]);
-           }
-	       var options = {
-                 title: 'Predicted Occupancy for Station During '+val+' Conditions',
-                 vAxis: {title: 'Number of Bikes'},
-                 hAxis: {title: 'Time (24 hour)' },
-		         isStacked: true,
-		         height: 600,
-               backgroundColor: {
-                fill: '#e6f2ff',
-                fillOpacity: 0.9
-                },
-		}
-	    chart = new google.visualization.AreaChart(document.getElementById('graph'));
-        chart.draw(data, options);
-        })
-    }
-     function startmap(lat, long, latend, longend){
-        var locstart = {lat: lat, lng: long};
-        var locend = {lat: latend, lng: longend}
-        var map = new google.maps.Map(document.getElementById('mapdiv'), {
-          center: locstart,
-          zoom: 12
-        });
-         var directionsDisplay = new google.maps.DirectionsRenderer({
-          map: map
-        });
-        var request = {
-          destination: locend,
-          origin: locstart,
-          travelMode: 'WALKING'
-        };
-        var directionsService = new google.maps.DirectionsService();
-        directionsService.route(request, function(response, status) {
-          if (status == 'OK') {
-            directionsDisplay.setDirections(response);
-          }
-        });
         }
+        
+        //Creating graphs to display the average occupancy each day 
+        function displayContent(arr1, marker) {
+            var loc = arr1[0]
+            var id = arr1[3]
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'Day');
+            $.getJSON('/graph_info?id=' + id, function(result) {
+                for (var d = 0; d < 7; d++) {
+                    data.addColumn('number', result.day[d]);
+                }
+                for (var i = 0; i < 24; i++) {
+                    var col = []
+                    col.push(i)
+                    for (var j = 0; j < 7; j++) {
+                        col.push(result.data[i][j])
+                    }
+                    data.addRows([col]);
+                }
+                var options = {
+                    title: 'Station: ' + loc,
+                    vAxis: {
+                        title: 'Number of Bikes'
+                    },
+                    hAxis: {
+                        title: 'Time (24 hour)'
+                    },
+                    isStacked: true,
+                    height: 600,
+                    backgroundColor: {
+                        fill: '#e6f2ff',
+                        fillOpacity: 0.9
+                    },
+                }
+
+                chart = new google.visualization.AreaChart(document.getElementById('graph'));
+                chart.draw(data, options);
+                $('body, html, #graph').scrollTop(1880);
+
+                document.getElementById('rad').innerHTML = "";
+                document.getElementById('rad').innerHTML += '<ul><li><h3>Pick Weather Condition </h3></li><br><li><input type="radio" name = "weather" value = "Wet"> Wet<br></li><li><input type="radio" name="weather" value = "Dry" > Dry <br></li><li><input type = "button" value = "Submit" name = "weatherbutton" onclick="getWeatherInfo(' + id + ');"></button></li><br>'
+            })
+        }
+
+        //Creating graphs that show the predicted average occupancy during specific weather conditions
+        function getWeatherInfo(id) {
+            var val = document.querySelector('input[name="weather"]:checked').value;
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'Day');
+            //query to get a specially formatted array to populate google charts graph
+            $.getJSON('/weathergraph_info?id=' + id + ',' + val, function(result) {
+                for (var d = 0; d < 7; d++) {
+                    data.addColumn('number', result.day[d]);
+                }
+                for (var i = 0; i < 24; i++) {
+                    var col = []
+                    col.push(i)
+                    for (var j = 0; j < 7; j++) {
+                        col.push(result.data[i][j])
+                    }
+                    data.addRows([col]);
+                }
+                var options = {
+                    title: 'Predicted Occupancy for Station During ' + val + ' Conditions',
+                    vAxis: {
+                        title: 'Number of Bikes'
+                    },
+                    hAxis: {
+                        title: 'Time (24 hour)'
+                    },
+                    isStacked: true,
+                    height: 600,
+                    backgroundColor: {
+                        fill: '#e6f2ff',
+                        fillOpacity: 0.9
+                    },
+                }
+                chart = new google.visualization.AreaChart(document.getElementById('graph'));
+                chart.draw(data, options);
+            })
+        }
+
+        //Creating map to show directions from users current location to their closest station
+        function startmap(lat, long, latend, longend) {
+            var locstart = {
+                lat: lat,
+                lng: long
+            };
+            var locend = {
+                lat: latend,
+                lng: longend
+            }
+            var map = new google.maps.Map(document.getElementById('mapdiv'), {
+                center: locstart,
+                zoom: 12
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            var request = {
+                destination: locend,
+                origin: locstart,
+                travelMode: 'WALKING'
+            };
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function(response, status) {
+                if (status == 'OK') {
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+        
+        
+        //function to get the latitude and longitude of users current location
         //https://developers.google.com/maps/documentation/javascript/examples/directions-simple
-    function GetLatlong(address) {
-        var geocoder = new google.maps.Geocoder();
-	   address += ", Dublin";
-            geocoder.geocode({ 'address': address }, function (results, status) {
+        function GetLatlong(address) {
+            var geocoder = new google.maps.Geocoder();
+            address += ", Dublin";
+            geocoder.geocode({
+                'address': address
+            }, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
                     var latitude = results[0].geometry.location.lat();
                     var longitude = results[0].geometry.location.lng();
-                    distanceChecker(latitude,longitude,address)
+                    distanceChecker(latitude, longitude, address)
+                } else {
+                    document.getElementById('test').innerHTML = "Please enter a valid location in Dublin"
                 }
-            else {
-                document.getElementById('test').innerHTML = "Please enter a valid location in Dublin"
-            }
-        })};
-    function distanceChecker(lat, long, address){
-	    $.getJSON('/station_info', function(data) {
-	        var i;
-            var j = 1;
-            var location, min
-                if (distance(lat,long,data.result[0][1],data.result[0][2]) < distance(lat,long,data.result[1][1],data.result[1][2])){
-                    min = distance(lat,long,data.result[0][1],data.result[0][2]);
+            })
+        };
+
+        
+        //function to get the nearest station to the users current location
+        function distanceChecker(lat, long, address) {
+            $.getJSON('/station_info', function(data) {
+                var i;
+                var j = 1;
+                var location, min
+                
+                //finding minimum distance
+                if (distance(lat, long, data.result[0][1], data.result[0][2]) < distance(lat, long, data.result[1][1], data.result[1][2])) {
+                    min = distance(lat, long, data.result[0][1], data.result[0][2]);
                     location = data.result[0][0];
                     latend = data.result[0][1];
                     longend = data.result[0][2];
-		            var val = 0
-		 }
-            else {
-                    min = distance(lat,long,data.result[1][1],data.result[1][2]);
+                    var val = 0
+                } else {
+                    min = distance(lat, long, data.result[1][1], data.result[1][2]);
                     location = data.result[1][0];
-    		        latend = data.result[1][1];
+                    latend = data.result[1][1];
                     longend = data.result[1][2];
-		            var val = 1
-	        }
-            for (i = 2; i < 104; i++){
-                if (min > distance(lat,long,data.result[i][1],data.result[i][2])){
-                    min = distance(lat,long,data.result[i][1],data.result[i][2]);
-                    location = data.result[i][0];
-                    latend = data.result[i][1];
-                    longend = data.result[i][2];
-		            var val = i
-            }}
-	        var id = data.result[val][3]
+                    var val = 1
+                }
+                for (i = 2; i < 104; i++) {
+                    if (min > distance(lat, long, data.result[i][1], data.result[i][2])) {
+                        min = distance(lat, long, data.result[i][1], data.result[i][2]);
+                        location = data.result[i][0];
+                        latend = data.result[i][1];
+                        longend = data.result[i][2];
+                        var val = i
+                    }
+                }
+                var id = data.result[val][3]
 
-            var selectTime = document.getElementById("Time");
-            var time = selectTime.options[selectTime.selectedIndex].text;
+                var selectTime = document.getElementById("Time");
+                var time = selectTime.options[selectTime.selectedIndex].text;
 
-            var selectDay = document.getElementById("Day");
-            var day = selectDay.options[selectDay.selectedIndex].text;
+                var selectDay = document.getElementById("Day");
+                var day = selectDay.options[selectDay.selectedIndex].text;
 
-            if (day == "" || time == ""){
-                var div = document.getElementById('test');
-                div.innerHTML += "Please enter both a date and time";
-            }
+                if (day == "" || time == "") {
+                    var div = document.getElementById('test');
+                    div.innerHTML += "Please enter both a date and time";
+                }
 
-
-	       $.getJSON('/occupancy_prediction?id='+id+","+time+","+day, function(info){
-                var div = document.getElementById('test');
+                //getting preditice information to display
+                $.getJSON('/occupancy_prediction?id=' + id + "," + time + "," + day, function(info) {
+                    var div = document.getElementById('test');
                     div.innerHTML += "The closest location to " + address + " is " + location + ". ";
-                    div.innerHTML += "You are " + min +"km away from " + location + ".<br>";
-	                div.innerHTML += "<br>There will be a predicted " + info.occupancy[1] + " bikes available at this time.";
-                    if (info.occupancy[0] != false){
+                    div.innerHTML += "You are " + min + "km away from " + location + ".<br>";
+                    div.innerHTML += "<br>There will be a predicted " + info.occupancy[1] + " bikes available at this time.";
+                    if (info.occupancy[0] != false) {
                         div.innerHTML += "<br>The weather forcast for " + day + " at " + time + " is " + info.occupancy[0];
                         div.innerHTML += "<br><br>You are location A, please follow the route outlined to the left to get to your nearest station, location B.";
-                    }
-                    else{
+                    } else {
                         div.innerHTML += "<br><br>You are location A, please follow the route outlined to the left to get to your nearest station, location B.";
                         div.innerHTML += "<br><br>PLEASE NOTE: This prediction is only accurate 5 days in advance, for more accurate predictions please select a time within the next 5 days";
                     }
 
-            startmap(lat, long, latend, longend)
+                    startmap(lat, long, latend, longend)
 
-	})})
-	}
-        function distance(lat1,lon1,lat2,lon2) {
-            var R = 6371; // Radius of the earth in km
-            var dLat = deg2rad(lat2-lat1);  // deg2rad below
-            var dLon = deg2rad(lon2-lon1);
+                })
+            })
+        }
+
+        
+        //function to get the distance between two latitudes and longitudes
+        function distance(lat1, lon1, lat2, lon2) {
+            var R = 6371;
+            var dLat = deg2rad(lat2 - lat1); 
+            var dLon = deg2rad(lon2 - lon1);
             var a =
-                Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.sin(dLat / 2) * Math.sin(dLat / 2) +
                 Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
-                Math.sin(dLon/2) * Math.sin(dLon/2);
-            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-            var d = R * c; // Distance in km
-            var result = Math.round(d*100)/100
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var d = R * c;
+            var result = Math.round(d * 100) / 100
             return result;
-            }
-            function deg2rad(deg) {
-                return deg * (Math.PI/180)
-            }
-</script>
+        }
+
+        function deg2rad(deg) {
+            return deg * (Math.PI / 180)
+        }
+        
+    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLIaggqQb52Url971GbbnWc3XusmTukM&callback=myMap">
-</script>
-      <footer>
+    </script>
+    <footer>
         <div id="footerpic">
-            <h3>Find Us At</h3><p>Dublin Bikes<br>Rathmines<br>Dublin</p>
-</div>
+            <h3>Find Us At</h3>
+            <p>Dublin Bikes<br>Rathmines<br>Dublin</p>
+        </div>
 
         <div id="footer3">
             <h3>Contact Us</h3>
             <p>Office: +353 567 12 345<br>Email: DublinBikes@gmail.ie<br>Copyright 2018. Dublin Bikes.</p>
         </div>
-        </footer></div>
+    </footer>
+    
 </body>
+
 </html>

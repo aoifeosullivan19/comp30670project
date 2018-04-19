@@ -3,5 +3,5 @@ Contributors
 ============
 
 * Amy McCormack <amy.mccormack@ucdconnect.ie>
-* Aofie O'Sullivan
-* Muireann MacCarthy
+* Aofie O'Sullivan <aoifeosullivan7@gmail.com>
+* Muireann MacCarthy <muireann.maccarthy@gmail.com>

@@ -24,6 +24,7 @@ def index():
 
 @app.route('/station_info')
 def station_info():
+	"""Station Information to populate map"""
 	try:
 		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
 		info2 = session.query(latest.bikes, latest.id)
@@ -41,6 +42,7 @@ def station_info():
 
 @app.route('/station')
 def station():
+	"""Static station information"""
 	try:
 		info = session.query(Examp.location, Examp.lat, Examp.long, Examp.id)
 		stations = []
@@ -54,6 +56,7 @@ def station():
 
 @app.route('/station_occupancy')
 def station_occupancy():
+	"""Function to get the occupancy of a specific station"""
 	try:
 		id = request.args.get('id')
 		sql = session.query(latest.bikes, latest.stands).filter(latest.id == id)
@@ -66,25 +69,10 @@ def station_occupancy():
 		return jsonify(occupancy = arr)
 	except Exception as e:
 		return str(e)
-
-@app.route('/occupancy')
-def occupancy():
-	try:
-		id = request.args.get('id')
-
-		sql = session.query(latest.bikes, latest.stands).filter(latest.id == id)
-		arr = []
-		for i in sql:
-			arr.append(i[0])
-			arr.append(i[1])
-
-		return jsonify(occupancy = arr)
-	except Exception as e:
-		return str(e)
-
 
 @app.route('/current_weather')
 def current_weather():
+	"""Function to get current weather information"""
 	try:
 		info = session.query(weather.temp, weather.temp_min, weather.temp_max, weather.description, weather.mainDescription, weather.speed, weather.deg, weather.dt_txt, weather.humidity, weather.rain)
 		arr = [];
@@ -96,6 +84,8 @@ def current_weather():
 
 @app.route('/graph_info')
 def graph_info():
+	"""Function to get occupancy information for graphs and format the information
+	so it is readable by the google charts"""
 	try:
 		id = request.args.get('id')
 		conn_str = "mysql+pymysql://dublinbikesadmin:dublinbikes2018@dublinbikes.cglcinwmtg3w.eu-west-1.rds.amazonaws.com/dublinbikes"
@@ -129,6 +119,8 @@ def graph_info():
 
 @app.route('/weathergraph_info')
 def weathergraph_info():
+	"""Function to get the predicted graphs from pickle files for
+	specific weather conditions"""
 	try:
 		req = request.args.get('id')
 		req = req.split(',')
@@ -154,6 +146,8 @@ def weathergraph_info():
 
 @app.route('/occupancy_prediction')
 def occupancy_prediction():
+	"""Function that will use the given time and date and station
+	to predict the occupancy at that station and time"""
 	try:
 		req = request.args.get('id')
 		req = req.split(",")
